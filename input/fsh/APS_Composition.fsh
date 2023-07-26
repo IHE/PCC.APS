@@ -98,6 +98,9 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    drugs 0..* MS 
 //Conformance Note:
 // noOpen Isse: (call for comment) SHould we include a value set within this section to deffine what types of SDOH observations are relivant to the pregnancy, similar to how we have pregancy relivant history of past illnesses 
+// Open Issue: Seeking comment -- The IHE Maternal Health SMEs have sugested key social history observations that result in obsetric risk (homlessness, food insecurity, known by social services, lack of transportaion, domestic violence, support systems needed, and other resources needed). Observations in social history including alternate metrics for smoking and alcohol have identified by the international patient summary. 
+
+
 
 * section[FamilyMedicalHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-FamilyMedicalHistory"
 * section[FamilyMedicalHistory] ^extension.valueString = "Section"
@@ -195,7 +198,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
-* section[AdvanceDirectives].entry Reference(concent | DocumentReference)
+* section[AdvanceDirectives].entry Reference(concent | AdvanceDirectivesObservation | DocumentReference)
 * section[AdvanceDirectives].entry contains 
 //    advanceDirectivesConsent 0..* MS 
 //Conformance Note:
@@ -231,6 +234,17 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[VitalSigns].code = $loinc#8716-3
 * section[VitalSigns].code MS
 * section[VitalSigns].entry Reference(Observation)
+//* section[VitalSigns].entry contains 
+//    vitalSign 0..* MS 
+//Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
+
+* section[Immunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Immunizations"
+* section[Immunizations] ^extension.valueString = "Section"
+* section[Immunizations] ^short = "Immunizations"
+* section[Immunizations] ^definition = "Patient's immunization status and pertinent history."
+* section[Immunizations].code = $loinc#11369-6
+* section[Immunizations].code MS
+* section[Immunizations].entry Reference(Immunization)
 //* section[VitalSigns].entry contains 
 //    vitalSign 0..* MS 
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
