@@ -34,7 +34,7 @@ responses for recording smoking status.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $loinc#72166-2
+* code = $LOINC#72166-2
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit from Smoking.Status.VS (required)
@@ -59,7 +59,7 @@ Alcoholic drinks per day
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $loinc#74013-4
+* code = $LOINC#74013-4
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit from Alcohol.USe.VS (required)
@@ -164,26 +164,5 @@ TBD
 * component 0..0
 * method 0..0
 
-
-Profile:        ToxicExposure
-Parent:         Observation
-Id:             IHE.ToxicExposure
-Title:          "Toxic Exposure"
-Description:    """
-TBD
-"""
-* category 1..1
-* status = http://hl7.org/fhir/observation-status#final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#425400000
-* subject only Reference(Patient)
-* device 0..0
-* interpretation 0..0
-* focus 0..0
-* bodySite 0..0
-* specimen 0..0
-* referenceRange 0..0
-* component 0..0
-* method 0..0
 
 

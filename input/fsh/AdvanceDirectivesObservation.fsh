@@ -15,9 +15,8 @@ in as much detail as possible. Advance directives contains data such as the exis
 //Absence of the <value> element indicates that an advance directive of the specified type has been recorded, and must be examined to determine what type of treatment should be performed. The value element 
 //is not permitted when the <code> element describes an Other directive.
 
-* derivedFrom 0..1 only Reference(DocumentReference)
-
-// this is making everything else in observation forbidden. 
+* derivedFrom 0..1 
+* derivedFrom only Reference(DocumentReference)
 * implicitRules 0..0
 * language 0..0
 * contained 0..0
