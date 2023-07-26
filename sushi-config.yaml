@@ -2,11 +2,11 @@
 # ───────────────────────────────────────────────────
 # the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
-id: ihe.domain.profile
-canonical: https://profiles.ihe.net/Domain/Profile
+id: ihe.pcc.aps
+canonical: https://profiles.ihe.net/PCC/APS
 version: 0.0.1-current
-name: IHE_Domain_Profile
-title: "spelled out name of the IHE Profile"
+name: IHE_PCC_APS
+title: "Antepartum Summary"
 description: put the short description of the profile here. it should explain what problem is being solved
 releaseLabel: ci-build
 #releaseLabel: ballot
@@ -16,14 +16,14 @@ releaseLabel: ci-build
 status: draft
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
-  - name: IHE IT Infrastructure Technical Committee
-  - url: https://www.ihe.net/ihe_domains/it_infrastructure/
-  - email: iti@ihe.net
+  - name: IHE Patient Care Coordination Committee
+  - url: https://www.ihe.net/ihe_domains/patient_care_coordination/
+  - email: pcc@ihe.net
 contact:
-  - name: IHE IT Infrastructure Technical Committee
+  - name: IHE Patient Care Coordination Committee
     telecom:
       - system: email
-        value: iti@ihe.net
+        value: pcc@ihe.net
 license:  CC-BY-4.0
 fhirVersion: 4.0.1
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
