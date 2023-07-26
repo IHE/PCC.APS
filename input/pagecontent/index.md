@@ -1,6 +1,6 @@
-**TAntepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode. **
+**Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode. **
 
-**TODO: Write your executive overview here. Usually a one paragraph explanation of what problem this implementation guide solves.**
+**This profile is intended to be a summary for supporting pregnancy care prior to and leading up to delivery.**
 
 <div markdown="1" class="stu-note">
 
@@ -21,10 +21,8 @@ This guide is organized into the following sections:
    1. [Overview](volume-1.html#overview)
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
-   1. **TODO: point to the Volume 1 Appendix if there is one**
 2. Volume 2: Transaction Detail
    1. [ToDo do \[domain-YY\]](domain-YY.html)
-   1. **TODO: point to the Volume 2 Appendix if there is one**
 3. Volume 3: Metadata and Content
    1. [Content One](domain-ZZ.html)
 4. Volume 4: National Extensions

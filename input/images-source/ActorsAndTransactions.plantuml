@@ -1,6 +1,8 @@
 @startuml
-skinparam svgDimensionStyle false
-agent "[[#client Client]]" as Client
-agent "[[#server Server]]" as Server
-Client -down-> Server : "go [[domain-YY.html Domain-YY]]"
+hide footbox
+agent "Content\nCreator" as Creator
+agent "Content\nConsumer" as Consumer
+cloud "Share Content" as cloud
+Creator -> cloud : ContentCreator
+cloud -> Consumer : ContentConsumer
 @enduml

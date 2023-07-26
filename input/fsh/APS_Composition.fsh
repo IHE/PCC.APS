@@ -13,8 +13,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * subject 1..1
 * subject reference only (Patient)
 
-//Note openissues 
-//Adding in pregnancy section in addition to other sections to mimic IPS in the are you prgnant yes no and if current pregnancy was planned or not 
 * section contains 
     CheifComplaint 1..1 MS and 
     PregnancyHistory 1..1 MS and
@@ -34,12 +32,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
     AntepartumVisitSummaryFlowsheet 1..1 MS and
     CarePlan 1..1 MS and 
     VitalSigns 1..1 MS and
-    Immunizations 1..1 MS and 
-// Note to add section into composition  
+    Immunizations 1..1 MS and  
     AntepartumEducation 1..1 MS
 
-//Open Issue: (Requesting Input during Public Comment) Combining the the documents brought in requirements such as cheif complaint and physical exams. Do we need two different version of the document, one that is strictly just a pregnancy summary and the other that is a visit summary.... 
-//Open Issue: (Requesting Input during Public Comment) how does Antipartum summary allign with how current documentation is developed aorund Visit summary documents for OBGYn and pregnancy visits
+//APSOpenIssue_001: (Requesting Input during Public Comment) Combining the the documents brought in requirements such as cheif complaint and physical exams. Do we need two different version of the document, one that is strictly just a pregnancy summary and the other that is a visit summary.... 
+//APSOpenIssue_002: (Requesting Input during Public Comment) how does Antipartum summary allign with how current documentation is developed aorund Visit summary documents for OBGYn and pregnancy visits
 
 * section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-ChiefComplaint"
 * section[ChiefComplaint] ^extension.valueString = "Section"
@@ -97,8 +94,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    alcoholUse 0..* MS and 
 //    drugs 0..* MS 
 //Conformance Note:
-// noOpen Isse: (call for comment) SHould we include a value set within this section to deffine what types of SDOH observations are relivant to the pregnancy, similar to how we have pregancy relivant history of past illnesses 
-// Open Issue: Seeking comment -- The IHE Maternal Health SMEs have sugested key social history observations that result in obsetric risk (homlessness, food insecurity, known by social services, lack of transportaion, domestic violence, support systems needed, and other resources needed). Observations in social history including alternate metrics for smoking and alcohol have identified by the international patient summary. 
+// APSOpenIssue_003: SHould we include a value set within this section to deffine what types of SDOH observations are relivant to the pregnancy, similar to how we have pregancy relivant history of past illnesses 
+// APSOpenIssue_004: The IHE Maternal Health SMEs have sugested key social history observations that result in obsetric risk (homlessness, food insecurity, known by social services, lack of transportaion, domestic violence, support systems needed, and other resources needed). Observations in social history including alternate metrics for smoking and alcohol have identified by the international patient summary. 
 
 
 
@@ -142,7 +139,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems].entry Reference(Observation)
 //* section[ReviewOfSystems].entry contains MenstralHistory
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
-// OPen issue: DO we need a review of system - mentral histroy , if so do an any of the values in the following value set apply (Antepartum.Review.of.Systems.Menstrual.History.VS)? is there an alternate LOINC based valueset for this observation 
+// APSOpenIssue_005: DO we need a review of system - mentral histroy , if so do an any of the values in the following value set apply (Antepartum.Review.of.Systems.Menstrual.History.VS)? is there an alternate LOINC based valueset for this observation 
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-HistoryOfInfection"
 * section[HistoryOfInfection] ^extension.valueString = "Section"
