@@ -11,9 +11,6 @@
 * Actors
   * [ContentCreator](#ContentCreator)
   * [ContentConsumer](#ContentConsumer)
-* Transactions
-  * [ITI-65](ITI65.html)
-
 
 ## 1:X.2 Use Cases 
 

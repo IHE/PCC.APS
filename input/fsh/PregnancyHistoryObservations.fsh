@@ -13,7 +13,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * subject only Reference(Patient)
-* hasMember Reference(NumberOfLiveBirths | NumberOfPretermBirths | NumberOfBirthsStillLiving | NumberOfBirthsToTerm | NumberOfTotalBirths | NumberOfAbortions | NumberOfAbortionsInduced | NumberOfAbortionsSpontanious | NumberOfEctopicPregnancies | NumberOfStillbornBirths)
+* hasMember only Reference(NumberOfLiveBirths or NumberOfPretermBirths or NumberOfBirthsStillLiving or NumberOfBirthsToTerm or NumberOfTotalBirths or NumberOfAbortions or NumberOfAbortionsInduced or NumberOfAbortionsSpontanious or NumberOfEctopicPregnancies or NumberOfStillbornBirths)
 // Has member slicing may need to take place 
 // this is making everything else in observation forbidden.
 * category 0..0
@@ -928,7 +928,7 @@ Mestral Status Reported.
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * subject only Reference(Patient)
-* hasMember Reference(DateOfLastMenstralPeriod | MensesMonthly | PriorMensesDate | DurationOfMenstrualFlow | FrequencyOfMenstrualCycles | OnBirthControlPillsAtConception | Menarche | hCGPlus)
+* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or OnBirthControlPillsAtConception or Menarche or hCGPlus)
 // this is making everything else in observation forbidden.
 * device 0..0
 * interpretation 0..0
