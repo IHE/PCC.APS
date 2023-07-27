@@ -43,7 +43,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // APSOpenIssue_001: (Requesting Input during Public Comment) Combining the the documents brought in requirements such as cheif complaint and physical exams. Do we need two different version of the document, one that is strictly just a pregnancy summary and the other that is a visit summary.... 
 // APSOpenIssue_002: (Requesting Input during Public Comment) how does Antipartum summary allign with how current documentation is developed aorund Visit summary documents for OBGYn and pregnancy visits
 
-* section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-ChiefComplaint"
+* section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-chief-complaint"
 * section[ChiefComplaint] ^extension.valueString = "Section"
 * section[ChiefComplaint] ^short = "Cheif Complaint"
 * section[ChiefComplaint] ^definition = "Chief complaint records the patient's primary complaint (the patient's own description)."
@@ -52,7 +52,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ChiefComplaint].text 1..1
 // Conformance Note: If there is no narrative available in this section then a data absent Reason SHALL be provided 
 
-* section[PregnancyHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-PregnancyHistory"
+* section[PregnancyHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-pregnancy-history"
 * section[PregnancyHistory] ^extension.valueString = "Section"
 * section[PregnancyHistory] ^short = "Pregnancy History"
 * section[PregnancyHistory] ^definition = "The pregnancy history section contains coded entries describing the patient history of pregnancies."
@@ -64,7 +64,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    HistoricalPregnancy 0..* MS 
 // Conformance Note:
 
-* section[Problems] ^extension.url = "https://www.hl7.org/fhir/ihe-PCC-problems"
+* section[Problems] ^extension.url = "https://www.hl7.org/fhir/ihe-pcc-problems"
 * section[Problems] ^extension.valueString = "Section"
 * section[Problems] ^short = "Problem List"
 * section[Problems] ^definition = "The active problem section shall contain a narrative description of the conditions currently being monitored for the patient. It shall include entries for patient conditions."
@@ -74,7 +74,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // Conformance Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[HistoryOfPastIllness] ^extension.url = "https://www.hl7.org/fhir/ihe-PCC-HistoryOfPastIllness"
+* section[HistoryOfPastIllness] ^extension.url = "https://www.hl7.org/fhir/ihe-pcc-history-of-PastIllness"
 * section[HistoryOfPastIllness] ^extension.valueString = "Section"
 * section[HistoryOfPastIllness] ^short = "History of Past Illness"
 * section[HistoryOfPastIllness] ^definition = "The History of Past Illness section shall contain a narrative description of the conditions the patient suffered in the past. It shall include entries for problems."
@@ -87,7 +87,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // Conformance Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[SocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-SocialHistory"
+* section[SocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-social-history"
 * section[SocialHistory] ^extension.valueString = "Section"
 * section[SocialHistory] ^short = "Social History"
 * section[SocialHistory] ^definition = "The social history section shall contain a narrative description of the person’s beliefs, home life, community life, work life, hobbies, and risky habits. It shall include Social History Observations."
@@ -104,7 +104,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 
 
 
-* section[FamilyMedicalHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-FamilyMedicalHistory"
+* section[FamilyMedicalHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-family-medical-history"
 * section[FamilyMedicalHistory] ^extension.valueString = "Section"
 * section[FamilyMedicalHistory] ^short = "Family Medical History"
 * section[FamilyMedicalHistory] ^definition = "The family history section shall include entries for family history"
@@ -113,7 +113,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[FamilyMedicalHistory].entry only Reference(FamilyMemberHistory or Observation)
 // Conformance Note:
 
-* section[Medications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Medications"
+* section[Medications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-medications"
 * section[Medications] ^extension.valueString = "Section"
 * section[Medications] ^short = "Medications"
 * section[Medications] ^definition = "The medications section shall contain a description of the relevant medications for the patient, e.g., an ambulatory prescription list."
@@ -124,7 +124,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    Medications 1..1 MS  
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[AllergiesAndAdverseReactions] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AllergiesAndAdverseReactions"
+* section[AllergiesAndAdverseReactions] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-allergies-and-adverse-reactions"
 * section[AllergiesAndAdverseReactions] ^extension.valueString = "Section"
 * section[AllergiesAndAdverseReactions] ^short = "Allergies and Adverse Reactions"
 * section[AllergiesAndAdverseReactions] ^definition = "The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient. It shall include entries for intolerances and adverse reactions."
@@ -135,7 +135,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    allergyOrIntolerance 1..* MS
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[ReviewOfSystems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-ReviewOfSystems"
+* section[ReviewOfSystems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-review-of-systems"
 * section[ReviewOfSystems] ^extension.valueString = "Section"
 * section[ReviewOfSystems] ^short = "Review of Systems"
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
@@ -146,7 +146,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 // APSOpenIssue_005: DO we need a review of system - mentral histroy , if so do an any of the values in the following value set apply (Antepartum.Review.of.Systems.Menstrual.History.VS)? is there an alternate LOINC based valueset for this observation 
 
-* section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-HistoryOfInfection"
+* section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-history-of-infection"
 * section[HistoryOfInfection] ^extension.valueString = "Section"
 * section[HistoryOfInfection] ^short = "History of Infection"
 * section[HistoryOfInfection] ^definition = "The History of Infection section shall contain a narrative description of any infections the patient may have contracted prior to the patient's current condition."
@@ -155,7 +155,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfInfection].entry only Reference(Condition)
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[PhysicalExams] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-PhysicalExams"
+* section[PhysicalExams] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-physical-exams"
 * section[PhysicalExams] ^extension.valueString = "Section"
 * section[PhysicalExams] ^short = "Physical Exams"
 * section[PhysicalExams] ^definition = "The coded Detailed Physical Examination section shall contain only the required and optional subsections performed."
@@ -164,7 +164,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[PhysicalExams].entry only Reference(Observation)
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[AntepartumLabs] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AntepartumLabs"
+* section[AntepartumLabs] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-antepartum-labs"
 * section[AntepartumLabs] ^extension.valueString = "Section"
 * section[AntepartumLabs] ^short = "Antepartum Labs"
 * section[AntepartumLabs] ^definition = "."
@@ -177,7 +177,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    AntenatalTestingAndSurveillance 1..* MS
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[HistoryOfProcedures] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-HistoryOfProcedures"
+* section[HistoryOfProcedures] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-history-of-procedures"
 * section[HistoryOfProcedures] ^extension.valueString = "Section"
 * section[HistoryOfProcedures] ^short = "History of Procedures"
 * section[HistoryOfProcedures] ^definition = "The list of surgeries section shall include entries for procedures and references to procedure reports when known."
@@ -186,7 +186,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfProcedures].entry only Reference(Procedures or DocumentReference)
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
-* section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Payors"
+* section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-payors"
 * section[Payors] ^extension.valueString = "Section"
 * section[Payors] ^short = "Payors"
 * section[Payors] ^definition = "The Payers section contains data on the patient’s payers, whether a ‘third party’ insurance, self-pay, other payer or guarantor, or some combination. ."
@@ -194,7 +194,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Payors].code MS
 * section[Payors].entry only Reference(Coverage)
 
-* section[AdvanceDirectives] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AdvanceDirectives"
+* section[AdvanceDirectives] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-advance-directives"
 * section[AdvanceDirectives] ^extension.valueString = "Section"
 * section[AdvanceDirectives] ^short = "Advance Directives"
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
@@ -205,7 +205,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    advanceDirectivesConsent 0..* MS 
 
 
-* section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AntepartumVisitSummaryFlowsheet"
+* section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-antepartum-visit-summary-flowsheet"
 * section[AntepartumVisitSummaryFlowsheet] ^extension.valueString = "Section"
 * section[AntepartumVisitSummaryFlowsheet] ^short = "Antepartum Visit Summary Flowsheet"
 * section[AntepartumVisitSummaryFlowsheet] ^definition = "This section is a running history of the most important elements noted for a pregnant woman."
@@ -217,7 +217,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    FlowsheetPannel 0..* 
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
-* section[CarePlan] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-CarePlan"
+* section[CarePlan] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-care-plan"
 * section[CarePlan] ^extension.valueString = "Section"
 * section[CarePlan] ^short = "Care Plan"
 * section[CarePlan] ^definition = "The care plan section shall contain a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient."
@@ -229,7 +229,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    BirthPlan 0..1 MS
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
-* section[VitalSigns] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-vitalSigns"
+* section[VitalSigns] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-vitalsigns"
 * section[VitalSigns] ^extension.valueString = "Section"
 * section[VitalSigns] ^short = "Vital Signs"
 * section[VitalSigns] ^definition = "The vital signs section contains coded measurement results of a patient’s vital signs."
@@ -240,7 +240,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    vitalSign 0..* MS 
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
-* section[Immunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Immunizations"
+* section[Immunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-immunizations"
 * section[Immunizations] ^extension.valueString = "Section"
 * section[Immunizations] ^short = "Immunizations"
 * section[Immunizations] ^definition = "Patient's immunization status and pertinent history."
@@ -251,7 +251,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    vitalSign 0..* MS 
 // Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
-* section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AntepartumEducation"
+* section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-pcc-antepartum-education"
 * section[AntepartumEducation] ^extension.valueString = "Section"
 * section[AntepartumEducation] ^short = "AntepartumEducation"
 * section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
