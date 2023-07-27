@@ -50,7 +50,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ChiefComplaint].code = $loinc#10154-3
 * section[ChiefComplaint].code MS
 * section[ChiefComplaint].text 1..1
-// Conformance Note: If there is no narrative available in this section then a data absent Reason SHALL be provided 
+// Note: If there is no narrative available in this section then a data absent Reason SHALL be provided 
 
 * section[PregnancyHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[PregnancyHistory] ^extension.valueString = "Section"
@@ -62,7 +62,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // * section[PregnancyHistory].entry contains 
 //    CurrentPregnancy 1..1 MS and
 //    HistoricalPregnancy 0..* MS 
-// Conformance Note:
 
 * section[Problems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Problems] ^extension.valueString = "Section"
@@ -71,8 +70,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Problems].code = $loinc#11450-4
 * section[Problems].code MS
 * section[Problems].entry only Reference(Condition)
-// Conformance Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[HistoryOfPastIllness] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[HistoryOfPastIllness] ^extension.valueString = "Section"
@@ -84,8 +83,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 // * section[HistoryOfPastIllness].entry contains 
 //    ProblemEntry 
 //    PregancyRelaventProblems 
-// Conformance Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[SocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[SocialHistory] ^extension.valueString = "Section"
@@ -98,7 +97,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    smokingTobaccoUse 1..1 MS and
 //    alcoholUse 0..* MS and 
 //    drugs 0..* MS 
-// Conformance Note:
+// Note:
 // APSOpenIssue_003: SHould we include a value set within this section to deffine what types of SDOH observations are relivant to the pregnancy, similar to how we have pregancy relivant history of past illnesses 
 // APSOpenIssue_004: The IHE Maternal Health SMEs have sugested key social history observations that result in obsetric risk (homlessness, food insecurity, known by social services, lack of transportaion, domestic violence, support systems needed, and other resources needed). Observations in social history including alternate metrics for smoking and alcohol have identified by the international patient summary. 
 
@@ -111,7 +110,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[FamilyMedicalHistory].code = $loinc#10157-6
 * section[FamilyMedicalHistory].code MS
 * section[FamilyMedicalHistory].entry only Reference(FamilyMemberHistory or Observation)
-// Conformance Note:
+
 
 * section[Medications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Medications] ^extension.valueString = "Section"
@@ -122,7 +121,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Medications].entry only Reference(MedicationStatement or DocumentReference)
 // * section[Medications].entry contains 
 //    Medications 1..1 MS  
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[AllergiesAndAdverseReactions] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[AllergiesAndAdverseReactions] ^extension.valueString = "Section"
@@ -133,7 +132,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AllergiesAndAdverseReactions].entry only Reference(AllergyIntolerance or DocumentReference)
 // * section[AllergiesAndAdverseReactions].entry contains 
 //    allergyOrIntolerance 1..* MS
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[ReviewOfSystems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[ReviewOfSystems] ^extension.valueString = "Section"
@@ -143,7 +142,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems].code MS
 * section[ReviewOfSystems].entry only Reference(Observation)
 // * section[ReviewOfSystems].entry contains MenstralHistory
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 // APSOpenIssue_005: DO we need a review of system - mentral histroy , if so do an any of the values in the following value set apply (Antepartum.Review.of.Systems.Menstrual.History.VS)? is there an alternate LOINC based valueset for this observation 
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -153,7 +152,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfInfection].code = $loinc#56838-6
 * section[HistoryOfInfection].code MS
 * section[HistoryOfInfection].entry only Reference(Condition)
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[PhysicalExams] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[PhysicalExams] ^extension.valueString = "Section"
@@ -162,7 +161,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[PhysicalExams].code = $loinc#29545-1
 * section[PhysicalExams].code MS
 * section[PhysicalExams].entry only Reference(Observation)
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[AntepartumLabs] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[AntepartumLabs] ^extension.valueString = "Section"
@@ -175,7 +174,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    AntepartumLaboratoryResults 1..* MS and 
 //    AntepartumDiagnosticFindings 1..* MS and 
 //    AntenatalTestingAndSurveillance 1..* MS
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[HistoryOfProcedures] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[HistoryOfProcedures] ^extension.valueString = "Section"
@@ -184,7 +183,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfProcedures].code = $loinc#47519-4
 * section[HistoryOfProcedures].code MS
 * section[HistoryOfProcedures].entry only Reference(Procedures or DocumentReference)
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Payors] ^extension.valueString = "Section"
@@ -201,8 +200,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
 * section[AdvanceDirectives].entry only Reference(concent or AdvanceDirectivesObservation or DocumentReference)
-* section[AdvanceDirectives].entry contains 
-//    advanceDirectivesConsent 0..* MS 
+* section[AdvanceDirectives].entry contains advanceDirectivesConsent MS 
 
 
 * section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -212,10 +210,9 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
 * section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation)
-* section[AntepartumVisitSummaryFlowsheet].entry contains 
-//    simpleObservation 0..* MS and 
+* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation MS 
 //    FlowsheetPannel 0..* 
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
 * section[CarePlan] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[CarePlan] ^extension.valueString = "Section"
@@ -224,10 +221,10 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[CarePlan].code = $loinc#18776-5
 * section[CarePlan].code MS
 * section[CarePlan].entry only Reference(CarePlan or DocumentReference)
-* section[CarePlan].entry contains 
+* section[CarePlan].entry contains birthPlan MS
 //    carePlan 0..* MS and 
-//    BirthPlan 0..1 MS
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
+//    
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
 * section[VitalSigns] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[VitalSigns] ^extension.valueString = "Section"
@@ -238,7 +235,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[VitalSigns].entry only Reference(Observation)
 //* section[VitalSigns].entry contains 
 //    vitalSign 0..* MS 
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
 * section[Immunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Immunizations] ^extension.valueString = "Section"
@@ -249,7 +246,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Immunizations].entry only Reference(Immunization)
 //* section[VitalSigns].entry contains 
 //    vitalSign 0..* MS 
-// Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
+// Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
 * section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[AntepartumEducation] ^extension.valueString = "Section"
@@ -262,4 +259,4 @@ and selected histories are provided. The Antepartum Summary represents a summary
 //    firstTrimester 0..* MS and 
 //    secondTrimester 0..* MS and 
 //    thirdTrimester 0..* MS
-// Conformance Note: 
+// Note: 
