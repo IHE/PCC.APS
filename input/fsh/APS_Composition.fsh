@@ -93,7 +93,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[SocialHistory] ^definition = "The social history section shall contain a narrative description of the person’s beliefs, home life, community life, work life, hobbies, and risky habits. It shall include Social History Observations."
 * section[SocialHistory].code = $loinc#29762-2
 * section[SocialHistory].code MS
-* section[SocialHistory].entry Reference(Observation)
+* section[SocialHistory].entry only Reference(Observation or DocumentReference)
 //* section[SocialHistory].entry contains 
 //    smokingTobaccoUse 1..1 MS and
 //    alcoholUse 0..* MS and 
@@ -110,7 +110,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[FamilyMedicalHistory] ^definition = "The family history section shall include entries for family history"
 * section[FamilyMedicalHistory].code = $loinc#10157-6
 * section[FamilyMedicalHistory].code MS
-* section[FamilyMedicalHistory].entry Reference(FamilyMemberHistory or Observation)
+* section[FamilyMedicalHistory].entry only Reference(FamilyMemberHistory or Observation)
 //Conformance Note:
 
 * section[Medications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Medications"
@@ -119,7 +119,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Medications] ^definition = "The medications section shall contain a description of the relevant medications for the patient, e.g., an ambulatory prescription list."
 * section[Medications].code = $loinc#10160-0
 * section[Medications].code MS
-* section[Medications].entry Reference(MedicationStatement or DocumentReference)
+* section[Medications].entry only Reference(MedicationStatement or DocumentReference)
 //* section[Medications].entry contains 
 //    Medications 1..1 MS  
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
@@ -130,7 +130,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AllergiesAndAdverseReactions] ^definition = "The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient. It shall include entries for intolerances and adverse reactions."
 * section[AllergiesAndAdverseReactions].code = $LOINC#48765-2 
 * section[AllergiesAndAdverseReactions].code MS
-* section[AllergiesAndAdverseReactions].entry Reference(AllergyIntolerance or DocumentReference)
+* section[AllergiesAndAdverseReactions].entry only Reference(AllergyIntolerance or DocumentReference)
 //* section[AllergiesAndAdverseReactions].entry contains 
 //    allergyOrIntolerance 1..* MS
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
@@ -141,7 +141,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].code MS
-* section[ReviewOfSystems].entry Reference(Observation)
+* section[ReviewOfSystems].entry only Reference(Observation)
 //* section[ReviewOfSystems].entry contains MenstralHistory
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 // APSOpenIssue_005: DO we need a review of system - mentral histroy , if so do an any of the values in the following value set apply (Antepartum.Review.of.Systems.Menstrual.History.VS)? is there an alternate LOINC based valueset for this observation 
@@ -152,7 +152,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfInfection] ^definition = "The History of Infection section shall contain a narrative description of any infections the patient may have contracted prior to the patient's current condition."
 * section[HistoryOfInfection].code = $loinc#56838-6
 * section[HistoryOfInfection].code MS
-* section[HistoryOfInfection].entry Reference(Condition)
+* section[HistoryOfInfection].entry only Reference(Condition)
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[PhysicalExams] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-PhysicalExams"
@@ -161,7 +161,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[PhysicalExams] ^definition = "The coded Detailed Physical Examination section shall contain only the required and optional subsections performed."
 * section[PhysicalExams].code = $loinc#29545-1
 * section[PhysicalExams].code MS
-* section[PhysicalExams].entry Reference(Observation)
+* section[PhysicalExams].entry only Reference(Observation)
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[AntepartumLabs] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AntepartumLabs"
@@ -170,7 +170,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumLabs] ^definition = "."
 * section[AntepartumLabs].code = $loinc#26436-6
 * section[AntepartumLabs].code MS
-* section[AntepartumLabs].entry Reference(Observation)
+* section[AntepartumLabs].entry only Reference(Observation)
 //* section[AntepartumLabs].entry contains 
 //    AntepartumLaboratoryResults 1..* MS and 
 //    AntepartumDiagnosticFindings 1..* MS and 
@@ -183,7 +183,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfProcedures] ^definition = "The list of surgeries section shall include entries for procedures and references to procedure reports when known."
 * section[HistoryOfProcedures].code = $loinc#47519-4
 * section[HistoryOfProcedures].code MS
-* section[HistoryOfProcedures].entry Reference(Procedures or DocumentReference)
+* section[HistoryOfProcedures].entry only Reference(Procedures or DocumentReference)
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Payors"
@@ -192,7 +192,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Payors] ^definition = "The Payers section contains data on the patient’s payers, whether a ‘third party’ insurance, self-pay, other payer or guarantor, or some combination. ."
 * section[Payors].code = $loinc#48768-6
 * section[Payors].code MS
-* section[Payors].entry Reference(Coverage)
+* section[Payors].entry only Reference(Coverage)
 
 * section[AdvanceDirectives] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-AdvanceDirectives"
 * section[AdvanceDirectives] ^extension.valueString = "Section"
@@ -200,7 +200,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
-* section[AdvanceDirectives].entry Reference(concent or AdvanceDirectivesObservation or DocumentReference)
+* section[AdvanceDirectives].entry only Reference(concent or AdvanceDirectivesObservation or DocumentReference)
 * section[AdvanceDirectives].entry contains 
 //    advanceDirectivesConsent 0..* MS 
 //Conformance Note:
@@ -211,7 +211,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet] ^definition = "This section is a running history of the most important elements noted for a pregnant woman."
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
-* section[AntepartumVisitSummaryFlowsheet].entry Reference(Observation)
+* section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation)
 * section[AntepartumVisitSummaryFlowsheet].entry contains 
 //    simpleObservation 0..* MS and 
 //    FlowsheetPannel 0..* 
@@ -223,7 +223,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[CarePlan] ^definition = "The care plan section shall contain a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient."
 * section[CarePlan].code = $loinc#18776-5
 * section[CarePlan].code MS
-* section[CarePlan].entry Reference(CarePlan or DocumentReference)
+* section[CarePlan].entry only Reference(CarePlan or DocumentReference)
 * section[CarePlan].entry contains 
 //    carePlan 0..* MS and 
 //    BirthPlan 0..1 MS
@@ -235,7 +235,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[VitalSigns] ^definition = "The vital signs section contains coded measurement results of a patient’s vital signs."
 * section[VitalSigns].code = $loinc#8716-3
 * section[VitalSigns].code MS
-* section[VitalSigns].entry Reference(Observation)
+* section[VitalSigns].entry only Reference(Observation)
 //* section[VitalSigns].entry contains 
 //    vitalSign 0..* MS 
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
@@ -246,7 +246,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Immunizations] ^definition = "Patient's immunization status and pertinent history."
 * section[Immunizations].code = $loinc#11369-6
 * section[Immunizations].code MS
-* section[Immunizations].entry Reference(Immunization)
+* section[Immunizations].entry only Reference(Immunization)
 //* section[VitalSigns].entry contains 
 //    vitalSign 0..* MS 
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided
@@ -257,7 +257,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
-* section[AntepartumEducation].entry Reference(Procedure or DocumentReference)
+* section[AntepartumEducation].entry only Reference(Procedure or DocumentReference)
 //* section[AntepartumEducation].entry contains 
 //    firstTrimester 0..* MS and 
 //    secondTrimester 0..* MS and 
