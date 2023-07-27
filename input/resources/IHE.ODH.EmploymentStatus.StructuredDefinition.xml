@@ -7,7 +7,7 @@
         <lastUpdated value="2021-05-27T08:31:05.057+00:00"/>
         <source value="#iGAwdD6ECP1hP6Hz"/>
     </meta>
-    <url value="https://profiles.ihe.net/PCC/fhir/StructureDefinition/IHE.ODH.EmploymentStatus.StructuredDefinition"/>
+    <url value="https://profiles.ihe.net/PCC/APS/StructureDefinition/IHE.ODH.EmploymentStatus.StructuredDefinition"/>
     <version value="1.0.0"/>
     <name value="EmploymentStatus"/>
     <title value="Employment Status"/>

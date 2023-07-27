@@ -15,7 +15,8 @@ TBD
 * effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1
-* value[x] only CodeableConcept from Antepartum.Education.VS(Extensible)
+* value[x] only CodeableConcept 
+* valueCodeableConcept from Antepartum.Education.VS (extensible)
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0

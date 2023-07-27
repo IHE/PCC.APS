@@ -8,10 +8,10 @@ It is represented in part by Estimated Due Dates and a Visit Summary Flowsheet, 
 and selected histories are provided. The Antepartum Summary represents a summary of the most critical information to an antepartum care provider regarding the status of a patient’s pregnancy.
 """
 
-* type = $loinc#57055-6
-* category =  $loinc#90767-5
-* subject 1..1
-* subject only Reference(Patient)
+//* category[+] = $loinc#57055-6
+* category = $loinc#90767-5
+//* subject 1..1
+//* subject only Reference(Patient)
 
 * section[sectionPregnancyHx] 1..1
 * section[sectionProblems] 1..1
@@ -36,11 +36,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
     AntepartumEducation 1..1 MS
 // Note:
 
-* section[PregnancyHistory].entry contains 
+* section[sectionPregnancyHx].entry contains 
     currentPregnancyObservations 1..* MS and 
     historicalPregnancyObservations 0..* MS
-* section[PregnancyHistory].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
-* section[PregnancyHistory].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
+* section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
+* section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
 
 
 * section[sectionSocialHistory].entry contains 
@@ -60,7 +60,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
-* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(EmploymentStatus)
+* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(https://profiles.ihe.net/PCC/APS/StructureDefinition/IHE.ODH.EmploymentStatus.StructuredDefinition)
 
 
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
@@ -104,8 +104,10 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].code MS
-* section[ReviewOfSystems].entry contains menstralHistory 0..1 MS 
-* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
+
+// add slice
+//* section[ReviewOfSystems].entry contains menstralHistory 0..1 MS 
+//* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
 
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
