@@ -10,7 +10,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#229819007	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
 * value[x].unit from Smoking.Tabbacco.Use.VS (required)
@@ -38,7 +38,7 @@ responses for recording smoking status.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $loinc#72166-2
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
 * value[x].unit from Smoking.Status.VS (required)
@@ -65,7 +65,7 @@ Alcoholic drinks per day
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $loinc#74013-4
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
 * value[x].unit from Alcohol.USe.VS (required)
@@ -92,7 +92,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#363908000
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 //APSOpenIssue_013:
 * subject only Reference(Patient)
 * device 0..0
@@ -115,7 +115,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#256235009
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
 * value[x].unit = $ucum#{times}/wky.
@@ -165,7 +165,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#425400000
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0

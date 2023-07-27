@@ -10,7 +10,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#118185001
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * subject only Reference(Patient)
@@ -43,11 +43,11 @@ any other evidence of life such as heart beat.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11636-8
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -72,11 +72,11 @@ Total number of children whose birth occurred through the end of the last day of
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11637-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -101,11 +101,11 @@ Total number of children still living at time this record is generated.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11638-4
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -131,11 +131,11 @@ Total number of children whose birth occurred after the beginning of the first d
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11639-2
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -162,11 +162,11 @@ the number of times the uterus is emptied of a viable pregnancy.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11640-0
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -193,11 +193,11 @@ data derived from assisted fertilization procedure].
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11612-9
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -223,11 +223,11 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11613-7
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -252,11 +252,11 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11614-5
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -282,11 +282,11 @@ Number of Ectopic Pregnancies
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#33065-4
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -312,11 +312,11 @@ Number of Stillborn Births
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#57062-2
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -344,11 +344,11 @@ Total number of times the patient has been pregnant including the present pregna
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11996-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -374,11 +374,11 @@ To document multiple pregnancy.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#45371-2
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Boolean
+* value[x] only boolean
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -403,7 +403,7 @@ Gestational age in weeks.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#49051-6 
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
@@ -432,7 +432,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11887-7
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
@@ -464,7 +464,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#42839-1
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
@@ -494,7 +494,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#42840-9
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
@@ -524,7 +524,7 @@ Patient's pregnancy status (e.g., pregnant, not pregnant), as reported by the pa
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11449-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
@@ -555,11 +555,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#8665-2 
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -584,10 +584,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11778-8
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -612,10 +612,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11779-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -640,10 +640,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11780-4
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -668,10 +668,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11884-4
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -696,10 +696,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11885-1
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -724,10 +724,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#11886-9
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -752,10 +752,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#69044-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -779,11 +779,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#68493-6
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -808,11 +808,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#68496-9
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -838,10 +838,10 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#68499-3
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -866,11 +866,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#68497-7
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -897,11 +897,11 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#69043-8
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only Integer
+* value[x] only integer
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -927,11 +927,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#68500-8
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -957,7 +957,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * code = $loinc#8348-5
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x]1..1 
@@ -991,7 +991,7 @@ Mestral Status Reported.
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $loinc#8678-5
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 * subject only Reference(Patient)
 * hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or OnBirthControlPillsAtConception or Menarche or hCGPlus)
@@ -1018,11 +1018,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#364307006
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1
-* value[x] only Boolean
+* value[x] only boolean
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -1048,11 +1048,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#21840007 
 * effective[x] 1..1
-* effective[x] only effectiveDateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -1078,12 +1078,12 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#364306002 	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].valueQuantity:Quantity.code = $ucum#d
+* value[x].code = $ucum#d
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
@@ -1110,7 +1110,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#289887006 	 	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
@@ -1142,11 +1142,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#10036567  	 	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only Boolean
+* value[x] only boolean
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
@@ -1173,7 +1173,7 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#398700009 	 	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
@@ -1204,11 +1204,11 @@ TBD
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
 * code = $sct#250423000	 	
 * effective[x] 1..1
-* effective[x] only DateTime 
+* effective[x] only dateTime 
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only DateTime
+* value[x] only dateTime
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
