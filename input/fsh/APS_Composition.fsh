@@ -200,7 +200,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
 * section[AdvanceDirectives].entry only Reference(concent or AdvanceDirectivesObservation or DocumentReference)
-* section[AdvanceDirectives].entry contains advanceDirectivesConsent MS 
+* section[AdvanceDirectives].entry contains advanceDirectivesConsent 
 
 
 * section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -210,7 +210,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
 * section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation)
-* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation MS 
+* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation
 //    FlowsheetPannel 0..* 
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
@@ -221,7 +221,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[CarePlan].code = $loinc#18776-5
 * section[CarePlan].code MS
 * section[CarePlan].entry only Reference(CarePlan or DocumentReference)
-* section[CarePlan].entry contains birthPlan MS
+* section[CarePlan].entry contains birthPlan
 //    carePlan 0..* MS and 
 //    
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
