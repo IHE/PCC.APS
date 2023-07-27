@@ -994,7 +994,7 @@ Mestral Status Reported.
 * effective[x] only dateTime 
 * performer 1..*
 * subject only Reference(Patient)
-* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or OnBirthControlPillsAtConception or Menarche or hCGPlus)
+* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or OnBirthControlPillsAtConception or Menarche or HCGPlus)
 // this is making everything else in observation forbidden.
 * device 0..0
 * interpretation 0..0
@@ -1115,7 +1115,7 @@ TBD
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].valueQuantity:Quantity.code = $ucum#d
+* value[x].code = $ucum#d
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.

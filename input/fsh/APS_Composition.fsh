@@ -93,7 +93,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[SocialHistory] ^definition = "The social history section shall contain a narrative description of the person’s beliefs, home life, community life, work life, hobbies, and risky habits. It shall include Social History Observations."
 * section[SocialHistory].code = $loinc#29762-2
 * section[SocialHistory].code MS
-* section[SocialHistory].entry Reference(Observation or DocumentReference)
+* section[SocialHistory].entry Reference(Observation)
 //* section[SocialHistory].entry contains 
 //    smokingTobaccoUse 1..1 MS and
 //    alcoholUse 0..* MS and 

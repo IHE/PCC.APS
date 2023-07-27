@@ -44,7 +44,7 @@ Id: Antepartum.History.of.Past.Illness.VS
 * $sct#441493008   "History of Preterm labor" 
 //* $sct# ??  "History of Premature Rupture of Membranes" 
 * $sct#161805006   "Previous Cesarean Section" 
-* $ct#161743003   "History of Stillbirth" 
+* $sct#161743003   "History of Stillbirth" 
 //* $sct# ??  "History of Neonatal Death" 
 * $sct#161809000   "History of Postpartum Hemorrhage" 
 
@@ -79,7 +79,7 @@ Description: "TBD"
 Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 * $sct#21840007   "Date of Last Menstrual Period" 
 * $sct#364307006   "Menses Monthly" 
-* $sct#21840007   "Prior Menses Date" 
+// APSOpenIssue_015: * $sct#21840007   "Prior Menses Date" Removed because it is a repeat concept wiht the same code as "date of last menstral period". CP may need to be made on the CDA APS to remove as well
 * $sct#364306002   "Duration of Menstrual Flow" 
 * $sct#289887006   "Frequency of Menstrual Cycles" 
 * $sct#10036567   "On Birth Control Pills at conception" 
@@ -95,7 +95,7 @@ Id: Antepartum.History.of.Infection.VS
 * $sct#240480009   "Exposed to Genital Herpes" 
 * $sct#49882001   "Rash since LMP" 
 * $sct#34014006   "Viral illness since LMP" 
-* $sct#49882001   "Rash or viral illness since LMP" 
+// APSOpenIssue_016: * $sct#49882001   "Rash or viral illness since LMP"  Removed because it is a repeat concept wiht the same code as "Rash since LMP". CP may need to be made on the CDA APS to remove as well
 * $sct#235871004   "Hepatitis" 
 * $sct#235872006   "Hepatitis" 
 * $sct#8098009   "History of STD" 
@@ -164,8 +164,8 @@ Id: Antepartum.Laboratory.VS
 * $loinc#21198-7   "Beta HCG" 
 * $loinc#15410-4   "Varicella zoster virus Ab.IgG (EIA)" 
 * $loinc#17763-4   "Varicella zoster virus Ab.IgG (IF)" 
-* $loinc#30525-0   "Age, Patient Quantitative" 
-* $loinc#20450-3   "Alpha-1-Fetoprotein Multiple of the Median, Serum Quantitative Calculated" 
+// APSOpenIssue_017: * $loinc#30525-0   "Age, Patient Quantitative"  Removed because it is a repeat concept wiht the same code as "age". CP may need to be made on the CDA APS to remove as well
+// APSOpenIssue_018: * $loinc#20450-3   "Alpha-1-Fetoprotein Multiple of the Median, Serum Quantitative Calculated"  Removed because it is a repeat concept wiht the same code as "Alpha-1-Fetoprotein". CP may need to be made on the CDA APS to remove as well
 * $loinc#20465-1   "Choriogonadotropin/Choriogonatotropin, Control Serum Quantitative" 
 * $loinc#20466-9   "Estriol/Estriol, Control Serum Quantitative" 
 * $loinc#20406-5   "Glucose" 
@@ -200,8 +200,8 @@ Description: "TBD"
 Id: Antepartum.Education.VS
 * $sct#440047008   "Risk factors identified by prenatal history" 
 * $sct#17629007   "Anticipated course of prenatal care" 
-* $sct#171054004   "Special Diet" 
-* $sct#171054004   "Nutrition and weight gain counseling" 
+* $sct#171054004   "Nutrition and weight gain counseling"
+// APSOpenIssue_019: * $sct#171054004   "Special Diet"   Removed because it is a repeat concept wiht the same code as "Nutrition and weight gain counseling". CP may need to be made on the CDA APS to remove as well
 * $sct#439733009   "Toxoplasmosis precautions (cats/raw meat)" 
 * $sct#162169002   "Sexual activity" 
 * $sct#171056002   "Exercise" 
@@ -216,7 +216,7 @@ Id: Antepartum.Education.VS
 * $sct#413457006   "Domestic violence" 
 * $sct#440638004   "Seatbelt use" 
 * $sct#66961001   "Childbirth classes/hospital facilities" 
-* $sct#66961001   "Second Trimester Childbirth classes/hospital facilities" 
+// APSOpenIssue_020: * $sct#66961001   "Second Trimester Childbirth classes/hospital facilities"  Removed because it is a repeat concept wiht the same code as "Childbirth classes/hospital facilities". CP may need to be made on the CDA APS to remove as well
 * $sct#440669000   "Signs and symptoms of preterm labor" 
 * $sct#410299006   "Abnormal Lab Values" 
 //* $sct# ??  "Influenza vaccine" 

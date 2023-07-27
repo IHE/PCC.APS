@@ -18,6 +18,15 @@
 - APSOpenIssue_012: Seeking Comment -- WE found multiple ways to represent smoking in IPS, IHE, and US-Core. These differences include smoking tabbaco status Vs use observations. IPS and US CORE only deffins the smoking status of the patient and have their value sets in LOINC and SNOMED-CT, respectively. IHE Deffins the social history smoking observation around the use of tabbacoo and has a value set deffined for packs per unit of measure. 
 - APSOpenIssue_013: Seeking Comment -- For Social History drug use, IHE currently specifies a SNOMED-CT code for the observation type with no constrain to the responce. IPS and US core do not use this data element. There is a loinc code (74204-9) which is deffined for United States national trauma data. Seeking input for any updates to the value. 
 - APSOpenIssue_014: The Social Histroy Employment observation is omitted as structured work concepts, including employer, are addressed using the Occupational Data For Health
+- APSOpenIssue_015: * $sct#21840007   "Prior Menses Date" Removed because it is a repeat concept wiht the same code as "date of last menstral period". CP may need to be made on the CDA APS to remove as well
+- APSOpenIssue_016: * $sct#49882001   "Rash or viral illness since LMP"  Removed because it is a repeat concept wiht the same code as "Rash since LMP". CP may need to be made on the CDA APS to remove as well
+- APSOpenIssue_017: * $loinc#30525-0   "Age, Patient Quantitative"  Removed because it is a repeat concept wiht the same code as "age". CP may need to be made on the CDA APS to remove as well
+- APSOpenIssue_018: * $loinc#20450-3   "Alpha-1-Fetoprotein Multiple of the Median, Serum Quantitative Calculated"  Removed because it is a repeat concept wiht the same code as "Alpha-1-Fetoprotein". CP may need to be made on the CDA APS to remove as well
+- APSOpenIssue_019: * $sct#171054004   "Special Diet"   Removed because it is a repeat concept wiht the same code as "Nutrition and weight gain counseling". CP may need to be made on the CDA APS to remove as well
+- APSOpenIssue_020: * $sct#66961001   "Second Trimester Childbirth classes/hospital facilities"  Removed because it is a repeat concept wiht the same code as "Childbirth classes/hospital facilities". CP may need to be made on the CDA APS to remove as well
+
+
+
 
 
 
