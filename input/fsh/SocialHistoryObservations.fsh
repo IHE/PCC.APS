@@ -8,7 +8,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#229819007	
+* code = $sct#229819007	
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit from Smoking.Tabbacco.Use.VS (required)
@@ -34,7 +34,7 @@ responses for recording smoking status.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $LOINC#72166-2
+* code = $loinc#72166-2
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit from Smoking.Status.VS (required)
@@ -59,7 +59,7 @@ Alcoholic drinks per day
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $LOINC#74013-4
+* code = $loinc#74013-4
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit from Alcohol.USe.VS (required)
@@ -84,7 +84,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#363908000
+* code = $sct#363908000
 * effective[x].effectiveDateTime 1..1
 //APSOpenIssue_013:
 * subject only Reference(Patient)
@@ -106,7 +106,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#256235009
+* code = $sct#256235009
 * effective[x].effectiveDateTime 1..1
 * value[x].valueQuantity 1..1
 * value[x].valueQuantity.Quantity.unit = $UCUM#{times}/wk
@@ -130,7 +130,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#364393001
+* code = $sct#364393001
 * effective[x].valueCodeableConcept 1..1
 * subject only Reference(Patient)
 * device 0..0
@@ -153,7 +153,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $SCT#425400000
+* code = $sct#425400000
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0

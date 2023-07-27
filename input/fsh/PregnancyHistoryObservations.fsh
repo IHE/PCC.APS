@@ -8,7 +8,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 """
 
 * status = http://hl7.org/fhir/observation-status#final
-* code = $SCT#118185001
+* code = $sct#118185001
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -40,7 +40,7 @@ any other evidence of life such as heart beat.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11636-8
+* code = $loinc#11636-8
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -67,7 +67,7 @@ Total number of children whose birth occurred through the end of the last day of
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11637-6
+* code = $loinc#11637-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -94,7 +94,7 @@ Total number of children still living at time this record is generated.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11638-4
+* code = $loinc#11638-4
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -122,7 +122,7 @@ Total number of children whose birth occurred after the beginning of the first d
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11639-2
+* code = $loinc#11639-2
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -151,7 +151,7 @@ the number of times the uterus is emptied of a viable pregnancy.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11640-0
+* code = $loinc#11640-0
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -180,7 +180,7 @@ data derived from assisted fertilization procedure].
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11612-9
+* code = $loinc#11612-9
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -208,7 +208,7 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11613-7
+* code = $loinc#11613-7
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -235,7 +235,7 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11614-5
+* code = $loinc#11614-5
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -263,7 +263,7 @@ Number of Ectopic Pregnancies
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#33065-4
+* code = $loinc#33065-4
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -291,7 +291,7 @@ Number of Stillborn Births
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#57062-2
+* code = $loinc#57062-2
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -321,7 +321,7 @@ Total number of times the patient has been pregnant including the present pregna
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11996-6
+* code = $loinc#11996-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -349,7 +349,7 @@ To document multiple pregnancy.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#45371-2
+* code = $loinc#45371-2
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -376,7 +376,7 @@ Gestational age in weeks.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#49051-6 
+* code = $loinc#49051-6 
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -403,7 +403,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11887-7
+* code = $loinc#11887-7
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -433,7 +433,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#42839-1
+* code = $loinc#42839-1
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -461,7 +461,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#42840-9
+* code = $loinc#42840-9
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -489,7 +489,7 @@ Patient's pregnancy status (e.g., pregnant, not pregnant), as reported by the pa
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11449-6
+* code = $loinc#11449-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -518,7 +518,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#8665-2 
+* code = $loinc#8665-2 
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -545,7 +545,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11778-8
+* code = $loinc#11778-8
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueDateTime 1..1
@@ -571,7 +571,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11779-6
+* code = $loinc#11779-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueDateTime 1..1
@@ -597,7 +597,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11780-4
+* code = $loinc#11780-4
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueDateTime 1..1
@@ -623,7 +623,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11884-4
+* code = $loinc#11884-4
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueInteger 1..1
@@ -649,7 +649,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11885-1
+* code = $loinc#11885-1
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueInteger 1..1
@@ -675,7 +675,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#11886-9
+* code = $loinc#11886-9
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueInteger 1..1
@@ -701,7 +701,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#69044-6
+* code = $loinc#69044-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueDateTime 1..1
@@ -726,7 +726,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#68493-6
+* code = $loinc#68493-6
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -753,7 +753,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#68496-9
+* code = $loinc#68496-9
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -781,7 +781,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#68499-3
+* code = $loinc#68499-3
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * value[x].valueDateTime 1..1
@@ -807,7 +807,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#68497-7
+* code = $loinc#68497-7
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -836,7 +836,7 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#69043-8
+* code = $loinc#69043-8
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -864,7 +864,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#68500-8
+* code = $loinc#68500-8
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -892,7 +892,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam
-* code = $LOINC#8348-5
+* code = $loinc#8348-5
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -924,7 +924,7 @@ Mestral Status Reported.
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $LOINC#8678-5
+* code = $loinc#8678-5
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 * subject only Reference(Patient)
@@ -950,7 +950,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#364307006
+* code = $sct#364307006
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -978,7 +978,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#21840007 
+* code = $sct#21840007 
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -1006,7 +1006,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#364306002 	
+* code = $sct#364306002 	
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -1036,7 +1036,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#289887006 	 	
+* code = $sct#289887006 	 	
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -1066,7 +1066,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#10036567  	 	
+* code = $sct#10036567  	 	
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -1095,7 +1095,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#398700009 	 	
+* code = $sct#398700009 	 	
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
@@ -1124,7 +1124,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $SCT#250423000	 	
+* code = $sct#250423000	 	
 * effective[x].effectiveDateTime 1..1
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 

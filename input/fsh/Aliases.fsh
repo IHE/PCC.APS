@@ -1,4 +1,4 @@
-Alias: SCT = http://snomed.info/sct
-Alias: UCUM = http://unitsofmeasure.org
-Alias: LOINC = http://loinc.org
+Alias: sct = http://snomed.info/sct
+Alias: ucum = http://unitsofmeasure.org
+Alias: loinc = http://loinc.org
 
