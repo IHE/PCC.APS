@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ob"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">External Cephalic version performed to attempt to re-position the baby</div> 
+  </text> 
+  <status value="completed"/> 
+  <category> 
+    <coding> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="386637004"/> 
+      <display value="Obstetric procedure (procedure)"/> 
+    </coding> 
+    <text value="OB"/> 
+  </category> 
+  <code> 
+    <coding> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="240278000"/> 
+      <display value="External cephalic version (procedure)"/> 
+    </coding> 
+    <text value="Vaginal delivery"/> 
+  </code> 
+  <subject> 
+  <display value="Amanda Alvarez"/> 
+  </subject> 
+  <performedDateTime value="2022-03-22"/> 
+  <performer> 
+    <actor> 
+      <display value="Melinda O'Brian, MD"/> 
+    </actor> 
+  </performer>  
+  <location> 
+    <display value="Women’s Clinic"/> 
+  </location>     
+  <reasonCode> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="1231436008"/> 
+      <display value="Breech position of fetus in pregnancy (disorder)"/> 
+      <text value="Breech position of fetus in pregnancy"/> 
+  </reasonCode>  
+  <outcome> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="385669000"/> 
+      <display value="Successful (qualifier value)"/> 
+      <text value="External Cephalic Versing - Successful"/> 
+  </outcome>  
+</Procedure> 
