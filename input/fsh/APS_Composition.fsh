@@ -199,7 +199,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
-* section[AdvanceDirectives].entry only Reference(Concent or AdvanceDirectivesObservation or DocumentReference)
+* section[AdvanceDirectives].entry only Reference(Consent or AdvanceDirectivesObservation or DocumentReference)
 //* section[AdvanceDirectives].entry contains advanceDirectivesConsent 0..* MS
 
 
