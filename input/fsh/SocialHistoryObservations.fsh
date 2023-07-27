@@ -1,7 +1,7 @@
-Profile:        SmokingTobaccoUse
+Profile:        SmokingTobaccoUseFrequency
 Parent:         Observation
-Id:             IHE.smokingTobaccoUse
-Title:          "Smoking and Tobacco Use"
+Id:             IHE.SmokingTobaccoUseFrequency
+Title:          "Smoking and Tobacco Use Frequency"
 Description:    """
 TBD
 """
@@ -53,9 +53,9 @@ responses for recording smoking status.
 * method 0..0
 
 
-Profile:        AlcoholUse
+Profile:        AlcoholUseFrequency
 Parent:         Observation
-Id:             IHE.alcoholUse
+Id:             IHE.AlcoholUseFrequency
 Title:          "alcohol Use"
 Description:    """
 Alcoholic drinks per day
