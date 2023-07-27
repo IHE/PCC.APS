@@ -70,7 +70,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Problems] ^definition = "The active problem section shall contain a narrative description of the conditions currently being monitored for the patient. It shall include entries for patient conditions."
 * section[Problems].code = $loinc#11450-4
 * section[Problems].code MS
-* section[Problems].entry only Reference(condition)
+* section[Problems].entry only Reference(Condition)
 //Conformance Note: The Condition codes held within this section SHALL come from SNOMED-CT Core 
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
@@ -80,7 +80,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfPastIllness] ^definition = "The History of Past Illness section shall contain a narrative description of the conditions the patient suffered in the past. It shall include entries for problems."
 * section[HistoryOfPastIllness].code = $loinc#11348-0
 * section[HistoryOfPastIllness].code MS
-* section[HistoryOfPastIllness].entry only Reference(condition)
+* section[HistoryOfPastIllness].entry only Reference(Condition)
 //* section[HistoryOfPastIllness].entry contains 
 //    ProblemEntry 
 //    PregancyRelaventProblems 

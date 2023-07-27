@@ -9,8 +9,10 @@ TBD
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#229819007	
-* effective[x].effectiveDateTime 1..1
-* value[x].valueQuantity 1..1
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
+* value[x] 1..1 
+* value[x] only Quantity
 * value[x].valueQuantity.Quantity.unit from Smoking.Tabbacco.Use.VS (required)
 * subject only Reference(Patient)
 * device 0..0
@@ -35,8 +37,10 @@ responses for recording smoking status.
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $loinc#72166-2
-* effective[x].effectiveDateTime 1..1
-* value[x].valueQuantity 1..1
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
+* value[x] 1..1 
+* value[x] only Quantity
 * value[x].valueQuantity.Quantity.unit from Smoking.Status.VS (required)
 * subject only Reference(Patient)
 * device 0..0
@@ -60,8 +64,10 @@ Alcoholic drinks per day
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $loinc#74013-4
-* effective[x].effectiveDateTime 1..1
-* value[x].valueQuantity 1..1
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
+* value[x] 1..1 
+* value[x] only Quantity
 * value[x].valueQuantity.Quantity.unit from Alcohol.USe.VS (required)
 * subject only Reference(Patient)
 * device 0..0
@@ -85,7 +91,8 @@ TBD
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#363908000
-* effective[x].effectiveDateTime 1..1
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
 //APSOpenIssue_013:
 * subject only Reference(Patient)
 * device 0..0
@@ -107,9 +114,11 @@ TBD
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#256235009
-* effective[x].effectiveDateTime 1..1
-* value[x].valueQuantity 1..1
-* value[x].valueQuantity.Quantity.unit = $UCUM#{times}/wk
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
+* value[x] 1..1 
+* value[x] only Quantity
+* value[x].valueQuantity.Quantity.unit = $ucum#{times}/wk
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
@@ -131,7 +140,8 @@ TBD
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#364393001
-* effective[x].valueCodeableConcept 1..1
+* value[x] 1..1 
+* value[x] only CodeableConcept
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
@@ -154,6 +164,8 @@ TBD
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 * code = $sct#425400000
+* effective[x] 1..1
+* effective[x] only effectiveDateTime 
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0

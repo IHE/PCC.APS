@@ -10,7 +10,8 @@ in as much detail as possible. Advance directives contains data such as the exis
 * code from Advance.Directives.VS (preferred)
 * status = #registered 
 * subject only Reference(Patient)
-* valueBoolean 1..1
+* value[x] 1..1
+* value[x] only Boolean
 // Conformance Statment: The advance directive observation may include a <value> element using the Boolean (xsi:type='BL') data type to indicate simply whether the procedure described is permitted. 
 //Absence of the <value> element indicates that an advance directive of the specified type has been recorded, and must be examined to determine what type of treatment should be performed. The value element 
 //is not permitted when the <code> element describes an Other directive.
