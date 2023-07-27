@@ -50,6 +50,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     exercise 0..1 and 
     diet 0..1 and 
     toxicExposure 0..1 and 
+    sdohObservations 0..1 MS and 
     occupationalDataForHealth 0..1
 // Note:
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
@@ -58,6 +59,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[exercise] only Reference(Exercise or Observation)
 * section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
+* section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
 * section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(EmploymentStatus)
 
 
@@ -151,7 +153,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
-* section[AntepartumEducation].entry only Reference(Procedure or DocumentReference)
+* section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
 //* section[AntepartumEducation].entry contains 
 //    firstTrimester 0..* MS and 
 //    secondTrimester 0..* MS and 
