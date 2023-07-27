@@ -92,7 +92,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[FamilyMedicalHistory] ^definition = "The family history section shall include entries for family history"
 * section[FamilyMedicalHistory].code = $loinc#10157-6
 * section[FamilyMedicalHistory].code MS
-* section[FamilyMedicalHistory].entry 0..* only Reference(FamilyMemberHistory or Observation)
+* section[FamilyMedicalHistory].entry 0..* 
+* section[FamilyMedicalHistory].entry only Reference(Observation)
 
 
 * section[ReviewOfSystems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
