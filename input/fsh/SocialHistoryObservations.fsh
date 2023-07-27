@@ -1,4 +1,4 @@
-Profile:        smokingTobaccoUse
+Profile:        SmokingTobaccoUse
 Parent:         Observation
 Id:             IHE.smokingTobaccoUse
 Title:          "Smoking and Tobacco Use"
@@ -22,7 +22,7 @@ TBD
 * component 0..0
 * method 0..0
 
-Profile:        smokingStatus
+Profile:        SmokingStatus
 Parent:         Observation
 Id:             IHE.smokingStatus
 Title:          "Smoking Status"
@@ -49,7 +49,7 @@ responses for recording smoking status.
 * method 0..0
 
 
-Profile:        alcoholUse
+Profile:        AlcoholUse
 Parent:         Observation
 Id:             IHE.alcoholUse
 Title:          "alcohol Use"
@@ -74,7 +74,7 @@ Alcoholic drinks per day
 * method 0..0
 
 
-Profile:        drugUse
+Profile:        DrugUse
 Parent:         Observation
 Id:             IHE.drugUse
 Title:          "Drug Use"

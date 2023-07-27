@@ -12,7 +12,12 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * category =  $loinc#90767-5
 * subject 1..1
 * subject only Reference(Patient)
-
+* section 1..* 
+* section ^slicing.discriminator.type = #profile
+* section ^slicing.discriminator.path = "resolve()"
+* section ^slicing.rules = #open
+* section ^short = "all slices"
+* section ^definition = "TBD"
 * section contains 
     ChiefComplaint 1..1 MS and 
     PregnancyHistory 1..1 MS and
@@ -88,7 +93,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[SocialHistory] ^definition = "The social history section shall contain a narrative description of the person’s beliefs, home life, community life, work life, hobbies, and risky habits. It shall include Social History Observations."
 * section[SocialHistory].code = $loinc#29762-2
 * section[SocialHistory].code MS
-* section[SocialHistory].entry Reference(Observation | DocumentReference)
+* section[SocialHistory].entry Reference(Observation or DocumentReference)
 //* section[SocialHistory].entry contains 
 //    smokingTobaccoUse 1..1 MS and
 //    alcoholUse 0..* MS and 
@@ -105,7 +110,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[FamilyMedicalHistory] ^definition = "The family history section shall include entries for family history"
 * section[FamilyMedicalHistory].code = $loinc#10157-6
 * section[FamilyMedicalHistory].code MS
-* section[FamilyMedicalHistory].entry Reference(FamilyMemberHistory | Observation)
+* section[FamilyMedicalHistory].entry Reference(FamilyMemberHistory or Observation)
 //Conformance Note:
 
 * section[Medications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Medications"
@@ -114,7 +119,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Medications] ^definition = "The medications section shall contain a description of the relevant medications for the patient, e.g., an ambulatory prescription list."
 * section[Medications].code = $loinc#10160-0
 * section[Medications].code MS
-* section[Medications].entry Reference(MedicationStatement | DocumentReference)
+* section[Medications].entry Reference(MedicationStatement or DocumentReference)
 //* section[Medications].entry contains 
 //    Medications 1..1 MS  
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
@@ -125,7 +130,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AllergiesAndAdverseReactions] ^definition = "The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient. It shall include entries for intolerances and adverse reactions."
 * section[AllergiesAndAdverseReactions].code = $LOINC#48765-2 
 * section[AllergiesAndAdverseReactions].code MS
-* section[AllergiesAndAdverseReactions].entry Reference(AllergyIntolerance | DocumentReference)
+* section[AllergiesAndAdverseReactions].entry Reference(AllergyIntolerance or DocumentReference)
 //* section[AllergiesAndAdverseReactions].entry contains 
 //    allergyOrIntolerance 1..* MS
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
@@ -178,7 +183,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfProcedures] ^definition = "The list of surgeries section shall include entries for procedures and references to procedure reports when known."
 * section[HistoryOfProcedures].code = $loinc#47519-4
 * section[HistoryOfProcedures].code MS
-* section[HistoryOfProcedures].entry Reference(Procedures | DocumentReference)
+* section[HistoryOfProcedures].entry Reference(Procedures or DocumentReference)
 //Conformance Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/ihe-PCC-Payors"
@@ -195,7 +200,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
-* section[AdvanceDirectives].entry Reference(concent | AdvanceDirectivesObservation | DocumentReference)
+* section[AdvanceDirectives].entry Reference(concent or AdvanceDirectivesObservation or DocumentReference)
 * section[AdvanceDirectives].entry contains 
 //    advanceDirectivesConsent 0..* MS 
 //Conformance Note:
@@ -218,7 +223,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[CarePlan] ^definition = "The care plan section shall contain a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient."
 * section[CarePlan].code = $loinc#18776-5
 * section[CarePlan].code MS
-* section[CarePlan].entry Reference(CarePlan | DocumentReference)
+* section[CarePlan].entry Reference(CarePlan or DocumentReference)
 * section[CarePlan].entry contains 
 //    carePlan 0..* MS and 
 //    BirthPlan 0..1 MS
@@ -252,7 +257,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
-* section[AntepartumEducation].entry Reference(Procedure | DocumentReference)
+* section[AntepartumEducation].entry Reference(Procedure or DocumentReference)
 //* section[AntepartumEducation].entry contains 
 //    firstTrimester 0..* MS and 
 //    secondTrimester 0..* MS and 

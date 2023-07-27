@@ -1114,7 +1114,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 
-Profile:        hCGPlus 
+Profile:        HCGPlus 
 Parent:         Observation
 Id:             IHE.hCGPlus 	
 Title:          "hCG+"
