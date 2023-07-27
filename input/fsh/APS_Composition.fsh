@@ -182,7 +182,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[HistoryOfProcedures] ^definition = "The list of surgeries section shall include entries for procedures and references to procedure reports when known."
 * section[HistoryOfProcedures].code = $loinc#47519-4
 * section[HistoryOfProcedures].code MS
-* section[HistoryOfProcedures].entry only Reference(Procedures or DocumentReference)
+* section[HistoryOfProcedures].entry only Reference(Procedure or DocumentReference)
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -199,8 +199,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AdvanceDirectives] ^definition = "The advance directive section shall include entries for references to consent and advance directive documents (e.g., Durable Power of Attorney, Code Status) when known."
 * section[AdvanceDirectives].code = $loinc#42348-3
 * section[AdvanceDirectives].code MS
-* section[AdvanceDirectives].entry only Reference(concent or AdvanceDirectivesObservation or DocumentReference)
-* section[AdvanceDirectives].entry contains advanceDirectivesConsent 0..* MS
+* section[AdvanceDirectives].entry only Reference(Concent or AdvanceDirectivesObservation or DocumentReference)
+//* section[AdvanceDirectives].entry contains advanceDirectivesConsent 0..* MS
 
 
 * section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -210,7 +210,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
 * section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation)
-* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation 0..* MS
+//* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation 0..* MS
 //    FlowsheetPannel 0..* 
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
@@ -221,7 +221,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[CarePlan].code = $loinc#18776-5
 * section[CarePlan].code MS
 * section[CarePlan].entry only Reference(CarePlan or DocumentReference)
-* section[CarePlan].entry contains birthPlan 0..1
+//* section[CarePlan].entry contains birthPlan 0..1
 //    carePlan 0..* MS and 
 //    
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
