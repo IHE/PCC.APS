@@ -7,7 +7,7 @@ Description: "TBD"
 * identifier[=].use = #usual
 * identifier[=].system = "urn:oid:1.2.36.146.595.217.0.1"
 * identifier[=].type = 	http://terminology.hl7.org/CodeSystem/v2-0203#MR
-* identifier[=].period = "2001-05-06"
+* identifier[=].period = 2001-05-06
 //* identifier[=].assigner = "Acme Healthcare"
 // identifieer  =  active
 
@@ -19,10 +19,10 @@ Description: "TBD"
 * name[+].use = #maiden
 * name[=].family = "Windsor"
 * name[=].given = "Amanda"
-* name[=].period[+].end = "2002"
+* name[=].period[+].end = 2002
 
 * gender = #female
-* birthDate = "1994-12-25T14:35:45-05:00"
+* birthDate = 1994-12-25T14:35:45-05:00
 
 * deceasedBoolean = #false
 
@@ -35,7 +35,7 @@ Description: "TBD"
 * address[=].state = "RI"
 * address[=].postalCode = "02828"
 * address[=].country = "US"
-* address[=].period[+].start = "1974-12-25"
+* address[=].period[+].start = 1974-12-25
 
 
 * contact[+].relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N
@@ -52,7 +52,7 @@ Description: "TBD"
 * contact[=].address[=].state = "RI"
 * contact[=].address[=].postalCode = "02828"
 * contact[=].address[=].country = "US"
-* contact[=].address[=].period[+]start = "1994-12-25"
+* contact[=].address[=].period[+].start = 1994-12-25
 
 * contact[=].gender[+] = #female
 // relationship period start 2012
