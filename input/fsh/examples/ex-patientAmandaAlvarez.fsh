@@ -40,22 +40,20 @@ Description: "TBD"
 
 * contact[+].relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N
 * contact[=].name.family = "du Marché"
-* contact[=].extension = http://hl7.org/fhir/StructureDefinition/humanname-own-prefix 
-* contact[=].extension[+].value = #VV
+* contact[=].name.prefix = "VV"
 * contact[=].name.given[+] = "Bénédicte"
 * contact[=].name.given[=] = "R."
 * contact[=].telecom[+].system = #phone
 * contact[=].telecom[=].value = "+33 (237) 998327"
 * contact[=].address[+].use = #home
-* contact[=].address[+].type = #both
-
-
-* contact[=].address[+].line[+] = "534 Erewhon St"
+* contact[=].address[=].type = #both
+* contact[=].address[=].line[+] = "534 Erewhon St"
 * contact[=].address[=].city = "Greenville"
 * contact[=].address[=].state = "RI"
 * contact[=].address[=].postalCode = "02828"
 * contact[=].address[=].country = "US"
 * contact[=].address[=].period[+]start = "1994-12-25"
+
 * contact[=].gender[+] = #female
 // relationship period start 2012
 //  managingOrganization = Organization/1 

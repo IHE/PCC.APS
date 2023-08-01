@@ -2,7 +2,6 @@ ValueSet: Antepartum_History_of_Past_Illness_VS
 Title: "Antepartum History of Past Illness"
 Description: "TBD"
 Id: Antepartum.History.of.Past.Illness.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#73211009   "Diabetes" 
 * $sct#38341003   "Hypertension" 
@@ -56,7 +55,6 @@ ValueSet: Antepartum_Family_History_and_Genetic_Screening_VS
 Title: "Antepartum Family History and Genetic Screening"
 Description: "TBD"
 Id: Antepartum.Family.History.and.Genetic.Screening.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#408856003   "Autism" 
 * $sct#414022008   "Blood Disorders" 
@@ -84,7 +82,6 @@ ValueSet: Antepartum_Review_of_Systems_Menstrual_History_VS
 Title: "Antepartum Review of Systems Menstrual History"
 Description: "TBD"
 Id: Antepartum.Review.of.Systems.Menstrual.History.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#21840007   "Date of Last Menstrual Period" 
 * $sct#364307006   "Menses Monthly" 
@@ -100,7 +97,6 @@ ValueSet: Antepartum_History_of_Infection_VS
 Title: "Antepartum History of Infection"
 Description: "TBD"
 Id: Antepartum.History.of.Infection.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#170464005   "Live with someone with TB or exposed to TB" 
 * $sct#402888002   "History of Genital Herpes" 
@@ -122,7 +118,6 @@ ValueSet: Antepartum_Laboratory_VS
 Title: "Antepartum Laboratory"
 Description: "TBD"
 Id: Antepartum.Laboratory.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $loinc#890-4   "Ab Screen" 
 * $loinc#883-9   "ABO Group" 
@@ -214,7 +209,6 @@ ValueSet: Antepartum_Education_VS
 Title: "Antepartum Education"
 Description: "TBD"
 Id: Antepartum.Education.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#440047008   "Risk factors identified by prenatal history" 
 * $sct#17629007   "Anticipated course of prenatal care" 
@@ -260,7 +254,6 @@ ValueSet: Advance_Directives_VS
 Title: "Advance Directives"
 Description: "TBD"
 Id: Advance.Directives.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#304251008   "Resuscitation" 
 * $sct#52765003   "Intubation" 
@@ -277,7 +270,6 @@ ValueSet: Smoking_Tabbacco_Use_Frequency_VS
 Title: "Smoking Tabbacco Use Frequency"
 Description: "TBD"
 Id: Smoking.Tabbacco.Use.Frequency.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $ucum#{pack}/d   "Packs per day" 
 * $ucum#{pack}/wk   "Packs per week" 
@@ -288,7 +280,6 @@ ValueSet: Smoking_Status_VS
 Title: "Smoking Status"
 Description: "TBD"
 Id: Smoking.Status.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $sct#449868002   "Current every day smoker" 
 * $sct#428041000124106   "Current some day smoker" 
@@ -304,7 +295,6 @@ ValueSet: Alcohol_USe_Frequency_VS
 Title: "Alcohol USe Frequency"
 Description: "TBD"
 Id: Alcohol.USe.Frequency.VS
-* ^caseSensitive = true
 * ^experimental = false
 * $ucum#{drink}/d  "drinks per day" 
 * $ucum#{drink}/wk   "drinks per week" 
