@@ -9,7 +9,12 @@ and selected histories are provided. The Antepartum Summary represents a summary
 """
 
 //* category[+] = $loinc#57055-6
-* category = $loinc#90767-5
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category 1..
+* category contains pregnancySummaryDocument 1..1
+* category[pregnancySummaryDocument] = $loinc#90767-5
 //* subject 1..1
 //* subject only Reference(Patient)
 

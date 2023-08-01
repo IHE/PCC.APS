@@ -1009,7 +1009,7 @@ TBD
 Profile:        PriorMensesDate 
 Parent:         Observation
 Id:             IHE.PriorMensesDate
-Title:          "Prior Menses Date "
+Title:          "Prior Menses Date"
 Description:    """
 TBD
 """
@@ -1039,7 +1039,7 @@ TBD
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
 Id:             IHE.DurationOfMenstrualFlow
-Title:          "Duration of Menstrual Flow "
+Title:          "Duration of Menstrual Flow"
 Description:    """
 TBD
 """
@@ -1071,7 +1071,7 @@ TBD
 Profile:        FrequencyOfMenstrualCycles 
 Parent:         Observation
 Id:             IHE.FrequencyOfMenstrualCycles
-Title:          "Frequency of Menstrual Cycles "
+Title:          "Frequency of Menstrual Cycles"
 Description:    """
 TBD
 """

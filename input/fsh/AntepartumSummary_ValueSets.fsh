@@ -1,4 +1,5 @@
 ValueSet: Antepartum_History_of_Past_Illness_VS
+Title: "Antepartum History of Past Illness"
 Description: "TBD"
 Id: Antepartum.History.of.Past.Illness.VS
 * $sct#73211009   "Diabetes" 
@@ -50,6 +51,7 @@ Id: Antepartum.History.of.Past.Illness.VS
 
 
 ValueSet: Antepartum_Family_History_and_Genetic_Screening_VS
+Title: "Antepartum Family History and Genetic Screening"
 Description: "TBD"
 Id: Antepartum.Family.History.and.Genetic.Screening.VS
 * $sct#408856003   "Autism" 
@@ -75,6 +77,7 @@ Id: Antepartum.Family.History.and.Genetic.Screening.VS
 
 
 ValueSet: Antepartum_Review_of_Systems_Menstrual_History_VS
+Title: "Antepartum Review of Systems Menstrual History"
 Description: "TBD"
 Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 * $sct#21840007   "Date of Last Menstrual Period" 
@@ -88,6 +91,7 @@ Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 
 
 ValueSet: Antepartum_History_of_Infection_VS
+Title: "Antepartum History of Infection"
 Description: "TBD"
 Id: Antepartum.History.of.Infection.VS
 * $sct#170464005   "Live with someone with TB or exposed to TB" 
@@ -107,6 +111,7 @@ Id: Antepartum.History.of.Infection.VS
 
 
 ValueSet: Antepartum_Laboratory_VS
+Title: "Antepartum Laboratory"
 Description: "TBD"
 Id: Antepartum.Laboratory.VS
 * $loinc#890-4   "Ab Screen" 
@@ -196,6 +201,7 @@ Id: Antepartum.Laboratory.VS
 
 
 ValueSet: Antepartum_Education_VS
+Title: "Antepartum Education"
 Description: "TBD"
 Id: Antepartum.Education.VS
 * $sct#440047008   "Risk factors identified by prenatal history" 
@@ -223,11 +229,11 @@ Id: Antepartum.Education.VS
 * $sct#439908001  "Selecting a newborn care provider" 
 * $sct#54070000   "Postpartum family planning" 
 * $sct#243064009   "Tubal sterilization" 
-* $sct#243062008   "Third Trimester Anesthesia/analgesia plans " 
-* $sct#310585007   "Intended Facility for Delivery plan " 
+* $sct#243062008   "Third Trimester Anesthesia/analgesia plans" 
+* $sct#310585007   "Intended Facility for Delivery plan" 
 * $sct#440309009   "Fetal movement monitoring" 
 * $sct#440671000   "Labor signs" 
-* $sct#440073003   "VBAC counseling " 
+* $sct#440073003   "VBAC counseling" 
 //* $sct# ??  "Signs & Symptoms of Pregnancy-induced hypertension" 
 * $sct#184002001   "Circumcision" 
 * $sct#169644004   "Bottle feeding" 
@@ -239,6 +245,7 @@ Id: Antepartum.Education.VS
 
 
 ValueSet: Advance_Directives_VS
+Title: "Advance Directives"
 Description: "TBD"
 Id: Advance.Directives.VS
 * $sct#304251008   "Resuscitation" 
@@ -252,15 +259,17 @@ Id: Advance.Directives.VS
 * $sct#71388002   "Other Directive"  
 
 
-ValueSet: Smoking_Tabbacco_Use_VS
+ValueSet: Smoking_Tabbacco_Use_Frequency_VS
+Title: "Smoking Tabbacco Use Frequency"
 Description: "TBD"
-Id: Smoking.Tabbacco.Use.VS
+Id: Smoking.Tabbacco.Use.Frequency.VS
 * $ucum#{pack}/d   "Packs per day" 
 * $ucum#{pack}/wk   "Packs per week" 
 * $ucum#{pack}/a    "Packs in a year" 
 
 
 ValueSet: Smoking_Status_VS
+Title: "Smoking Status"
 Description: "TBD"
 Id: Smoking.Status.VS
 * $sct#449868002   "Current every day smoker" 
@@ -269,13 +278,14 @@ Id: Smoking.Status.VS
 * $sct#266919005   "Never smoker" 
 * $sct#77176002   "Smoker, current status unknown" 
 * $sct#266927001   "Unknown if ever smoked" 
-* $sct#428071000124103   "Heavy tobacco smoker" 
+// * $sct#428071000124103   "Heavy tobacco smoker" --- Code no longer availabel in SNOMED ct
 * $sct#428061000124105   "Light tobacco smoker" 
 
 
-ValueSet: Alcohol_USe_VS
+ValueSet: Alcohol_USe_Frequency_VS
+Title: "Alcohol USe Frequency"
 Description: "TBD"
-Id: Alcohol.USe.VS
+Id: Alcohol.USe.Frequency.VS
 * $ucum#{drink}/d  "drinks per day" 
 * $ucum#{drink}/wk   "drinks per week" 
 

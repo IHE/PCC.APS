@@ -39,30 +39,3 @@ in as much detail as possible. Advance directives contains data such as the exis
 * component 0..0
 
 
-Profile:        SmokingStatus
-Parent:         Observation
-Id:             IHE.smokingStatus
-Title:          "Smoking Status"
-Description:    """
-Tobacco smoking status represents a person's smoking behavior. Smoking statuses can be classified as current every day smoker, current some day smoker, former smoker, never smoker, 
-smoker - current status unknown, unknown if ever smoked, current heavy tobacco smoker, and current light tobacco smoker. These statuses represent CDC's preferred (sometimes required) 
-responses for recording smoking status.
-"""
-* category 1..1
-* status = http://hl7.org/fhir/observation-status#final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $loinc#72166-2
-* effective[x] 1..1
-* effective[x] only dateTime 
-* value[x] 1..1 
-* value[x] only Quantity
-* value[x].unit from Smoking.Status.VS (required)
-* subject only Reference(Patient)
-* device 0..0
-* interpretation 0..0
-* focus 0..0
-* bodySite 0..0
-* specimen 0..0
-* referenceRange 0..0
-* component 0..0
-* method 0..0

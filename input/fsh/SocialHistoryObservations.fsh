@@ -13,7 +13,7 @@ TBD
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].unit from Smoking.Tabbacco.Use.VS (required)
+* value[x].unit from Smoking.Tabbacco.Use.Frequency.VS (required)
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
@@ -40,7 +40,7 @@ Alcoholic drinks per day
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].unit from Alcohol.USe.VS (required)
+* value[x].unit from Alcohol.USe.Frequency.VS (required)
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
