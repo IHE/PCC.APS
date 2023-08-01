@@ -64,14 +64,14 @@ Description: "A History of Employment Status Observation is a clinical statement
 * code.coding[Fixed_74165-2].code 1..1
 * code.coding[Fixed_74165-2].code = #74165-2 (exactly)
 * subject 1..1
-* subject only Reference($StructureDefinition-Patient-uv-ips.html)
+* subject only Reference(StructureDefinition-Patient-uv-ips.html)
 * subject ^short = "The subject of an observation"
 * subject ^definition = "The subject of an observation."
 * focus 0..0
 * effectivePeriod only Period
 * effectivePeriod ^short = "The time period the employment status addresses. If the employment is current, the ending time of the time period should be omitted."
 * effectivePeriod ^definition = "The time period the employment status addresses. If the employment is current, the ending time of the time period should be omitted."
-* performer only Reference(Practitioner or Organization or $StructureDefinition-Patient-uv-ips.html or RelatedPerson)
+* performer only Reference(Practitioner or Organization or StructureDefinition-Patient-uv-ips.html or RelatedPerson)
 * valueCodeableConcept only CodeableConcept
 * valueCodeableConcept from EmploymentStatusODH (required)
 * valueCodeableConcept ^short = "A person’s employment status as defined by compensation and sector (e.g. paid vs. unpaid, self-employed vs. not self-employed, government vs. private, etc.)"
