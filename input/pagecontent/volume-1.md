@@ -4,6 +4,74 @@
 
 **This is intended to be a Content profile.**
 
+<a name="overview"> </a>
+
+## 1:XX.1 Overview
+TBD
+This FHIR document inherits its composition from the [International Patient Summary](https://hl7.org/fhir/uv/ips/) and will have some dependencies on that Implementation guide. 
+
+The following table informs the Pregnancy observations that are defined in this profile, indicating where the observation is already included in the in the IPS. However, many of the sections and entries defined in the IPS were designed to be extensible, so the additional observations profiled by this specification do not impact conformance to the IPS document. 
+
+
+|     APS Pregnancy Observations                                                                                                    |  Inherited from IPS (Y/N) |
+|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| [Pregnancy History](StructureDefinition-IHE.PregnancyHistory.html)                                                                | N                         |
+| [Date Of First Prenatal Visit](StructureDefinition-IHE.DateOfFirstPrenatalVisit.html)                                             | N                         |
+| [Number Of Prenatal Visits For This Pregnancy](StructureDefinition-IHE.NumberOfPrenatalVisitsForThisPregnancy.html)               | N                         |
+| [Pregnancy Status](StructureDefinition-Observation-pregnancy-status-uv-ips.html)                                                  | Y                         |
+| [Menstrual Status](StructureDefinition-IHE.MenstrualStatus.html)                                                                  | N                         |
+| [Date Of Last Menstral Period](StructureDefinition-IHE.DateOfLastMenstralPeriod.html)                                             | N                         |
+| [Delivery Date Clinical Estimate](StructureDefinition-IHE.DeliveryDateClinicalEstimate.html)                                      | N                         |
+| [Delivery Date Estimated From LMP](StructureDefinition-IHE.DeliveryDateEstimatedFromLMP.html)                                     | N                         |
+| [Delivery Date Estimated From Ovulation Date](StructureDefinition-IHE.DeliveryDateEstimatedFromOvulationDate.html)                | N                         |
+| [Multiple Pregnancy](StructureDefinition-IHE.MultiplePregnancy.html)                                                              | N                         |
+| [Gestational Age](StructureDefinition-IHE.GestationalAge.html)                                                                    | N                         |
+| [Fetus Gestational Age](StructureDefinition-IHE.FetusGestationalAge.html)                                                         | N                         |
+| [Body Weight Measured Pre Pregnancy](StructureDefinition-IHE.BodyWeightMeasuredPrePregnancy.html)                                 | N                         |
+| [Labor Risk](StructureDefinition-IHE.LaborRisk.html)                                                                              | N                         |
+| [Delivery Risk](StructureDefinition-IHE.DeliveryRisk.html)                                                                        | N                         |
+| [Fetus Gestational Age Clinical Estimate](StructureDefinition-IHE.FetusGestationalAgeClinicalEstimate.html)                       | N                         |
+| [Fetus Gestational Age Estimated From LMP](StructureDefinition-IHE.FetusGestationalAgeEstimatedFromLMP.html)                      | N                         |
+| [Fetus Gestational Age Estimated From Ovulation Date](StructureDefinition-IHE.FetusGestationalAgeEstimatedFromOvulationDate.html) | N                         |
+| [Number Of Live Births](StructureDefinition-IHE.NumberOfLiveBirths.html)                                                          | N                         |
+| [Number Of Preterm Births](StructureDefinition-IHE.NumberOfPretermBirths.html)                                                    | N                         |
+| [Number Of Births StillLiving](StructureDefinition-IHE.NumberOfBirthsStillLiving.html)                                            | N                         |
+| [Number Of Births To Term](StructureDefinition-IHE.NumberOfBirthsToTerm.html)                                                     | N                         |
+| [Number Of Total Births](StructureDefinition-IHE.NumberOfTotalBirths.html)                                                        | N                         |
+| [Number Of Abortions](StructureDefinition-IHE.NumberOfAbortions.html)                                                             | N                         |
+| [Number Of Abortions Induced](StructureDefinition-IHE.NumberOfAbortionsInduced.html)                                              | N                         |
+| [Number Of Abortions Spontanious](StructureDefinition-IHE.NumberOfAbortionsSpontanious.html)                                      | N                         |
+| [Number Of Ectopic Pregnancies](StructureDefinition-IHE.NumberOfEctopicPregnancies.html)                                          | N                         |
+| [Number Of Stillborn Births](StructureDefinition-IHE.NumberOfStillbornBirths.html)                                                | N                         |
+| [Number Of Pregnancies](StructureDefinition-IHE.NumberOfPregnancies.html)                                                         | N                         |
+| [Number Of Previous Live Births Now Dead](StructureDefinition-IHE.NumberOfPreviousLiveBirthsNowDead.html)                         | N                         |
+| [Date Of Last Live Birth](StructureDefinition-IHE.DateOfLastLiveBirth.html)                                                       | N                         |
+| [Number Of Previous Cesarean Deliveries](StructureDefinition-IHE.NumberOfPreviousCesareanDeliveries.html)                         | N                         |
+| [Number Of Other Pregnancy Outcomes](StructureDefinition-IHE.NumberOfOtherPregnancyOutcomes.html)                                 | N                         |
+| [Date Of Last Other Pregnancy Outcome](StructureDefinition-IHE.DateOfLastOtherPregnancyOutcome.html)                              | N                         |
+| [Menses Monthly](StructureDefinition-IHE.MensesMonthly.html)                                                                      | N                         |
+| [Prior Menses Date](StructureDefinition-IHE.PriorMensesDate.html)                                                                 | N                         |
+| [Duration Of Menstrual Flow](StructureDefinition-IHE.DurationOfMenstrualFlow.html)                                                | N                         |
+| [Frequency Of Menstrual Cycles](StructureDefinition-IHE.FrequencyOfMenstrualCycles.html)                                          | N                         |
+| [On BirthControl Pills At Conception](StructureDefinition-IHE.OnBirthControlPillsAtConception.html)                               | N                         |
+| [Menarche](StructureDefinition-IHE.Menarche.html)                                                                                 | N                         |
+| [Employment Status](StructureDefinition-odh-EmploymentStatus.html)                                                                | N                         |
+| [HCG+](StructureDefinition-IHE.hCGPlus.html)                                                                                      | N                         |
+| [Smoking Tobacco Use Frequency](StructureDefinition-IHE.SmokingTobaccoUseFrequency.html)                                          | N                         |
+| [Smoking Status](StructureDefinition-Observation-tobaccouse-uv-ips.html)                                                          | Y                         |
+| [alcohol Use](StructureDefinition-Observation-alcoholuse-uv-ips.html)                                                             | Y                         |
+| [Alcohol Use Frequency](StructureDefinition-IHE.AlcoholUseFrequency.html)                                                         | N                         |
+| [Drug Use](StructureDefinition-IHE.drugUse.html)                                                                                  | N                         |
+| [Exercise](StructureDefinition-IHE.Exercise.html)                                                                                 | N                         |
+| [Diet](StructureDefinition-IHE.Diet.html)                                                                                         | N                         |
+| [Toxic Exposure](StructureDefinition-IHE.ToxicExposure.html)                                                                      | N                         |
+| [Homelessness](StructureDefinition-IHE.Homelessness.html)                                                                         | N                         |
+| [Domestic Violence Risk](StructureDefinition-IHE.ViolenceRisk.html)                                                               | N                         |
+| [Pregnancy Education Observation](StructureDefinition-IHE.PregnancyEducationObservation.html)                                     | N                         |
+| [Advance Directives Observation](StructureDefinition-IHE.AdvanceDirectivesObservation.html)                                       | N                         |
+{: .grid}
+
+
 <a name="actors-and-transactions"> </a>
 
 ## 1:X.1 APS Actors, Transactions, and Content Modules
@@ -61,17 +129,17 @@ The actors in this profile are described in more detail in the sections below.
 
 #### 56.1.1.1 Content Creator
 
-The [Content Creator](pcc.html#31-document-sharing-pcc-1) creates the [APS content](TODO) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [Content Creator](pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
 #### 56.1.1.2 Content Consumer
 
-The [Content Consumer](pcc.html#31-document-sharing-pcc-1) consumes the [APS content](TODO) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [Content Consumer](pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 #### 56.1.2 APS Content
 
-The Content Creator and Content Consumer share the [APS content](TODO) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The Content Creator and Content Consumer share the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="actor-options"> </a>
 

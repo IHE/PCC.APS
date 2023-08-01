@@ -512,36 +512,6 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 
-Profile:        PregnancyStatus
-Parent:         Observation
-Id:             IHE.PregnancyStatus
-Title:          "Pregnancy Status"
-Description:    """
-Patient's pregnancy status (e.g., pregnant, not pregnant), as reported by the patient or the patient's proxy.  
-"""
-* category 1..1
-* status = http://hl7.org/fhir/observation-status#final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $loinc#11449-6
-* effective[x] 1..1
-* effective[x] only dateTime 
-* performer 1..*
-//Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
-* value[x] 1..1
-* value[x] only CodeableConcept
-* subject only Reference(Patient)
-// this is making everything else in observation forbidden.
-* device 0..0
-* interpretation 0..0
-* focus 0..0
-* bodySite 0..0
-* specimen 0..0
-* referenceRange 0..0
-* component 0..0
-// HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
-// OPen Issue: Pregnancy Status in IPS has been deffined as an observation with with a LOINC andwer set of pregant, Not pregnant, and unknown shold we pull that method over?
-// Open Issue: update Pregancy status loic code to allign with IPS loinc 82810-3
-
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -979,12 +949,12 @@ TBD
 
 
 
-Profile:        MestralStatus
+Profile:        MenstrualStatus
 Parent:         Observation
-Id:             IHE.MestralStatus
-Title:          "Mestral Status"
+Id:             IHE.MenstrualStatus
+Title:          "Menstrual Status"
 Description:    """
-Mestral Status Reported. 
+MenstrualStatus Reported. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1140,7 +1110,7 @@ TBD
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-* code = $sct#10036567  	 	
+// * code = $sct#10036567  	 - code no longer supported by SNOMED CT	
 * effective[x] 1..1
 * effective[x] only dateTime 
 * performer 1..*

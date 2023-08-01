@@ -82,7 +82,7 @@ Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 // APSOpenIssue_015: * $sct#21840007   "Prior Menses Date" Removed because it is a repeat concept wiht the same code as "date of last menstral period". CP may need to be made on the CDA APS to remove as well
 * $sct#364306002   "Duration of Menstrual Flow" 
 * $sct#289887006   "Frequency of Menstrual Cycles" 
-* $sct#10036567   "On Birth Control Pills at conception" 
+//* $sct#10036567   "On Birth Control Pills at conception" --- code no longer supported by SNOMED ct 
 * $sct#398700009   "Menarche" 
 * $sct#250423000   "hCG+" 
 
