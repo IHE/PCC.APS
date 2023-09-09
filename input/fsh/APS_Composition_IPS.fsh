@@ -8,7 +8,6 @@ It is represented in part by Estimated Due Dates and a Visit Summary Flowsheet, 
 and selected histories are provided. The Antepartum Summary represents a summary of the most critical information to an antepartum care provider regarding the status of a patient’s pregnancy.
 """
 
-//* category[+] = $loinc#57055-6
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open

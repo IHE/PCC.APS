@@ -58,8 +58,8 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Employment Status](StructureDefinition-odh-EmploymentStatus.html)                                                                | N                         |
 | [HCG+](StructureDefinition-IHE.hCGPlus.html)                                                                                      | N                         |
 | [Smoking Tobacco Use Frequency](StructureDefinition-IHE.SmokingTobaccoUseFrequency.html)                                          | N                         |
-| [Smoking Status](StructureDefinition-Observation-tobaccouse-uv-ips.html)                                                          | Y                         |
-| [alcohol Use](StructureDefinition-Observation-alcoholuse-uv-ips.html)                                                             | Y                         |
+| [Smoking Status](Observation-tobaccouse-uv-ips)                                                          | Y                         |
+| [alcohol Use](Observation-alcoholuse-uv-ips)                                                             | Y                         |
 | [Alcohol Use Frequency](StructureDefinition-IHE.AlcoholUseFrequency.html)                                                         | N                         |
 | [Drug Use](StructureDefinition-IHE.drugUse.html)                                                                                  | N                         |
 | [Exercise](StructureDefinition-IHE.Exercise.html)                                                                                 | N                         |
