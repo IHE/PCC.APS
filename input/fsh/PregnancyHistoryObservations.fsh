@@ -28,6 +28,13 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 // Open Issue: (requesting feedback) on this approach
 
+Instance: Inline-Instance-of-PregnancyHistory
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        NumberOfLiveBirths
@@ -60,6 +67,16 @@ any other evidence of life such as heart beat.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfLiveBirths
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
+
 Profile:        NumberOfPretermBirths
 Parent:         Observation
 Id:             IHE.NumberOfPretermBirths
@@ -89,6 +106,16 @@ Total number of children whose birth occurred through the end of the last day of
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfPretermBirths
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
+
 Profile:        NumberOfBirthsStillLiving
 Parent:         Observation
 Id:             IHE.NumberOfBirthsStillLiving
@@ -117,6 +144,15 @@ Total number of children still living at time this record is generated.
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
+
+Instance: Inline-Instance-of-NumberOfBirthsStillLiving
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -148,6 +184,14 @@ Total number of children whose birth occurred after the beginning of the first d
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfBirthsToTerm
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -178,6 +222,15 @@ the number of times the uterus is emptied of a viable pregnancy.
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
+
+Instance: Inline-Instance-of-NumberOfTotalBirths
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        NumberOfAbortions
@@ -210,6 +263,14 @@ data derived from assisted fertilization procedure].
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfAbortions
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -240,6 +301,15 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfAbortionsInduced
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
 Id:             IHE.NumberOfAbortionsSpontanious
@@ -269,6 +339,14 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-NumberOfAbortionsSpontanious
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -298,6 +376,15 @@ Number of Ectopic Pregnancies
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
+
+Instance: Inline-Instance-of-NumberOfEctopicPregnancies
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        NumberOfStillbornBirths
@@ -331,6 +418,15 @@ Number of Stillborn Births
 
 // Open issue: why Biths to term and births preterm observations repeated in the current pregnancy section of the APS CDA? How best do we map this into this FHIR model 
 
+Instance: Inline-Instance-of-NumberOfStillbornBirths
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 
 Profile:        NumberOfPregnancies
 Parent:         Observation
@@ -361,6 +457,14 @@ Total number of times the patient has been pregnant including the present pregna
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-NumberOfPregnancies
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = 3
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -390,6 +494,14 @@ To document multiple pregnancy.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-MultiplePregnancy
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = #false
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -419,6 +531,15 @@ Gestational age in weeks.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-GestationalAge
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -449,8 +570,17 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-
 //Open issue: ANtepartum summary references a number of observations that appear irrelivant to Antepartum care (32396-4	Labor duration, 8339-4	Body weight at birth, 29300-1	Procedure, 8722-1 	Surgical operation note anesthesia, 52829-9	Place of service) Review with comittee 
+
+Instance: Inline-Instance-of-FetusGestationalAge
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -481,6 +611,14 @@ Increased chance of harm during the period supporting the bringing forth of an o
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-LaborRisk
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = $loinc#14510-2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -511,7 +649,14 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-
+Instance: Inline-Instance-of-DeliveryRisk
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* dateTime = "2021-10-06T10:52:30-07:00"
+* value = $loinc#14510-2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -542,6 +687,15 @@ TBD
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-DateOfLastMenstralPeriod
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2021-06-12"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
 Id:             IHE.DeliveryDateClinicalEstimate
@@ -569,6 +723,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-DeliveryDateClinicalEstimate
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2022-03-24"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -596,6 +758,15 @@ TBD
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
+
+Instance: Inline-Instance-of-DeliveryDateEstimatedFromLMP
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2022-03-24"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -625,6 +796,15 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-DeliveryDateEstimatedFromOvulationDate
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -652,6 +832,16 @@ TBD
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
+
+Instance: Inline-Instance-of-FetusGestationalAgeClinicalEstimate
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -681,6 +871,15 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromLMP
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -709,6 +908,15 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromOvulationDate
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 14
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -736,6 +944,15 @@ TBD
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
+
+Instance: Inline-Instance-of-DateOfFirstPrenatalVisit
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2021-08-06T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -766,6 +983,15 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfPrenatalVisitsForThisPregnancy
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 2
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
 Id:             IHE.NumberOfPreviousLiveBirthsNowDead
@@ -795,6 +1021,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfPreviousLiveBirthsNowDead
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -823,6 +1057,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
+Instance: Inline-Instance-of-DateOfLastLiveBirth
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2018-04-13T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -852,6 +1094,15 @@ TBD
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
+
+Instance: Inline-Instance-of-NumberOfPreviousCesareanDeliveries
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 0
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -884,6 +1135,14 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-NumberOfOtherPregnancyOutcomes
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 1
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -914,6 +1173,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-DateOfLastOtherPregnancyOutcome
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2015-01-10T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -947,6 +1214,15 @@ TBD
 //Open Issue: (Seeking input) there were two observations for Date of last menstral period, one with a code from LOINC and one with a code from SNOMED-CT. The Observation with the LOINC code was chosen over the SNOMED-CT, as best practice is to use LIONC for observation codes. 
 //Open Issue: seeking Comment -- Menstral status observations have code values from SNOMED-CT. Proper practice with deffining observation is to use LOINC in the code section. Looking for comment to determine if the origional SNOMED code should be retained  or replaced with a LOINC code
 
+Instance: Inline-Instance-of-BodyWeightMeasuredPrePregnancy
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 156
+* Quantity[=].code = $ucum#lb_av
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        MenstrualStatus
@@ -974,6 +1250,14 @@ MenstrualStatus Reported.
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
+
+Instance: Inline-Instance-of-MenstrualStatus
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        MensesMonthly
@@ -1006,6 +1290,15 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 
+Instance: Inline-Instance-of-MensesMonthly
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #false
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 Profile:        PriorMensesDate 
 Parent:         Observation
 Id:             IHE.PriorMensesDate
@@ -1035,6 +1328,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-PriorMensesDate
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value[+].dateTime = "2021-07-17"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1066,6 +1367,15 @@ TBD
 * referenceRange 0..0
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
+
+Instance: Inline-Instance-of-DurationOfMenstrualFlow
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 6
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1099,6 +1409,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-FrequencyOfMenstrualCycles
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = 24
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        OnBirthControlPillsAtConception 
 Parent:         Observation
@@ -1130,6 +1448,14 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-OnBirthControlPillsAtConception
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #false
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        Menarche 
 Parent:         Observation
@@ -1161,6 +1487,15 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-Menarche
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 38
+* Quantity[=].code = $ucum#wk
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1178,7 +1513,7 @@ TBD
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
-* value[x] only dateTime
+* value[x] only boolean
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
@@ -1192,3 +1527,11 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
+Instance: Inline-Instance-of-HCGPlus
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #false
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)

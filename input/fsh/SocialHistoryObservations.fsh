@@ -24,6 +24,16 @@ TBD
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-SmokingTobaccoUseFrequency
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 0
+* Quantity[=].unit = $ucum#{pack}/d
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -51,6 +61,16 @@ Alcoholic drinks per day
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-AlcoholUseFrequency
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 0
+* Quantity[=].unit = $ucum#{drink}/d
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -75,6 +95,15 @@ TBD
 * referenceRange 0..0
 * component 0..0
 
+Instance: Inline-Instance-of-DrugUse
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
+
 Profile:        Exercise
 Parent:         Observation
 Id:             IHE.Exercise
@@ -90,7 +119,7 @@ TBD
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].unit = $ucum#{times}/wky.
+* value[x].unit = $ucum#{times}/wky
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
@@ -100,6 +129,17 @@ TBD
 * referenceRange 0..0
 * component 0..0
 * method 0..0
+
+Instance: Inline-Instance-of-Exercise
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* Quantity[+].value = 2
+* Quantity[=].unit = $ucum#{times}/wky
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        Diet
 Parent:         Observation
@@ -124,6 +164,15 @@ TBD
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-Diet
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = $sct#36823005
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -150,6 +199,15 @@ TBD
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-ToxicExposure
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #flase
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -176,6 +234,15 @@ TBD
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-Homelessness
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #flase
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -200,3 +267,12 @@ TBD
 * component 0..0
 * method 0..0
 
+Instance: Inline-Instance-of-DomesticViolenceRisk
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #flase
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)

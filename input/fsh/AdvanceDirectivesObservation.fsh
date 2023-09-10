@@ -39,3 +39,12 @@ in as much detail as possible. Advance directives contains data such as the exis
 * component 0..0
 
 
+Instance: Inline-Instance-of-AdvanceDirectivesObservation
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* code = $sct#116859006
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = #false
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)

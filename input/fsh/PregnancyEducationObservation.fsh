@@ -27,3 +27,11 @@ TBD
 * referenceRange 0..0
 * component 0..0
 
+Instance: Inline-Instance-of-PregnancyEducationObservation
+InstanceOf: Observation
+Usage: #inline
+* status = http://hl7.org/fhir/observation-status#final
+* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
+* value = $sct#54070000
+* performer = Reference(Provider/ex-Provider)
+* subject = Reference(patient/ex-Patient)
