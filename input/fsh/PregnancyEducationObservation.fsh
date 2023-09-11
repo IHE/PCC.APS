@@ -31,6 +31,7 @@ Instance: Inline-Instance-of-PregnancyEducationObservation
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
+* code = $loinc#34895-3
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#54070000
 * performer = Reference(ex-Provider)
