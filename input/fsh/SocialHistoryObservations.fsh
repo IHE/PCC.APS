@@ -267,7 +267,7 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-DomesticViolenceRisk
+Instance: ex-DomesticViolenceRisk
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final

@@ -39,7 +39,7 @@ in as much detail as possible. Advance directives contains data such as the exis
 * component 0..0
 
 
-Instance: Inline-Instance-of-AdvanceDirectivesObservation
+Instance: ex-AdvanceDirectivesObservation
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final

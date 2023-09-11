@@ -27,7 +27,7 @@ TBD
 * referenceRange 0..0
 * component 0..0
 
-Instance: Inline-Instance-of-PregnancyEducationObservation
+Instance: ex-PregnancyEducationObservation
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final

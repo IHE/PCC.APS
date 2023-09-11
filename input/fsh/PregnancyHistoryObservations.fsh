@@ -28,7 +28,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 // Open Issue: (requesting feedback) on this approach
 
-Instance: Inline-Instance-of-PregnancyHistory
+Instance: ex-PregnancyHistory
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -68,7 +68,7 @@ any other evidence of life such as heart beat.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfLiveBirths
+Instance: ex-NumberOfLiveBirths
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -108,7 +108,7 @@ Total number of children whose birth occurred through the end of the last day of
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfPretermBirths
+Instance: ex-NumberOfPretermBirths
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -148,7 +148,7 @@ Total number of children still living at time this record is generated.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfBirthsStillLiving
+Instance: ex-NumberOfBirthsStillLiving
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -188,7 +188,7 @@ Total number of children whose birth occurred after the beginning of the first d
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfBirthsToTerm
+Instance: ex-NumberOfBirthsToTerm
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -228,7 +228,7 @@ the number of times the uterus is emptied of a viable pregnancy.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfTotalBirths
+Instance: ex-NumberOfTotalBirths
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -269,7 +269,7 @@ data derived from assisted fertilization procedure].
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfAbortions
+Instance: ex-NumberOfAbortions
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -308,7 +308,7 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfAbortionsInduced
+Instance: ex-NumberOfAbortionsInduced
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -347,7 +347,7 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-NumberOfAbortionsSpontanious
+Instance: ex-NumberOfAbortionsSpontanious
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -386,7 +386,7 @@ Number of Ectopic Pregnancies
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-NumberOfEctopicPregnancies
+Instance: ex-NumberOfEctopicPregnancies
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -428,7 +428,7 @@ Number of Stillborn Births
 
 // Open issue: why Biths to term and births preterm observations repeated in the current pregnancy section of the APS CDA? How best do we map this into this FHIR model 
 
-Instance: Inline-Instance-of-NumberOfStillbornBirths
+Instance: ex-NumberOfStillbornBirths
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -468,7 +468,7 @@ Total number of times the patient has been pregnant including the present pregna
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-NumberOfPregnancies
+Instance: ex-NumberOfPregnancies
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -506,7 +506,7 @@ To document multiple pregnancy.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-MultiplePregnancy
+Instance: ex-MultiplePregnancy
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -544,7 +544,7 @@ Gestational age in weeks.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-GestationalAge
+Instance: ex-GestationalAge
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -586,7 +586,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 
 //Open issue: ANtepartum summary references a number of observations that appear irrelivant to Antepartum care (32396-4	Labor duration, 8339-4	Body weight at birth, 29300-1	Procedure, 8722-1 	Surgical operation note anesthesia, 52829-9	Place of service) Review with comittee 
 
-Instance: Inline-Instance-of-FetusGestationalAge
+Instance: ex-FetusGestationalAge
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -626,7 +626,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-LaborRisk
+Instance: ex-LaborRisk
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -665,7 +665,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DeliveryRisk
+Instance: ex-DeliveryRisk
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -704,7 +704,7 @@ TBD
 * method 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DateOfLastMenstralPeriod
+Instance: ex-DateOfLastMenstralPeriod
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -741,7 +741,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DeliveryDateClinicalEstimate
+Instance: ex-DeliveryDateClinicalEstimate
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -778,7 +778,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DeliveryDateEstimatedFromLMP
+Instance: ex-DeliveryDateEstimatedFromLMP
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -816,7 +816,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DeliveryDateEstimatedFromOvulationDate
+Instance: ex-DeliveryDateEstimatedFromOvulationDate
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -854,7 +854,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-FetusGestationalAgeClinicalEstimate
+Instance: ex-FetusGestationalAgeClinicalEstimate
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -893,7 +893,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromLMP
+Instance: ex-FetusGestationalAgeEstimatedFromLMP
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -931,7 +931,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromOvulationDate
+Instance: ex-FetusGestationalAgeEstimatedFromOvulationDate
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -969,7 +969,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DateOfFirstPrenatalVisit
+Instance: ex-DateOfFirstPrenatalVisit
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1008,7 +1008,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfPrenatalVisitsForThisPregnancy
+Instance: ex-NumberOfPrenatalVisitsForThisPregnancy
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1047,7 +1047,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfPreviousLiveBirthsNowDead
+Instance: ex-NumberOfPreviousLiveBirthsNowDead
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1084,7 +1084,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-DateOfLastLiveBirth
+Instance: ex-DateOfLastLiveBirth
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1123,7 +1123,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfPreviousCesareanDeliveries
+Instance: ex-NumberOfPreviousCesareanDeliveries
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1164,7 +1164,7 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-NumberOfOtherPregnancyOutcomes
+Instance: ex-NumberOfOtherPregnancyOutcomes
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1203,7 +1203,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-DateOfLastOtherPregnancyOutcome
+Instance: ex-DateOfLastOtherPregnancyOutcome
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1245,7 +1245,7 @@ TBD
 //Open Issue: (Seeking input) there were two observations for Date of last menstral period, one with a code from LOINC and one with a code from SNOMED-CT. The Observation with the LOINC code was chosen over the SNOMED-CT, as best practice is to use LIONC for observation codes. 
 //Open Issue: seeking Comment -- Menstral status observations have code values from SNOMED-CT. Proper practice with deffining observation is to use LOINC in the code section. Looking for comment to determine if the origional SNOMED code should be retained  or replaced with a LOINC code
 
-Instance: Inline-Instance-of-BodyWeightMeasuredPrePregnancy
+Instance: ex-BodyWeightMeasuredPrePregnancy
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1283,7 +1283,7 @@ MenstrualStatus Reported.
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
-Instance: Inline-Instance-of-MenstrualStatus
+Instance: ex-MenstrualStatus
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1323,7 +1323,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 
-Instance: Inline-Instance-of-MensesMonthly
+Instance: ex-MensesMonthly
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1362,7 +1362,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-PriorMensesDate
+Instance: ex-PriorMensesDate
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1403,7 +1403,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-DurationOfMenstrualFlow
+Instance: ex-DurationOfMenstrualFlow
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1445,7 +1445,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-FrequencyOfMenstrualCycles
+Instance: ex-FrequencyOfMenstrualCycles
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1485,7 +1485,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-OnBirthControlPillsAtConception
+Instance: ex-OnBirthControlPillsAtConception
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1525,7 +1525,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-Menarche
+Instance: ex-Menarche
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -1566,7 +1566,7 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: Inline-Instance-of-HCGPlus
+Instance: ex-HCGPlus
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
