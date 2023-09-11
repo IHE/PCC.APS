@@ -29,11 +29,11 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 0
-* Quantity[=].unit = $ucum#{pack}/d
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 0
+* valueQuantity[=].unit = $ucum#{pack}/d
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -66,11 +66,11 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 0
-* Quantity[=].unit = $ucum#{drink}/d
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 0
+* valueQuantity[=].unit = $ucum#{drink}/d
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -100,9 +100,9 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        Exercise
 Parent:         Observation
@@ -135,11 +135,11 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 2
-* Quantity[=].unit = $ucum#{times}/wky
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 2
+* valueQuantity[=].unit = $ucum#{times}/wky
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        Diet
 Parent:         Observation
@@ -169,10 +169,10 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = $sct#36823005
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueCodeableConcept = $sct#36823005
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -204,10 +204,10 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #flase
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #flase
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -239,10 +239,10 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #flase
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #flase
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -272,7 +272,7 @@ InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #flase
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #flase
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)

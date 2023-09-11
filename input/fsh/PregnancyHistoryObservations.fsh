@@ -32,9 +32,9 @@ Instance: Inline-Instance-of-PregnancyHistory
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfLiveBirths
@@ -71,10 +71,10 @@ Instance: Inline-Instance-of-NumberOfLiveBirths
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfPretermBirths
@@ -110,10 +110,10 @@ Instance: Inline-Instance-of-NumberOfPretermBirths
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfBirthsStillLiving
@@ -149,10 +149,10 @@ Instance: Inline-Instance-of-NumberOfBirthsStillLiving
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -188,10 +188,10 @@ Instance: Inline-Instance-of-NumberOfBirthsToTerm
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -227,10 +227,10 @@ Instance: Inline-Instance-of-NumberOfTotalBirths
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfAbortions
@@ -267,10 +267,10 @@ Instance: Inline-Instance-of-NumberOfAbortions
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -305,10 +305,10 @@ Instance: Inline-Instance-of-NumberOfAbortionsInduced
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
@@ -343,10 +343,10 @@ Instance: Inline-Instance-of-NumberOfAbortionsSpontanious
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -381,10 +381,10 @@ Instance: Inline-Instance-of-NumberOfEctopicPregnancies
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfStillbornBirths
@@ -422,10 +422,10 @@ Instance: Inline-Instance-of-NumberOfStillbornBirths
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfPregnancies
@@ -461,10 +461,10 @@ Instance: Inline-Instance-of-NumberOfPregnancies
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = 3
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 3
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -498,10 +498,10 @@ Instance: Inline-Instance-of-MultiplePregnancy
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = #false
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #false
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -535,11 +535,11 @@ Instance: Inline-Instance-of-GestationalAge
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -576,11 +576,11 @@ Instance: Inline-Instance-of-FetusGestationalAge
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -615,10 +615,10 @@ Instance: Inline-Instance-of-LaborRisk
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = $loinc#14510-2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueCodeableConcept = $loinc#14510-2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -653,10 +653,10 @@ Instance: Inline-Instance-of-DeliveryRisk
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* dateTime = "2021-10-06T10:52:30-07:00"
-* value = $loinc#14510-2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueCodeableConcept = $loinc#14510-2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -691,10 +691,10 @@ Instance: Inline-Instance-of-DateOfLastMenstralPeriod
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2021-06-12"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2021-06-12"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
@@ -727,10 +727,10 @@ Instance: Inline-Instance-of-DeliveryDateClinicalEstimate
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2022-03-24"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2022-03-24"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -763,10 +763,10 @@ Instance: Inline-Instance-of-DeliveryDateEstimatedFromLMP
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2022-03-24"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2022-03-24"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -800,11 +800,11 @@ Instance: Inline-Instance-of-DeliveryDateEstimatedFromOvulationDate
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -837,11 +837,11 @@ Instance: Inline-Instance-of-FetusGestationalAgeClinicalEstimate
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -875,11 +875,11 @@ Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromLMP
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -912,11 +912,11 @@ Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromOvulationDate
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 14
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 14
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -949,10 +949,10 @@ Instance: Inline-Instance-of-DateOfFirstPrenatalVisit
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2021-08-06T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2021-08-06T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -987,10 +987,10 @@ Instance: Inline-Instance-of-NumberOfPrenatalVisitsForThisPregnancy
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 2
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 2
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
@@ -1025,10 +1025,10 @@ Instance: Inline-Instance-of-NumberOfPreviousLiveBirthsNowDead
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -1061,10 +1061,10 @@ Instance: Inline-Instance-of-DateOfLastLiveBirth
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2018-04-13T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2018-04-13T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -1099,10 +1099,10 @@ Instance: Inline-Instance-of-NumberOfPreviousCesareanDeliveries
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 0
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 0
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -1139,10 +1139,10 @@ Instance: Inline-Instance-of-NumberOfOtherPregnancyOutcomes
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 1
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 1
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -1177,10 +1177,10 @@ Instance: Inline-Instance-of-DateOfLastOtherPregnancyOutcome
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2015-01-10T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2015-01-10T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -1218,11 +1218,11 @@ Instance: Inline-Instance-of-BodyWeightMeasuredPrePregnancy
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 156
-* Quantity[=].code = $ucum#lb_av
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 156
+* valueQuantity[=].code = $ucum#lb_av
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        MenstrualStatus
@@ -1255,9 +1255,9 @@ Instance: Inline-Instance-of-MenstrualStatus
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        MensesMonthly
@@ -1294,10 +1294,10 @@ Instance: Inline-Instance-of-MensesMonthly
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #false
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #false
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        PriorMensesDate 
 Parent:         Observation
@@ -1332,10 +1332,10 @@ Instance: Inline-Instance-of-PriorMensesDate
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value[+].dateTime = "2021-07-17"
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueDateTime = "2021-07-17"
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1372,10 +1372,10 @@ Instance: Inline-Instance-of-DurationOfMenstrualFlow
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 6
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 6
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1413,10 +1413,10 @@ Instance: Inline-Instance-of-FrequencyOfMenstrualCycles
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = 24
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueInteger = 24
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        OnBirthControlPillsAtConception 
 Parent:         Observation
@@ -1452,10 +1452,10 @@ Instance: Inline-Instance-of-OnBirthControlPillsAtConception
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #false
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #false
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        Menarche 
 Parent:         Observation
@@ -1491,11 +1491,11 @@ Instance: Inline-Instance-of-Menarche
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* Quantity[+].value = 38
-* Quantity[=].code = $ucum#wk
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueQuantity[+].value = 38
+* valueQuantity[=].code = $ucum#wk
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1531,7 +1531,7 @@ Instance: Inline-Instance-of-HCGPlus
 InstanceOf: Observation
 Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
-* effective[+].dateTime = "2021-10-06T10:52:30-07:00"
-* value = #false
-* performer = Reference(Provider/ex-Provider)
-* subject = Reference(patient/ex-Patient)
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueBoolean = #false
+* performer = Reference(ex-Provider)
+* subject = Reference(ex-Patient)
