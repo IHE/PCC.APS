@@ -24,16 +24,17 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-SmokingTobaccoUseFrequency
+Instance: ex-SmokingTobaccoUseFrequency
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 0
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].unit = $ucum#{pack}/d
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -61,16 +62,17 @@ Alcoholic drinks per day
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-AlcoholUseFrequency
+Instance: ex-AlcoholUseFrequency
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 0
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].unit = $ucum#{drink}/d
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -95,14 +97,14 @@ TBD
 * referenceRange 0..0
 * component 0..0
 
-Instance: Inline-Instance-of-DrugUse
+Instance: ex-DrugUse
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        Exercise
 Parent:         Observation
@@ -130,16 +132,17 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-Exercise
+Instance: ex-Exercise
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 2
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].unit = $ucum#{times}/wky
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        Diet
 Parent:         Observation
@@ -164,15 +167,15 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-Diet
+Instance: ex-Diet
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#36823005
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -199,15 +202,15 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-ToxicExposure
+Instance: ex-ToxicExposure
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -234,15 +237,15 @@ TBD
 * component 0..0
 * method 0..0
 
-Instance: Inline-Instance-of-Homelessness
+Instance: ex-Homelessness
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -274,5 +277,5 @@ Usage: #example
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)

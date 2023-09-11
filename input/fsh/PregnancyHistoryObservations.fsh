@@ -34,8 +34,8 @@ Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#118185001
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfLiveBirths
@@ -75,8 +75,8 @@ Usage: #example
 * code = $loinc#11636-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfPretermBirths
@@ -115,8 +115,8 @@ Usage: #example
 * code = $loinc#11637-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfBirthsStillLiving
@@ -155,8 +155,8 @@ Usage: #example
 * code = $loinc#11638-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -195,8 +195,8 @@ Usage: #example
 * code = $loinc#11639-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -235,8 +235,8 @@ Usage: #example
 * code = $loinc#11640-0
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfAbortions
@@ -276,8 +276,8 @@ Usage: #example
 * code = $loinc#11612-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -315,8 +315,8 @@ Usage: #example
 * code = $loinc#11613-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
@@ -354,8 +354,8 @@ Usage: #example
 * code = $loinc#11614-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -393,8 +393,8 @@ Usage: #example
 * code = $loinc#33065-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfStillbornBirths
@@ -435,8 +435,8 @@ Usage: #example
 * code = $loinc#57062-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfPregnancies
@@ -475,8 +475,8 @@ Usage: #example
 * code = $loinc#11996-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 3
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -513,8 +513,8 @@ Usage: #example
 * code = $loinc#45371-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -551,9 +551,10 @@ Usage: #example
 * code = $loinc#49051-6 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -593,9 +594,10 @@ Usage: #example
 * code = $loinc#11887-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -633,8 +635,8 @@ Usage: #example
 * code = $loinc#42839-1
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -672,8 +674,8 @@ Usage: #example
 * code = $loinc#42840-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -711,8 +713,8 @@ Usage: #example
 * code = $loinc#8665-2 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-06-12"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
@@ -748,8 +750,8 @@ Usage: #example
 * code = $loinc#11778-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -785,8 +787,8 @@ Usage: #example
 * code = $loinc#11779-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -823,9 +825,10 @@ Usage: #example
 * code = $loinc#11780-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -861,9 +864,10 @@ Usage: #example
 * code = $loinc#11884-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -900,9 +904,10 @@ Usage: #example
 * code = $loinc#11885-1
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -938,9 +943,10 @@ Usage: #example
 * code = $loinc#11886-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 14
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -976,8 +982,8 @@ Usage: #example
 * code = $loinc#69044-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-08-06T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -1015,8 +1021,8 @@ Usage: #example
 * code = $loinc#68493-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
@@ -1054,8 +1060,8 @@ Usage: #example
 * code = $loinc#68496-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -1091,8 +1097,8 @@ Usage: #example
 * code = $loinc#68499-3
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2018-04-13T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -1130,8 +1136,8 @@ Usage: #example
 * code = $loinc#68497-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -1171,8 +1177,8 @@ Usage: #example
 * code = $loinc#69043-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 1
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -1210,8 +1216,8 @@ Usage: #example
 * code = $loinc#68500-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2015-01-10T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -1252,9 +1258,10 @@ Usage: #example
 * code = $loinc#8348-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 156
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#lb_av
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        MenstrualStatus
@@ -1289,8 +1296,8 @@ Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8678-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        MensesMonthly
@@ -1330,8 +1337,8 @@ Usage: #example
 * code = $sct#364307006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        PriorMensesDate 
 Parent:         Observation
@@ -1369,8 +1376,8 @@ Usage: #example
 * code = $sct#21840007 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-07-17"
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1410,8 +1417,8 @@ Usage: #example
 * code = $sct#364306002 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 6
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1452,8 +1459,8 @@ Usage: #example
 * code = $sct#289887006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 24
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        OnBirthControlPillsAtConception 
 Parent:         Observation
@@ -1489,11 +1496,11 @@ Instance: ex-OnBirthControlPillsAtConception
 InstanceOf: Observation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = $sct#10036567
+* code = $sct#13197004
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        Menarche 
 Parent:         Observation
@@ -1532,9 +1539,10 @@ Usage: #example
 * code = $sct#398700009 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity[+].value = 38
+* valueQuantity[=].system = $ucum
 * valueQuantity[=].code = $ucum#wk
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1573,5 +1581,5 @@ Usage: #example
 * code = $sct#250423000	
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(ex-Provider)
-* subject = Reference(ex-Patient)
+* performer = Reference(Provider/ex-provider)
+* subject = Reference(Patient/ex-patient)
