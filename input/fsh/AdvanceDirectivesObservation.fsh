@@ -41,7 +41,7 @@ in as much detail as possible. Advance directives contains data such as the exis
 
 Instance: Inline-Instance-of-AdvanceDirectivesObservation
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"

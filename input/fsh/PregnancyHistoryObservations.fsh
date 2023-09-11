@@ -30,7 +30,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 
 Instance: Inline-Instance-of-PregnancyHistory
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#118185001
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -70,7 +70,7 @@ any other evidence of life such as heart beat.
 
 Instance: Inline-Instance-of-NumberOfLiveBirths
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11636-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -110,7 +110,7 @@ Total number of children whose birth occurred through the end of the last day of
 
 Instance: Inline-Instance-of-NumberOfPretermBirths
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11637-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -150,7 +150,7 @@ Total number of children still living at time this record is generated.
 
 Instance: Inline-Instance-of-NumberOfBirthsStillLiving
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11638-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -190,7 +190,7 @@ Total number of children whose birth occurred after the beginning of the first d
 
 Instance: Inline-Instance-of-NumberOfBirthsToTerm
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11639-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -230,7 +230,7 @@ the number of times the uterus is emptied of a viable pregnancy.
 
 Instance: Inline-Instance-of-NumberOfTotalBirths
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11640-0
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -271,7 +271,7 @@ data derived from assisted fertilization procedure].
 
 Instance: Inline-Instance-of-NumberOfAbortions
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11612-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -310,7 +310,7 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 
 Instance: Inline-Instance-of-NumberOfAbortionsInduced
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11613-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -349,7 +349,7 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 
 Instance: Inline-Instance-of-NumberOfAbortionsSpontanious
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11614-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -388,7 +388,7 @@ Number of Ectopic Pregnancies
 
 Instance: Inline-Instance-of-NumberOfEctopicPregnancies
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#33065-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -430,7 +430,7 @@ Number of Stillborn Births
 
 Instance: Inline-Instance-of-NumberOfStillbornBirths
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#57062-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -470,7 +470,7 @@ Total number of times the patient has been pregnant including the present pregna
 
 Instance: Inline-Instance-of-NumberOfPregnancies
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11996-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -508,7 +508,7 @@ To document multiple pregnancy.
 
 Instance: Inline-Instance-of-MultiplePregnancy
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#45371-2
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -546,7 +546,7 @@ Gestational age in weeks.
 
 Instance: Inline-Instance-of-GestationalAge
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#49051-6 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -588,7 +588,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 
 Instance: Inline-Instance-of-FetusGestationalAge
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11887-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -628,7 +628,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 
 Instance: Inline-Instance-of-LaborRisk
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#42839-1
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -667,7 +667,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 
 Instance: Inline-Instance-of-DeliveryRisk
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#42840-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -706,7 +706,7 @@ TBD
 
 Instance: Inline-Instance-of-DateOfLastMenstralPeriod
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8665-2 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -743,7 +743,7 @@ TBD
 
 Instance: Inline-Instance-of-DeliveryDateClinicalEstimate
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11778-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -780,7 +780,7 @@ TBD
 
 Instance: Inline-Instance-of-DeliveryDateEstimatedFromLMP
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11779-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -818,7 +818,7 @@ TBD
 
 Instance: Inline-Instance-of-DeliveryDateEstimatedFromOvulationDate
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11780-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -856,7 +856,7 @@ TBD
 
 Instance: Inline-Instance-of-FetusGestationalAgeClinicalEstimate
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11884-4
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -895,7 +895,7 @@ TBD
 
 Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromLMP
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11885-1
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -933,7 +933,7 @@ TBD
 
 Instance: Inline-Instance-of-FetusGestationalAgeEstimatedFromOvulationDate
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11886-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -971,7 +971,7 @@ TBD
 
 Instance: Inline-Instance-of-DateOfFirstPrenatalVisit
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#69044-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1010,7 +1010,7 @@ TBD
 
 Instance: Inline-Instance-of-NumberOfPrenatalVisitsForThisPregnancy
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68493-6
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1049,7 +1049,7 @@ TBD
 
 Instance: Inline-Instance-of-NumberOfPreviousLiveBirthsNowDead
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68496-9
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1086,7 +1086,7 @@ TBD
 
 Instance: Inline-Instance-of-DateOfLastLiveBirth
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68499-3
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1125,7 +1125,7 @@ TBD
 
 Instance: Inline-Instance-of-NumberOfPreviousCesareanDeliveries
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68497-7
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1166,7 +1166,7 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 
 Instance: Inline-Instance-of-NumberOfOtherPregnancyOutcomes
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#69043-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1205,7 +1205,7 @@ TBD
 
 Instance: Inline-Instance-of-DateOfLastOtherPregnancyOutcome
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68500-8
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1247,7 +1247,7 @@ TBD
 
 Instance: Inline-Instance-of-BodyWeightMeasuredPrePregnancy
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8348-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1285,7 +1285,7 @@ MenstrualStatus Reported.
 
 Instance: Inline-Instance-of-MenstrualStatus
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8678-5
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1325,7 +1325,7 @@ TBD
 
 Instance: Inline-Instance-of-MensesMonthly
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#364307006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1364,7 +1364,7 @@ TBD
 
 Instance: Inline-Instance-of-PriorMensesDate
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#21840007 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1405,7 +1405,7 @@ TBD
 
 Instance: Inline-Instance-of-DurationOfMenstrualFlow
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#364306002 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1447,7 +1447,7 @@ TBD
 
 Instance: Inline-Instance-of-FrequencyOfMenstrualCycles
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#289887006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1487,7 +1487,7 @@ TBD
 
 Instance: Inline-Instance-of-OnBirthControlPillsAtConception
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#10036567
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1527,7 +1527,7 @@ TBD
 
 Instance: Inline-Instance-of-Menarche
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#398700009 
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -1568,7 +1568,7 @@ TBD
 
 Instance: Inline-Instance-of-HCGPlus
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#250423000	
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"

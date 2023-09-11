@@ -29,7 +29,7 @@ TBD
 
 Instance: Inline-Instance-of-PregnancyEducationObservation
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#34895-3
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"

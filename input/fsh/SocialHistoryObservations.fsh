@@ -26,7 +26,7 @@ TBD
 
 Instance: Inline-Instance-of-SmokingTobaccoUseFrequency
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -63,7 +63,7 @@ Alcoholic drinks per day
 
 Instance: Inline-Instance-of-AlcoholUseFrequency
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -97,7 +97,7 @@ TBD
 
 Instance: Inline-Instance-of-DrugUse
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -132,7 +132,7 @@ TBD
 
 Instance: Inline-Instance-of-Exercise
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -166,7 +166,7 @@ TBD
 
 Instance: Inline-Instance-of-Diet
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -201,7 +201,7 @@ TBD
 
 Instance: Inline-Instance-of-ToxicExposure
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -236,7 +236,7 @@ TBD
 
 Instance: Inline-Instance-of-Homelessness
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
@@ -269,7 +269,7 @@ TBD
 
 Instance: Inline-Instance-of-DomesticViolenceRisk
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
