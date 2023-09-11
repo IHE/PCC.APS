@@ -205,7 +205,7 @@ Usage: #inline
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueBoolean = #flase
+* valueBoolean = false
 * performer = Reference(ex-Provider)
 * subject = Reference(ex-Patient)
 
