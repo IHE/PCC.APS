@@ -779,7 +779,7 @@ InstanceOf: DeliveryDateEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 14 'wk'
+* valuedateTime = "2022-04-08"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        FetusGestationalAgeClinicalEstimate
@@ -797,7 +797,7 @@ TBD
 * effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only integer
+* value[x] only Quantity
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -833,7 +833,7 @@ TBD
 * effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only integer
+* value[x] only Quantity
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -868,7 +868,7 @@ TBD
 * effective[x] only dateTime 
 * performer 1..*
 * value[x] 1..1 
-* value[x] only integer
+* value[x] only Quantity
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
 * device 0..0
@@ -1311,7 +1311,6 @@ TBD
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].code = $ucum#d
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
@@ -1330,7 +1329,7 @@ InstanceOf: DurationOfMenstrualFlow
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity= 6 'd'
+* valueQuantity = 6 'd'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 
