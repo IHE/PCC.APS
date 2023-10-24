@@ -32,7 +32,7 @@ Description: "The Example instance for the SmokingTobaccoUseFrequency observatio
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 0 '{pack}/d'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -68,7 +68,7 @@ Description: "The Example instance for the AlcoholUseFrequency observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{drink}/d'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -100,7 +100,7 @@ Description: "The Example instance for the DrugUse observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        Exercise
 Parent:         Observation
@@ -136,7 +136,7 @@ Description: "The Example instance for the Exercise observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{times}/wky'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        Diet
 Parent:         Observation
@@ -169,7 +169,7 @@ Description: "The Example instance for the Diet observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#36823005
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -204,7 +204,7 @@ Description: "The Example instance for the ToxicExposure observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -239,7 +239,7 @@ Description: "The Example instance for the Homelessness observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -272,4 +272,4 @@ Description: "The Example instance for the DomesticViolenceRisk observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)

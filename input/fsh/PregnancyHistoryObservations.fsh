@@ -35,8 +35,7 @@ Description: "The Example instance for the PregnancyHistory observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
-
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfLiveBirths
 Parent:         Observation
@@ -76,7 +75,7 @@ Description: "The Example instance for the NumberOfLiveBirths observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfPretermBirths
@@ -116,7 +115,7 @@ Description: "The Example instance for the NumberOfPretermBirths observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfBirthsStillLiving
@@ -156,7 +155,7 @@ Description: "The Example instance for the NumberOfBirthsStillLiving observation
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -196,7 +195,7 @@ Description: "The Example instance for the NumberOfBirthsToTerm observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -236,7 +235,7 @@ Description: "The Example instance for the NumberOfTotalBirths observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfAbortions
@@ -277,7 +276,7 @@ Description: "The Example instance for the NumberOfAbortions observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -316,7 +315,7 @@ Description: "The Example instance for the NumberOfAbortionsInduced observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
@@ -355,7 +354,7 @@ Description: "The Example instance for the NumberOfAbortionsSpontanious observat
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -394,7 +393,7 @@ Description: "The Example instance for the NumberOfEctopicPregnancies observatio
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfStillbornBirths
@@ -436,7 +435,7 @@ Description: "The Example instance for the NumberOfStillbornBirths observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfPregnancies
@@ -476,7 +475,7 @@ Description: "The Example instance for the NumberOfPregnancies observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 3
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -514,7 +513,7 @@ Description: "The Example instance for the MultiplePregnancy observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -552,7 +551,7 @@ Description: "The Example instance for the GestationalAge observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -593,7 +592,7 @@ Description: "The Example instance for the FetusGestationalAge observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -632,7 +631,7 @@ Description: "The Example instance for the LaborRisk observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -671,7 +670,7 @@ Description: "The Example instance for the DeliveryRisk observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -710,7 +709,7 @@ Description: "The Example instance for the DateOfLastMenstralPeriod observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-06-12"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
@@ -747,7 +746,7 @@ Description: "The Example instance for the DeliveryDateClinicalEstimate observat
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -784,7 +783,7 @@ Description: "The Example instance for the DeliveryDateEstimatedFromLMP observat
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -822,7 +821,7 @@ Description: "The Example instance for the DeliveryDateEstimatedFromOvulationDat
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-04-08"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -859,7 +858,7 @@ Description: "The Example instance for the FetusGestationalAgeClinicalEstimate o
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -897,7 +896,7 @@ Description: "The Example instance for the FetusGestationalAgeEstimatedFromLMP o
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -934,7 +933,7 @@ Description: "The Example instance for the FetusGestationalAgeEstimatedFromOvula
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -971,7 +970,7 @@ Description: "The Example instance for the DateOfFirstPrenatalVisit observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-08-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -1010,7 +1009,7 @@ Description: "The Example instance for the NumberOfPrenatalVisitsForThisPregnanc
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
@@ -1049,7 +1048,7 @@ Description: "The Example instance for the NumberOfPreviousLiveBirthsNowDead obs
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -1086,7 +1085,7 @@ Description: "The Example instance for the DateOfLastLiveBirth observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2018-04-13T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -1125,7 +1124,7 @@ Description: "The Example instance for the NumberOfPreviousCesareanDeliveries ob
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -1166,7 +1165,7 @@ Description: "The Example instance for the NumberOfOtherPregnancyOutcomes observ
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 1
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -1205,7 +1204,7 @@ Description: "The Example instance for the DateOfLastOtherPregnancyOutcome obser
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2015-01-10T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -1247,7 +1246,7 @@ Description: "The Example instance for the BodyWeightMeasuredPrePregnancy observ
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 156 'lb_av'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        MenstrualStatus
@@ -1283,7 +1282,7 @@ Description: "The Example instance for the MenstrualStatus observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        MensesMonthly
 Parent:         Observation
@@ -1323,7 +1322,7 @@ Description: "The Example instance for the MensesMonthly observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        PriorMensesDate 
 Parent:         Observation
@@ -1362,7 +1361,7 @@ Description: "The Example instance for the PriorMensesDate observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-07-17"
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1402,7 +1401,7 @@ Description: "The Example instance for the DurationOfMenstrualFlow observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 6 'd'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1444,7 +1443,7 @@ Description: "The Example instance for the FrequencyOfMenstrualCycles observatio
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 24 'd'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 
 Profile:        Menarche 
@@ -1485,7 +1484,7 @@ Description: "The Example instance for the Menarche observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 38 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1525,4 +1524,4 @@ Description: "The Example instance for the HCGPlus observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)

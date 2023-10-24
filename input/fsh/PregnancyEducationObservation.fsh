@@ -35,4 +35,4 @@ Description: "The Example instance for the PregnancyEducationObservation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#54070000
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)

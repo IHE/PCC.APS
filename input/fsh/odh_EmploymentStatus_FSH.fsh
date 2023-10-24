@@ -117,4 +117,4 @@ Description: "The Example instance for the EmploymentStatus observation"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = #Employed
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
