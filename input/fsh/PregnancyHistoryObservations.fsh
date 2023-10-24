@@ -34,7 +34,6 @@ Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfLiveBirths
@@ -74,7 +73,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfPretermBirths
@@ -113,7 +111,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfBirthsStillLiving
@@ -152,7 +149,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -191,7 +187,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -230,7 +225,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfAbortions
@@ -270,7 +264,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -308,7 +301,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
@@ -346,7 +338,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -384,7 +375,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfStillbornBirths
@@ -425,7 +415,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfPregnancies
@@ -464,7 +453,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 3
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -501,7 +489,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -539,7 +526,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -580,7 +566,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -618,7 +603,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -656,7 +640,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -694,7 +677,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-06-12"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
@@ -730,7 +712,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -766,7 +747,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -804,7 +784,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -841,7 +820,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -879,7 +857,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -916,7 +893,6 @@ Usage: #example
 * valueQuantity[+] = 14
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -952,7 +928,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-08-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -990,7 +965,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
@@ -1028,7 +1002,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -1064,7 +1037,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2018-04-13T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -1102,7 +1074,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -1142,7 +1113,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 1
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -1180,7 +1150,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2015-01-10T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -1222,7 +1191,6 @@ Usage: #example
 * valueQuantity[+] = 156
 * valueQuantity[=] = $ucum#lb_av
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        MenstrualStatus
@@ -1257,8 +1225,6 @@ Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
-
 
 Profile:        MensesMonthly
 Parent:         Observation
@@ -1297,7 +1263,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        PriorMensesDate 
 Parent:         Observation
@@ -1335,7 +1300,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-07-17"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1375,7 +1339,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 6
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1416,7 +1379,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 24
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        OnBirthControlPillsAtConception 
 Parent:         Observation
@@ -1455,7 +1417,6 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        Menarche 
 Parent:         Observation
@@ -1495,7 +1456,6 @@ Usage: #example
 * valueQuantity[+] = 38
 * valueQuantity[=] = $ucum#wk
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1534,4 +1494,3 @@ Usage: #example
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
-* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
