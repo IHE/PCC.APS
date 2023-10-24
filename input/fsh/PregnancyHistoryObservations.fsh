@@ -779,7 +779,7 @@ InstanceOf: DeliveryDateEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valuedateTime = "2022-04-08"
+* valueDateTime = "2022-04-08"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        FetusGestationalAgeClinicalEstimate
