@@ -24,7 +24,7 @@
 - APSOpenIssue_018: * $loinc#20450-3   "Alpha-1-Fetoprotein Multiple of the Median, Serum Quantitative Calculated"  Removed because it is a repeat concept with the same code as "Alpha-1-Fetoprotein". CP may need to be made on the CDA APS to remove as well
 - APSOpenIssue_019: * $sct#171054004   "Special Diet"   Removed because it is a repeat concept with the same code as "Nutrition and weight gain counseling". CP may need to be made on the CDA APS to remove as well
 - APSOpenIssue_020: * $sct#66961001   "Second Trimester Childbirth classes/hospital facilities"  Removed because it is a repeat concept with the same code as "Childbirth classes/hospital facilities". CP may need to be made on the CDA APS to remove as well.
-	
+- APSOpenIssue_021: Observation "On Birth Control Pills at conception" SCT#10036567 no loger exhists. The observation was removed from the build. Commitee needs to determine if a new code needs to be found to replace it or if it should be removed entirely from this build and the CDA content modules that references it. 
 
 
 

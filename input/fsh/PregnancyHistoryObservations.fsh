@@ -1201,7 +1201,7 @@ MenstrualStatus Reported.
 * effective[x] only dateTime 
 * performer 1..*
 * subject only Reference(Patient)
-* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or OnBirthControlPillsAtConception or Menarche or HCGPlus)
+* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or Menarche or HCGPlus)
 // this is making everything else in observation forbidden.
 * device 0..0
 * interpretation 0..0
@@ -1372,43 +1372,6 @@ Usage: #example
 * valueQuantity = 24 'd'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
-Profile:        OnBirthControlPillsAtConception 
-Parent:         Observation
-Id:             IHE.OnBirthControlPillsAtConception
-Title:          "On Birth Control Pills at conception"
-Description:    """
-TBD
-"""
-* category 1..1
-* status = http://hl7.org/fhir/observation-status#final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#survey
-// * code = $sct#10036567  	 - code no longer supported by SNOMED CT	
-* effective[x] 1..1
-* effective[x] only dateTime 
-* performer 1..*
-//Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
-* value[x] 1..1 
-* value[x] only boolean
-//need confirmation this is the correct 
-* subject only Reference(Patient)
-// this is making everything else in observation forbidden.
-* device 0..0
-* interpretation 0..0
-* focus 0..0
-* bodySite 0..0
-* method 0..0 
-* specimen 0..0
-* referenceRange 0..0
-* component 0..0
-// HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
-
-Instance: ex-OnBirthControlPillsAtConception
-InstanceOf: OnBirthControlPillsAtConception
-Usage: #example
-* status = http://hl7.org/fhir/observation-status#final
-* effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        Menarche 
 Parent:         Observation
