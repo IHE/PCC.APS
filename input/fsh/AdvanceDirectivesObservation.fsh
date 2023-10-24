@@ -40,11 +40,12 @@ in as much detail as possible. Advance directives contains data such as the exis
 
 
 Instance: ex-AdvanceDirectivesObservation
-InstanceOf: Observation
+InstanceOf: AdvanceDirectivesObservation
 Usage: #example
+Description: "The Example instance for the AdvanceDirectivesObservation"
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(Provider/ex-provider)
-* subject = Reference(Patient/ex-patient)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)

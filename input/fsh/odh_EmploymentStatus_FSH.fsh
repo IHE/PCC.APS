@@ -109,3 +109,12 @@ Description: "A History of Employment Status Observation is a clinical statement
 * component.referenceRange.appliesTo ^binding.extension.valueString = "ObservationRangeType"
 * component.referenceRange.appliesTo ^binding.description = "Codes identifying the population the reference range applies to."
 
+Instance: ex-EmploymentStatus
+InstanceOf: EmploymentStatus
+Usage: #example
+Description: "The Example instance for the EmploymentStatus observation"
+* status = http://hl7.org/fhir/observation-status#final
+* effectiveDateTime = "2021-10-06T10:52:30-07:00"
+* valueCodeableConcept = #Employed
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)

@@ -34,7 +34,8 @@ Usage: #example
 Description: "The Example instance for the PregnancyHistory observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfLiveBirths
@@ -74,7 +75,8 @@ Description: "The Example instance for the NumberOfLiveBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfPretermBirths
@@ -113,7 +115,8 @@ Description: "The Example instance for the NumberOfPretermBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfBirthsStillLiving
@@ -152,7 +155,8 @@ Description: "The Example instance for the NumberOfBirthsStillLiving observation
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfBirthsToTerm
@@ -191,7 +195,8 @@ Description: "The Example instance for the NumberOfBirthsToTerm observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfTotalBirths
 Parent:         Observation
@@ -230,7 +235,8 @@ Description: "The Example instance for the NumberOfTotalBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfAbortions
@@ -270,7 +276,8 @@ Description: "The Example instance for the NumberOfAbortions observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfAbortionsInduced
 Parent:         Observation
@@ -308,7 +315,8 @@ Description: "The Example instance for the NumberOfAbortionsInduced observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfAbortionsSpontanious
 Parent:         Observation
@@ -346,7 +354,8 @@ Description: "The Example instance for the NumberOfAbortionsSpontanious observat
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfEctopicPregnancies
 Parent:         Observation
@@ -384,7 +393,8 @@ Description: "The Example instance for the NumberOfEctopicPregnancies observatio
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfStillbornBirths
@@ -425,7 +435,8 @@ Description: "The Example instance for the NumberOfStillbornBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfPregnancies
@@ -464,7 +475,8 @@ Description: "The Example instance for the NumberOfPregnancies observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 3
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        MultiplePregnancy
 Parent:         Observation
@@ -501,7 +513,8 @@ Description: "The Example instance for the MultiplePregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        GestationalAge
 Parent:         Observation
@@ -538,7 +551,8 @@ Description: "The Example instance for the GestationalAge observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        FetusGestationalAge
 Parent:         Observation
@@ -578,7 +592,8 @@ Description: "The Example instance for the FetusGestationalAge observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        LaborRisk
 Parent:         Observation
@@ -616,7 +631,8 @@ Description: "The Example instance for the LaborRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DeliveryRisk
 Parent:         Observation
@@ -654,7 +670,8 @@ Description: "The Example instance for the DeliveryRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DateOfLastMenstralPeriod
 Parent:         Observation
@@ -692,7 +709,8 @@ Description: "The Example instance for the DateOfLastMenstralPeriod observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-06-12"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DeliveryDateClinicalEstimate
 Parent:         Observation
@@ -728,7 +746,8 @@ Description: "The Example instance for the DeliveryDateClinicalEstimate observat
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DeliveryDateEstimatedFromLMP
 Parent:         Observation
@@ -764,7 +783,8 @@ Description: "The Example instance for the DeliveryDateEstimatedFromLMP observat
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        DeliveryDateEstimatedFromOvulationDate
@@ -801,7 +821,8 @@ Description: "The Example instance for the DeliveryDateEstimatedFromOvulationDat
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-04-08"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        FetusGestationalAgeClinicalEstimate
 Parent:         Observation
@@ -837,7 +858,8 @@ Description: "The Example instance for the FetusGestationalAgeClinicalEstimate o
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        FetusGestationalAgeEstimatedFromLMP
@@ -874,7 +896,8 @@ Description: "The Example instance for the FetusGestationalAgeEstimatedFromLMP o
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
 Parent:         Observation
@@ -910,7 +933,8 @@ Description: "The Example instance for the FetusGestationalAgeEstimatedFromOvula
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DateOfFirstPrenatalVisit
 Parent:         Observation
@@ -946,7 +970,8 @@ Description: "The Example instance for the DateOfFirstPrenatalVisit observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-08-06T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfPrenatalVisitsForThisPregnancy
 Parent:         Observation
@@ -984,7 +1009,8 @@ Description: "The Example instance for the NumberOfPrenatalVisitsForThisPregnanc
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfPreviousLiveBirthsNowDead
 Parent:         Observation
@@ -1022,7 +1048,8 @@ Description: "The Example instance for the NumberOfPreviousLiveBirthsNowDead obs
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DateOfLastLiveBirth
 Parent:         Observation
@@ -1058,7 +1085,8 @@ Description: "The Example instance for the DateOfLastLiveBirth observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2018-04-13T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        NumberOfPreviousCesareanDeliveries
 Parent:         Observation
@@ -1096,7 +1124,8 @@ Description: "The Example instance for the NumberOfPreviousCesareanDeliveries ob
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        NumberOfOtherPregnancyOutcomes
@@ -1136,7 +1165,8 @@ Description: "The Example instance for the NumberOfOtherPregnancyOutcomes observ
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 1
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DateOfLastOtherPregnancyOutcome
 Parent:         Observation
@@ -1174,7 +1204,8 @@ Description: "The Example instance for the DateOfLastOtherPregnancyOutcome obser
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2015-01-10T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        BodyWeightMeasuredPrePregnancy
 Parent:         Observation
@@ -1215,7 +1246,8 @@ Description: "The Example instance for the BodyWeightMeasuredPrePregnancy observ
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 156 'lb_av'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        MenstrualStatus
@@ -1250,7 +1282,8 @@ Usage: #example
 Description: "The Example instance for the MenstrualStatus observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        MensesMonthly
 Parent:         Observation
@@ -1289,7 +1322,8 @@ Description: "The Example instance for the MensesMonthly observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        PriorMensesDate 
 Parent:         Observation
@@ -1327,7 +1361,8 @@ Description: "The Example instance for the PriorMensesDate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-07-17"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DurationOfMenstrualFlow 
 Parent:         Observation
@@ -1366,7 +1401,8 @@ Description: "The Example instance for the DurationOfMenstrualFlow observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 6 'd'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        FrequencyOfMenstrualCycles 
@@ -1407,7 +1443,8 @@ Description: "The Example instance for the FrequencyOfMenstrualCycles observatio
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 24 'd'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 
 Profile:        Menarche 
@@ -1447,7 +1484,8 @@ Description: "The Example instance for the Menarche observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 38 'wk'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        HCGPlus 
 Parent:         Observation
@@ -1486,4 +1524,5 @@ Description: "The Example instance for the HCGPlus observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)

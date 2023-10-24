@@ -31,7 +31,8 @@ Description: "The Example instance for the SmokingTobaccoUseFrequency observatio
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 0 '{pack}/d'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -66,7 +67,8 @@ Description: "The Example instance for the AlcoholUseFrequency observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{drink}/d'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -97,7 +99,8 @@ Usage: #example
 Description: "The Example instance for the DrugUse observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        Exercise
 Parent:         Observation
@@ -132,7 +135,8 @@ Description: "The Example instance for the Exercise observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{times}/wky'
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        Diet
 Parent:         Observation
@@ -164,7 +168,8 @@ Description: "The Example instance for the Diet observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#36823005
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -198,7 +203,8 @@ Description: "The Example instance for the ToxicExposure observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -232,7 +238,8 @@ Description: "The Example instance for the Homelessness observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -264,4 +271,5 @@ Description: "The Example instance for the DomesticViolenceRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)

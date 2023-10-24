@@ -177,7 +177,7 @@ managing them as part of the patient record. See the [Discrete Data Import Optio
 
 N/A
 
-
+<a name="security-considerations"> </a>
 ## XX.5 APS Security Considerations
 
 See ITI TF-2x: [Appendix Z.8 “Mobile Security Considerations”](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)

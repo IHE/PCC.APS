@@ -34,4 +34,5 @@ Description: "The Example instance for the PregnancyEducationObservation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#54070000
-* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* performer = Reference(Practitioner/ex-Practitioner)
+* subject = Reference(Patient/ex-Patient)
