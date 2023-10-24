@@ -25,7 +25,7 @@ TBD
 * method 0..0
 
 Instance: ex-SmokingTobaccoUseFrequency
-InstanceOf: Observation
+InstanceOf: SmokingTobaccoUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -63,7 +63,7 @@ Alcoholic drinks per day
 * method 0..0
 
 Instance: ex-AlcoholUseFrequency
-InstanceOf: Observation
+InstanceOf: AlcoholUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -98,7 +98,7 @@ TBD
 * component 0..0
 
 Instance: ex-DrugUse
-InstanceOf: Observation
+InstanceOf: DrugUse
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -133,7 +133,7 @@ TBD
 * method 0..0
 
 Instance: ex-Exercise
-InstanceOf: Observation
+InstanceOf: Exercise
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -168,7 +168,7 @@ TBD
 * method 0..0
 
 Instance: ex-Diet
-InstanceOf: Observation
+InstanceOf: Diet
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -203,7 +203,7 @@ TBD
 * method 0..0
 
 Instance: ex-ToxicExposure
-InstanceOf: Observation
+InstanceOf: ToxicExposure
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -238,7 +238,7 @@ TBD
 * method 0..0
 
 Instance: ex-Homelessness
-InstanceOf: Observation
+InstanceOf: Homelessness
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
@@ -271,7 +271,7 @@ TBD
 * method 0..0
 
 Instance: ex-DomesticViolenceRisk
-InstanceOf: Observation
+InstanceOf: DomesticViolenceRisk
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006

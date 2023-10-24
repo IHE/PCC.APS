@@ -28,7 +28,7 @@ TBD
 * component 0..0
 
 Instance: ex-PregnancyEducationObservation
-InstanceOf: Observation
+InstanceOf: PregnancyEducationObservation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#34895-3

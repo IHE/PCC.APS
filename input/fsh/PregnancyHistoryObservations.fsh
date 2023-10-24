@@ -29,7 +29,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 // Open Issue: (requesting feedback) on this approach
 
 Instance: ex-PregnancyHistory
-InstanceOf: Observation
+InstanceOf: PregnancyHistory
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#118185001
@@ -69,7 +69,7 @@ any other evidence of life such as heart beat.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfLiveBirths
-InstanceOf: Observation
+InstanceOf: NumberOfLiveBirths
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11636-8
@@ -109,7 +109,7 @@ Total number of children whose birth occurred through the end of the last day of
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfPretermBirths
-InstanceOf: Observation
+InstanceOf: NumberOfPretermBirths
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11637-6
@@ -149,7 +149,7 @@ Total number of children still living at time this record is generated.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfBirthsStillLiving
-InstanceOf: Observation
+InstanceOf: NumberOfBirthsStillLiving
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11638-4
@@ -189,7 +189,7 @@ Total number of children whose birth occurred after the beginning of the first d
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfBirthsToTerm
-InstanceOf: Observation
+InstanceOf: NumberOfBirthsToTerm
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11639-2
@@ -229,7 +229,7 @@ the number of times the uterus is emptied of a viable pregnancy.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfTotalBirths
-InstanceOf: Observation
+InstanceOf: NumberOfTotalBirths
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11640-0
@@ -270,7 +270,7 @@ data derived from assisted fertilization procedure].
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfAbortions
-InstanceOf: Observation
+InstanceOf: NumberOfAbortions
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11612-9
@@ -309,7 +309,7 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfAbortionsInduced
-InstanceOf: Observation
+InstanceOf: NumberOfAbortionsInduced
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11613-7
@@ -348,7 +348,7 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-NumberOfAbortionsSpontanious
-InstanceOf: Observation
+InstanceOf: NumberOfAbortionsSpontanious
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11614-5
@@ -387,7 +387,7 @@ Number of Ectopic Pregnancies
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-NumberOfEctopicPregnancies
-InstanceOf: Observation
+InstanceOf: NumberOfEctopicPregnancies
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#33065-4
@@ -429,7 +429,7 @@ Number of Stillborn Births
 // Open issue: why Biths to term and births preterm observations repeated in the current pregnancy section of the APS CDA? How best do we map this into this FHIR model 
 
 Instance: ex-NumberOfStillbornBirths
-InstanceOf: Observation
+InstanceOf: NumberOfStillbornBirths
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#57062-2
@@ -469,7 +469,7 @@ Total number of times the patient has been pregnant including the present pregna
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-NumberOfPregnancies
-InstanceOf: Observation
+InstanceOf: NumberOfPregnancies
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11996-6
@@ -507,7 +507,7 @@ To document multiple pregnancy.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-MultiplePregnancy
-InstanceOf: Observation
+InstanceOf: MultiplePregnancy
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#45371-2
@@ -545,7 +545,7 @@ Gestational age in weeks.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-GestationalAge
-InstanceOf: Observation
+InstanceOf: GestationalAge
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#49051-6 
@@ -588,7 +588,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 //Open issue: ANtepartum summary references a number of observations that appear irrelivant to Antepartum care (32396-4	Labor duration, 8339-4	Body weight at birth, 29300-1	Procedure, 8722-1 	Surgical operation note anesthesia, 52829-9	Place of service) Review with comittee 
 
 Instance: ex-FetusGestationalAge
-InstanceOf: Observation
+InstanceOf: FetusGestationalAge
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11887-7
@@ -629,7 +629,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-LaborRisk
-InstanceOf: Observation
+InstanceOf: LaborRisk
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#42839-1
@@ -668,7 +668,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DeliveryRisk
-InstanceOf: Observation
+InstanceOf: DeliveryRisk
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#42840-9
@@ -707,7 +707,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DateOfLastMenstralPeriod
-InstanceOf: Observation
+InstanceOf: DateOfLastMenstralPeriod
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8665-2 
@@ -744,7 +744,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DeliveryDateClinicalEstimate
-InstanceOf: Observation
+InstanceOf: DeliveryDateClinicalEstimate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11778-8
@@ -781,7 +781,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DeliveryDateEstimatedFromLMP
-InstanceOf: Observation
+InstanceOf: DeliveryDateEstimatedFromLMP
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11779-6
@@ -819,7 +819,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DeliveryDateEstimatedFromOvulationDate
-InstanceOf: Observation
+InstanceOf: DeliveryDateEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11780-4
@@ -858,7 +858,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-FetusGestationalAgeClinicalEstimate
-InstanceOf: Observation
+InstanceOf: FetusGestationalAgeClinicalEstimate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11884-4
@@ -898,7 +898,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-FetusGestationalAgeEstimatedFromLMP
-InstanceOf: Observation
+InstanceOf: FetusGestationalAgeEstimatedFromLMP
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11885-1
@@ -937,7 +937,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-FetusGestationalAgeEstimatedFromOvulationDate
-InstanceOf: Observation
+InstanceOf: FetusGestationalAgeEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#11886-9
@@ -976,7 +976,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DateOfFirstPrenatalVisit
-InstanceOf: Observation
+InstanceOf: DateOfFirstPrenatalVisit
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#69044-6
@@ -1015,7 +1015,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfPrenatalVisitsForThisPregnancy
-InstanceOf: Observation
+InstanceOf: NumberOfPrenatalVisitsForThisPregnancy
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68493-6
@@ -1054,7 +1054,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfPreviousLiveBirthsNowDead
-InstanceOf: Observation
+InstanceOf: NumberOfPreviousLiveBirthsNowDead
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68496-9
@@ -1091,7 +1091,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-DateOfLastLiveBirth
-InstanceOf: Observation
+InstanceOf: DateOfLastLiveBirth
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68499-3
@@ -1130,7 +1130,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfPreviousCesareanDeliveries
-InstanceOf: Observation
+InstanceOf: NumberOfPreviousCesareanDeliveries
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68497-7
@@ -1171,7 +1171,7 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-NumberOfOtherPregnancyOutcomes
-InstanceOf: Observation
+InstanceOf: NumberOfOtherPregnancyOutcomes
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#69043-8
@@ -1210,7 +1210,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-DateOfLastOtherPregnancyOutcome
-InstanceOf: Observation
+InstanceOf: DateOfLastOtherPregnancyOutcome
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#68500-8
@@ -1252,7 +1252,7 @@ TBD
 //Open Issue: seeking Comment -- Menstral status observations have code values from SNOMED-CT. Proper practice with deffining observation is to use LOINC in the code section. Looking for comment to determine if the origional SNOMED code should be retained  or replaced with a LOINC code
 
 Instance: ex-BodyWeightMeasuredPrePregnancy
-InstanceOf: Observation
+InstanceOf: BodyWeightMeasuredPrePregnancy
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8348-5
@@ -1291,7 +1291,7 @@ MenstrualStatus Reported.
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer
 
 Instance: ex-MenstrualStatus
-InstanceOf: Observation
+InstanceOf: MenstrualStatus
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $loinc#8678-5
@@ -1331,7 +1331,7 @@ TBD
 
 
 Instance: ex-MensesMonthly
-InstanceOf: Observation
+InstanceOf: MensesMonthly
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#364307006
@@ -1370,7 +1370,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-PriorMensesDate
-InstanceOf: Observation
+InstanceOf: PriorMensesDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#21840007 
@@ -1411,7 +1411,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-DurationOfMenstrualFlow
-InstanceOf: Observation
+InstanceOf: DurationOfMenstrualFlow
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#364306002 
@@ -1453,7 +1453,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-FrequencyOfMenstrualCycles
-InstanceOf: Observation
+InstanceOf: FrequencyOfMenstrualCycles
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#289887006
@@ -1493,7 +1493,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-OnBirthControlPillsAtConception
-InstanceOf: Observation
+InstanceOf: OnBirthControlPillsAtConception
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#13197004
@@ -1533,7 +1533,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-Menarche
-InstanceOf: Observation
+InstanceOf: Menarche
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#398700009 
@@ -1575,7 +1575,7 @@ TBD
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
 Instance: ex-HCGPlus
-InstanceOf: Observation
+InstanceOf: HCGPlus
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * code = $sct#250423000	
