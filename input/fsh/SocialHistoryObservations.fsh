@@ -29,8 +29,7 @@ InstanceOf: SmokingTobaccoUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 0
-* valueQuantity[=] = $ucum#{pack}/d
+* valueQuantity = 0 '{pack}/d'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        AlcoholUseFrequency
@@ -64,8 +63,7 @@ InstanceOf: AlcoholUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 2
-* valueQuantity[=] = $ucum#{drink}/d
+* valueQuantity = 2 '{drink}/d'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        DrugUse
@@ -129,8 +127,7 @@ InstanceOf: Exercise
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 2
-* valueQuantity[=] = $ucum#{times}/wky
+* valueQuantity = 2 '{times}/wky'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        Diet

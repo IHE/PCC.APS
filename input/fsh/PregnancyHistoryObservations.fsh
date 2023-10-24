@@ -523,8 +523,7 @@ InstanceOf: GestationalAge
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        FetusGestationalAge
@@ -563,8 +562,7 @@ InstanceOf: FetusGestationalAge
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        LaborRisk
@@ -781,8 +779,7 @@ InstanceOf: DeliveryDateEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        FetusGestationalAgeClinicalEstimate
@@ -817,8 +814,7 @@ InstanceOf: FetusGestationalAgeClinicalEstimate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 
@@ -854,8 +850,7 @@ InstanceOf: FetusGestationalAgeEstimatedFromLMP
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        FetusGestationalAgeEstimatedFromOvulationDate
@@ -890,8 +885,7 @@ InstanceOf: FetusGestationalAgeEstimatedFromOvulationDate
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 14
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 14 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        DateOfFirstPrenatalVisit
@@ -1188,8 +1182,7 @@ InstanceOf: BodyWeightMeasuredPrePregnancy
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 156
-* valueQuantity[=] = $ucum#lb_av
+* valueQuantity = 156 'lb_av'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 
@@ -1337,7 +1330,7 @@ InstanceOf: DurationOfMenstrualFlow
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueInteger = 6
+* valueQuantity= 6 'd'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 
@@ -1377,7 +1370,7 @@ InstanceOf: FrequencyOfMenstrualCycles
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueInteger = 24
+* valueQuantity = 24 'd'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        OnBirthControlPillsAtConception 
@@ -1453,8 +1446,7 @@ InstanceOf: Menarche
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+] = 38
-* valueQuantity[=] = $ucum#wk
+* valueQuantity = 38 'wk'
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
 
 Profile:        HCGPlus 
