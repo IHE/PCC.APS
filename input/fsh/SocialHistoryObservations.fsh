@@ -27,6 +27,7 @@ TBD
 Instance: ex-SmokingTobaccoUseFrequency
 InstanceOf: SmokingTobaccoUseFrequency
 Usage: #example
+Description: "The Example instance for the SmokingTobaccoUseFrequency observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 0 '{pack}/d'
@@ -61,6 +62,7 @@ Alcoholic drinks per day
 Instance: ex-AlcoholUseFrequency
 InstanceOf: AlcoholUseFrequency
 Usage: #example
+Description: "The Example instance for the AlcoholUseFrequency observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{drink}/d'
@@ -92,6 +94,7 @@ TBD
 Instance: ex-DrugUse
 InstanceOf: DrugUse
 Usage: #example
+Description: "The Example instance for the DrugUse observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
@@ -125,6 +128,7 @@ TBD
 Instance: ex-Exercise
 InstanceOf: Exercise
 Usage: #example
+Description: "The Example instance for the Exercise observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 2 '{times}/wky'
@@ -156,6 +160,7 @@ TBD
 Instance: ex-Diet
 InstanceOf: Diet
 Usage: #example
+Description: "The Example instance for the Diet observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#36823005
@@ -189,6 +194,7 @@ TBD
 Instance: ex-ToxicExposure
 InstanceOf: ToxicExposure
 Usage: #example
+Description: "The Example instance for the ToxicExposure observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
@@ -222,6 +228,7 @@ TBD
 Instance: ex-Homelessness
 InstanceOf: Homelessness
 Usage: #example
+Description: "The Example instance for the Homelessness observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
@@ -253,6 +260,7 @@ TBD
 Instance: ex-DomesticViolenceRisk
 InstanceOf: DomesticViolenceRisk
 Usage: #example
+Description: "The Example instance for the DomesticViolenceRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false

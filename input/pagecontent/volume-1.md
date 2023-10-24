@@ -177,47 +177,6 @@ managing them as part of the patient record. See the [Discrete Data Import Optio
 
 N/A
 
-### XX.4.2 Use Cases
-
-#### XX.4.2.1 Use Case \#1: simple name
-
-One or two sentence simple description of this particular use case.
-
-Note that Section XX.4.2.1 repeats in its entirety for additional use cases (replicate as Section XX.4.2.2, XX.4.2.3, etc.).
-
-##### XX.4.2.1.1 simple name Use Case Description
-
-Describe the key use cases addressed by the profile. Limit to a maximum of one page of text or consider an appendix.
-
-##### XX.4.2.1.2 simple name Process Flow
-
-Diagram and describe the process flow(s) covered by this profile in order to satisfy the use cases. Demonstrate how the profile transactions are combined/sequenced. To provide context and demonstrate how the profile interacts with other profiles, feel free to include transactions and events that are “external” to this profile (using appropriate notation.)
-
-The set of process flows will typically be exemplary, not exhaustive (i.e., it will address all the use cases, but will not show all possible combinations of actors, or all possible sequencing of transactions).
-
-If there are detailed behavioral rules that apply to a specific process flow or multiple process flows, an appendix may be added as needed.
-
-The roles at the top of the swimlane diagram should correspond to actor names, include the profile acronym:actor name if referencing an actor from a different profile.
-
-<figure>
-{%include usecase1-processflow.svg%}
-<figcaption><b>Figure XX.4.2.2-1: Basic Process Flow in Profile Acronym Profile</b></figcaption>
-</figure>
-<br clear="all">
-
-**Pre-conditions**:
-
-Very briefly (typically one sentence) describe the conditions or timing when this content module would be used.
-
-**Main Flow**:
-
-Typically in an enumerated list, describe the clinical workflow  when, where, and how this content module would be used.
-
-**Post-conditions:**
-
-Very briefly (typically one sentence) describe the state of the clinical scenario after this content module has been created including examples of potential next steps.
-
-<a name="security-considerations"> </a>
 
 ## XX.5 APS Security Considerations
 

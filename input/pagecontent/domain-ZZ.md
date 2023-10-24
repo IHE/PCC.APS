@@ -22,7 +22,9 @@ The LOINC code for this document is 57055-6 Antepartum summary
 
 
 ### 1:X.6.4 Specification
-**TODO***
+
+This specification is fully deffined at this published URL (http://build.fhir.org/ig/IHE/PCC.APS/branches/master/artifacts.html)
+
 
 ### 1:X.6.5 Conformance
 N/A

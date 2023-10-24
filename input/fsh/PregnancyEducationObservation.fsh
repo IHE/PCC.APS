@@ -30,6 +30,7 @@ TBD
 Instance: ex-PregnancyEducationObservation
 InstanceOf: PregnancyEducationObservation
 Usage: #example
+Description: "The Example instance for the PregnancyEducationObservation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#54070000

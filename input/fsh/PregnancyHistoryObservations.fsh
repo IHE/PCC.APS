@@ -31,6 +31,7 @@ each birth event associated with the pregnancy or shall conform to the birth eve
 Instance: ex-PregnancyHistory
 InstanceOf: PregnancyHistory
 Usage: #example
+Description: "The Example instance for the PregnancyHistory observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
@@ -69,6 +70,7 @@ any other evidence of life such as heart beat.
 Instance: ex-NumberOfLiveBirths
 InstanceOf: NumberOfLiveBirths
 Usage: #example
+Description: "The Example instance for the NumberOfLiveBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
@@ -107,6 +109,7 @@ Total number of children whose birth occurred through the end of the last day of
 Instance: ex-NumberOfPretermBirths
 InstanceOf: NumberOfPretermBirths
 Usage: #example
+Description: "The Example instance for the NumberOfPretermBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -145,6 +148,7 @@ Total number of children still living at time this record is generated.
 Instance: ex-NumberOfBirthsStillLiving
 InstanceOf: NumberOfBirthsStillLiving
 Usage: #example
+Description: "The Example instance for the NumberOfBirthsStillLiving observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
@@ -183,6 +187,7 @@ Total number of children whose birth occurred after the beginning of the first d
 Instance: ex-NumberOfBirthsToTerm
 InstanceOf: NumberOfBirthsToTerm
 Usage: #example
+Description: "The Example instance for the NumberOfBirthsToTerm observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
@@ -221,6 +226,7 @@ the number of times the uterus is emptied of a viable pregnancy.
 Instance: ex-NumberOfTotalBirths
 InstanceOf: NumberOfTotalBirths
 Usage: #example
+Description: "The Example instance for the NumberOfTotalBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
@@ -260,6 +266,7 @@ data derived from assisted fertilization procedure].
 Instance: ex-NumberOfAbortions
 InstanceOf: NumberOfAbortions
 Usage: #example
+Description: "The Example instance for the NumberOfAbortions observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -297,6 +304,7 @@ Number of intentional medical or surgical terminations of pregnancies before 20 
 Instance: ex-NumberOfAbortionsInduced
 InstanceOf: NumberOfAbortionsInduced
 Usage: #example
+Description: "The Example instance for the NumberOfAbortionsInduced observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -334,6 +342,7 @@ Number of unintentional terminations of pregnancies before 20 weeks of gestation
 Instance: ex-NumberOfAbortionsSpontanious
 InstanceOf: NumberOfAbortionsSpontanious
 Usage: #example
+Description: "The Example instance for the NumberOfAbortionsSpontanious observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -371,6 +380,7 @@ Number of Ectopic Pregnancies
 Instance: ex-NumberOfEctopicPregnancies
 InstanceOf: NumberOfEctopicPregnancies
 Usage: #example
+Description: "The Example instance for the NumberOfEctopicPregnancies observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -411,6 +421,7 @@ Number of Stillborn Births
 Instance: ex-NumberOfStillbornBirths
 InstanceOf: NumberOfStillbornBirths
 Usage: #example
+Description: "The Example instance for the NumberOfStillbornBirths observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -449,6 +460,7 @@ Total number of times the patient has been pregnant including the present pregna
 Instance: ex-NumberOfPregnancies
 InstanceOf: NumberOfPregnancies
 Usage: #example
+Description: "The Example instance for the NumberOfPregnancies observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 3
@@ -485,6 +497,7 @@ To document multiple pregnancy.
 Instance: ex-MultiplePregnancy
 InstanceOf: MultiplePregnancy
 Usage: #example
+Description: "The Example instance for the MultiplePregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
@@ -521,6 +534,7 @@ Gestational age in weeks.
 Instance: ex-GestationalAge
 InstanceOf: GestationalAge
 Usage: #example
+Description: "The Example instance for the GestationalAge observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
@@ -560,6 +574,7 @@ The age of the conceptus, beginning from the time of fertilization. In clinical 
 Instance: ex-FetusGestationalAge
 InstanceOf: FetusGestationalAge
 Usage: #example
+Description: "The Example instance for the FetusGestationalAge observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
@@ -597,6 +612,7 @@ Increased chance of harm during the period supporting the bringing forth of an o
 Instance: ex-LaborRisk
 InstanceOf: LaborRisk
 Usage: #example
+Description: "The Example instance for the LaborRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
@@ -634,6 +650,7 @@ Increased chance of harm during the period supporting the expulsion of an offspr
 Instance: ex-DeliveryRisk
 InstanceOf: DeliveryRisk
 Usage: #example
+Description: "The Example instance for the DeliveryRisk observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $loinc#14510-2
@@ -671,6 +688,7 @@ TBD
 Instance: ex-DateOfLastMenstralPeriod
 InstanceOf: DateOfLastMenstralPeriod
 Usage: #example
+Description: "The Example instance for the DateOfLastMenstralPeriod observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-06-12"
@@ -706,6 +724,7 @@ TBD
 Instance: ex-DeliveryDateClinicalEstimate
 InstanceOf: DeliveryDateClinicalEstimate
 Usage: #example
+Description: "The Example instance for the DeliveryDateClinicalEstimate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
@@ -741,6 +760,7 @@ TBD
 Instance: ex-DeliveryDateEstimatedFromLMP
 InstanceOf: DeliveryDateEstimatedFromLMP
 Usage: #example
+Description: "The Example instance for the DeliveryDateEstimatedFromLMP observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-03-24"
@@ -777,6 +797,7 @@ TBD
 Instance: ex-DeliveryDateEstimatedFromOvulationDate
 InstanceOf: DeliveryDateEstimatedFromOvulationDate
 Usage: #example
+Description: "The Example instance for the DeliveryDateEstimatedFromOvulationDate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2022-04-08"
@@ -812,6 +833,7 @@ TBD
 Instance: ex-FetusGestationalAgeClinicalEstimate
 InstanceOf: FetusGestationalAgeClinicalEstimate
 Usage: #example
+Description: "The Example instance for the FetusGestationalAgeClinicalEstimate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
@@ -848,6 +870,7 @@ TBD
 Instance: ex-FetusGestationalAgeEstimatedFromLMP
 InstanceOf: FetusGestationalAgeEstimatedFromLMP
 Usage: #example
+Description: "The Example instance for the FetusGestationalAgeEstimatedFromLMP observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
@@ -883,6 +906,7 @@ TBD
 Instance: ex-FetusGestationalAgeEstimatedFromOvulationDate
 InstanceOf: FetusGestationalAgeEstimatedFromOvulationDate
 Usage: #example
+Description: "The Example instance for the FetusGestationalAgeEstimatedFromOvulationDate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 14 'wk'
@@ -918,6 +942,7 @@ TBD
 Instance: ex-DateOfFirstPrenatalVisit
 InstanceOf: DateOfFirstPrenatalVisit
 Usage: #example
+Description: "The Example instance for the DateOfFirstPrenatalVisit observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-08-06T10:52:30-07:00"
@@ -955,6 +980,7 @@ TBD
 Instance: ex-NumberOfPrenatalVisitsForThisPregnancy
 InstanceOf: NumberOfPrenatalVisitsForThisPregnancy
 Usage: #example
+Description: "The Example instance for the NumberOfPrenatalVisitsForThisPregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 2
@@ -992,6 +1018,7 @@ TBD
 Instance: ex-NumberOfPreviousLiveBirthsNowDead
 InstanceOf: NumberOfPreviousLiveBirthsNowDead
 Usage: #example
+Description: "The Example instance for the NumberOfPreviousLiveBirthsNowDead observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -1027,6 +1054,7 @@ TBD
 Instance: ex-DateOfLastLiveBirth
 InstanceOf: DateOfLastLiveBirth
 Usage: #example
+Description: "The Example instance for the DateOfLastLiveBirth observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2018-04-13T10:52:30-07:00"
@@ -1064,6 +1092,7 @@ TBD
 Instance: ex-NumberOfPreviousCesareanDeliveries
 InstanceOf: NumberOfPreviousCesareanDeliveries
 Usage: #example
+Description: "The Example instance for the NumberOfPreviousCesareanDeliveries observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 0
@@ -1103,6 +1132,7 @@ any of the listed outcomes. Perinatal death includes fetal and neonatal deaths.
 Instance: ex-NumberOfOtherPregnancyOutcomes
 InstanceOf: NumberOfOtherPregnancyOutcomes
 Usage: #example
+Description: "The Example instance for the NumberOfOtherPregnancyOutcomes observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueInteger = 1
@@ -1140,6 +1170,7 @@ TBD
 Instance: ex-DateOfLastOtherPregnancyOutcome
 InstanceOf: DateOfLastOtherPregnancyOutcome
 Usage: #example
+Description: "The Example instance for the DateOfLastOtherPregnancyOutcome observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2015-01-10T10:52:30-07:00"
@@ -1180,6 +1211,7 @@ TBD
 Instance: ex-BodyWeightMeasuredPrePregnancy
 InstanceOf: BodyWeightMeasuredPrePregnancy
 Usage: #example
+Description: "The Example instance for the BodyWeightMeasuredPrePregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 156 'lb_av'
@@ -1215,6 +1247,7 @@ MenstrualStatus Reported.
 Instance: ex-MenstrualStatus
 InstanceOf: MenstrualStatus
 Usage: #example
+Description: "The Example instance for the MenstrualStatus observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
@@ -1252,6 +1285,7 @@ TBD
 Instance: ex-MensesMonthly
 InstanceOf: MensesMonthly
 Usage: #example
+Description: "The Example instance for the MensesMonthly observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
@@ -1289,6 +1323,7 @@ TBD
 Instance: ex-PriorMensesDate
 InstanceOf: PriorMensesDate
 Usage: #example
+Description: "The Example instance for the PriorMensesDate observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueDateTime = "2021-07-17"
@@ -1327,6 +1362,7 @@ TBD
 Instance: ex-DurationOfMenstrualFlow
 InstanceOf: DurationOfMenstrualFlow
 Usage: #example
+Description: "The Example instance for the DurationOfMenstrualFlow observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 6 'd'
@@ -1367,6 +1403,7 @@ TBD
 Instance: ex-FrequencyOfMenstrualCycles
 InstanceOf: FrequencyOfMenstrualCycles
 Usage: #example
+Description: "The Example instance for the FrequencyOfMenstrualCycles observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 24 'd'
@@ -1406,6 +1443,7 @@ TBD
 Instance: ex-Menarche
 InstanceOf: Menarche
 Usage: #example
+Description: "The Example instance for the Menarche observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueQuantity = 38 'wk'
@@ -1444,6 +1482,7 @@ TBD
 Instance: ex-HCGPlus
 InstanceOf: HCGPlus
 Usage: #example
+Description: "The Example instance for the HCGPlus observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
