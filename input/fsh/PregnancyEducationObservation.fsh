@@ -31,8 +31,7 @@ Instance: ex-PregnancyEducationObservation
 InstanceOf: PregnancyEducationObservation
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #34895-3
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#54070000
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)

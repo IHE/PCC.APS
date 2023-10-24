@@ -28,13 +28,11 @@ Instance: ex-SmokingTobaccoUseFrequency
 InstanceOf: SmokingTobaccoUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+]value = 0
-* valueQuantity[=]system = $ucum
-* valueQuantity[=]unit = $ucum#{pack}/d
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* valueQuantity[+] = 0
+* valueQuantity[=] = $ucum#{pack}/d
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        AlcoholUseFrequency
 Parent:         Observation
@@ -66,13 +64,11 @@ Instance: ex-AlcoholUseFrequency
 InstanceOf: AlcoholUseFrequency
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+]value = 0
-* valueQuantity[=]system = $ucum
-* valueQuantity[=]unit = $ucum#{drink}/d
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* valueQuantity[+] = 2
+* valueQuantity[=] = $ucum#{drink}/d
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DrugUse
 Parent:         Observation
@@ -101,10 +97,9 @@ Instance: ex-DrugUse
 InstanceOf: DrugUse
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        Exercise
 Parent:         Observation
@@ -136,13 +131,11 @@ Instance: ex-Exercise
 InstanceOf: Exercise
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity[+]value = 2
-* valueQuantity[=]system = $ucum
-* valueQuantity[=]unit = $ucum#{times}/wky
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* valueQuantity[+] = 2
+* valueQuantity[=] = $ucum#{times}/wky
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        Diet
 Parent:         Observation
@@ -171,11 +164,10 @@ Instance: ex-Diet
 InstanceOf: Diet
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueCodeableConcept = $sct#36823005
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        ToxicExposure
 Parent:         Observation
@@ -206,11 +198,10 @@ Instance: ex-ToxicExposure
 InstanceOf: ToxicExposure
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        Homelessness
 Parent:         Observation
@@ -241,11 +232,10 @@ Instance: ex-Homelessness
 InstanceOf: Homelessness
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
 
 Profile:        DomesticViolenceRisk
 Parent:         Observation
@@ -274,8 +264,7 @@ Instance: ex-DomesticViolenceRisk
 InstanceOf: DomesticViolenceRisk
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* code = #116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
-* performer = Reference(Provider)
-* subject = Reference(Patient)
+* performer = Reference(http://hl7.org/fhir/StructureDefinition/Provider)
+* subject = Reference(http://hl7.org/fhir/StructureDefinition/Patient)
