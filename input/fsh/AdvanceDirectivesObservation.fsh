@@ -28,7 +28,6 @@ in as much detail as possible. Advance directives contains data such as the exis
 * focus 0..0
 * encounter 0..0
 * issued 0..0
-* performer 0..0
 * interpretation 0..0
 * bodySite 0..0
 * method 0..0
@@ -43,7 +42,6 @@ Instance: ex-AdvanceDirectivesObservation
 InstanceOf: AdvanceDirectivesObservation
 Usage: #example
 Description: "The Example instance for the AdvanceDirectivesObservation"
-* status = http://hl7.org/fhir/observation-status#final
 * code = $sct#116859006
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * valueBoolean = false
