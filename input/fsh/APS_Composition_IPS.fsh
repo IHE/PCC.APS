@@ -16,6 +16,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * category[pregnancySummaryDocument] = $loinc#90767-5
 //* subject 1..1
 //* subject only Reference(Patient)
+* title = "Antepartum Summary"
 
 * section[sectionPregnancyHx] 1..1
 * section[sectionProblems] 1..1
@@ -71,7 +72,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation)
 
 * section[sectionPlanOfCare].entry contains birthPlan 0..1 
-
+* section[sectionPlanOfCare].entry[birthPlan] only text
 //* section[sectionResults].entry contains 
 //    antepartumLaboratoryResults 1..* MS and 
 //    antepartumDiagnosticFindings 1..* MS and 
