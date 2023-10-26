@@ -262,7 +262,7 @@ TBD
 * specimen 0..0
 * referenceRange 0..0
 * component 0..0
-* method 0..0
+* method 0..0 
 
 Instance: ex-DomesticViolenceRisk
 InstanceOf: DomesticViolenceRisk
