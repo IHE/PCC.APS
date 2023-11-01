@@ -677,7 +677,7 @@ Parent:         Observation
 Id:             IHE.DateOfLastMenstralPeriod
 Title:          "Date Of Last Menstral Period"
 Description:    """
-TBD 
+The date the mother’s last normal menstrual period began.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -716,7 +716,7 @@ Parent:         Observation
 Id:             IHE.DeliveryDateClinicalEstimate
 Title:          "Delivery Date Clinical Estimate"
 Description:    """
-TBD 
+The final number of weeks should be available in the OB admission H&P as the first source. The final number of weeks may also be obtained from the PNC records as a secondary source if the information is not available in the OB admissions H&P
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
