@@ -1,6 +1,6 @@
 ValueSet: Antepartum_History_of_Past_Illness_VS
 Title: "Antepartum History of Past Illness"
-Description: "TBD"
+Description: "This value set identifies conditions that may impact the pregnancy care and monitoring decisions."
 Id: Antepartum.History.of.Past.Illness.VS
 * ^experimental = false
 * $sct#73211009   "Diabetes" 
@@ -53,7 +53,7 @@ Id: Antepartum.History.of.Past.Illness.VS
 
 ValueSet: Antepartum_Family_History_and_Genetic_Screening_VS
 Title: "Antepartum Family History and Genetic Screening"
-Description: "TBD"
+Description: "This value set includes the type of genetic-related risks identified through screening of the patient’s and biological father’s family history."
 Id: Antepartum.Family.History.and.Genetic.Screening.VS
 * ^experimental = false
 * $sct#408856003   "Autism" 
@@ -80,7 +80,7 @@ Id: Antepartum.Family.History.and.Genetic.Screening.VS
 
 ValueSet: Antepartum_Review_of_Systems_Menstrual_History_VS
 Title: "Antepartum Review of Systems Menstrual History"
-Description: "TBD"
+Description: "Antepartum Review of Systems Menstrual History This value set identifies the menstrual-history related observations that may inform the pregnancy care."
 Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 * ^experimental = false
 * $sct#21840007   "Date of Last Menstrual Period" 
@@ -95,7 +95,7 @@ Id: Antepartum.Review.of.Systems.Menstrual.History.VS
 
 ValueSet: Antepartum_History_of_Infection_VS
 Title: "Antepartum History of Infection"
-Description: "TBD"
+Description: "This value set identifies the infections that may result in risk to the pregnancy or otherwise inform the birth plan."
 Id: Antepartum.History.of.Infection.VS
 * ^experimental = false
 * $sct#170464005   "Live with someone with TB or exposed to TB" 
@@ -116,7 +116,7 @@ Id: Antepartum.History.of.Infection.VS
 
 ValueSet: Antepartum_Laboratory_VS
 Title: "Antepartum Laboratory"
-Description: "TBD"
+Description: "This value set identifies the laboratory tests that may be ordered and monitored during pregnancy."
 Id: Antepartum.Laboratory.VS
 * ^experimental = false
 * $loinc#890-4   "Ab Screen" 
@@ -207,7 +207,7 @@ Id: Antepartum.Laboratory.VS
 
 ValueSet: Antepartum_Education_VS
 Title: "Antepartum Education"
-Description: "TBD"
+Description: "This value set identifies the types of pregnancy-related education that may be delivered to the patient. "
 Id: Antepartum.Education.VS
 * ^experimental = false
 * $sct#440047008   "Risk factors identified by prenatal history" 
@@ -252,7 +252,7 @@ Id: Antepartum.Education.VS
 
 ValueSet: Advance_Directives_VS
 Title: "Advance Directives"
-Description: "TBD"
+Description: "This value set lists the interventions that the patient may choose to accept or decline in their advance directives."
 Id: Advance.Directives.VS
 * ^experimental = false
 * $sct#304251008   "Resuscitation" 
@@ -268,7 +268,7 @@ Id: Advance.Directives.VS
 
 ValueSet: Smoking_Tabbacco_Use_Frequency_VS
 Title: "Smoking Tabbacco Use Frequency"
-Description: "TBD"
+Description: "This value set identifies the frequency of tobacco use in packs/day, packs/week, or packs/year."
 Id: Smoking.Tabbacco.Use.Frequency.VS
 * ^experimental = false
 * $ucum#{pack}/d   "Packs per day" 
@@ -278,7 +278,7 @@ Id: Smoking.Tabbacco.Use.Frequency.VS
 
 ValueSet: Smoking_Status_VS
 Title: "Smoking Status"
-Description: "TBD"
+Description: "This value set identifies whether the patient is a smoker (everyday smoker or some day smoker) or whether the patient was a previous smoker."
 Id: Smoking.Status.VS
 * ^experimental = false
 * $sct#449868002   "Current every day smoker" 
@@ -293,7 +293,7 @@ Id: Smoking.Status.VS
 
 ValueSet: Alcohol_USe_Frequency_VS
 Title: "Alcohol USe Frequency"
-Description: "TBD"
+Description: "This value set lists the frequency metrics to express the frequency of alcohol use (e.g. drinks per day, drinks per week)."
 Id: Alcohol.USe.Frequency.VS
 * ^experimental = false
 * $ucum#{drink}/d  "drinks per day" 
