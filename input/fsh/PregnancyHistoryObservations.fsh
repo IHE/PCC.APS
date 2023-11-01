@@ -1265,7 +1265,7 @@ MenstrualStatus Reported.
 * effective[x] only dateTime 
 * performer 1..*
 * subject only Reference(Patient)
-* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or Menarche or HCGPlus)
+* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or Menarche or HCGPositive)
 // this is making everything else in observation forbidden.
 * device 0..0
 * interpretation 0..0
