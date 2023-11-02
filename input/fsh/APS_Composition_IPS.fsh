@@ -23,7 +23,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx] 1..1
 * section[sectionSocialHistory] 1..1
 * section[sectionProceduresHx] 1..1
-* section[sectionAdvanceDirectives] 1..1
 * section[sectionPlanOfCare] 1..1
 * section[sectionImmunizations] 1..1
 * section[sectionVitalSigns] 1..1
@@ -73,13 +72,14 @@ and selected histories are provided. The Antepartum Summary represents a summary
 
 * section[sectionPlanOfCare].entry contains birthPlan 0..1 
 * section[sectionPlanOfCare].entry[birthPlan] only Reference(CarePlan)
-//* section[sectionResults].entry contains 
-//    antepartumLaboratoryResults 1..* MS and 
-//    antepartumDiagnosticFindings 1..* MS and 
-//    antenatalTestingAndSurveillance 1..* MS
-//Note:
 
 
+* section[sectionResults] MS 
+* section[sectionResults].entry contains
+    antepartumLaboratoryResults 1..* MS and 
+    antenatalTestingAndSurveillance 0..* MS
+* section[sectionPlanOfCare].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
+* section[sectionPlanOfCare].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
 
 
 
@@ -109,10 +109,9 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].code MS
+* section[ReviewOfSystems].entry contains menstralHistory 0..1 MS
+* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
 
-// add slice
-//* section[ReviewOfSystems].entry contains menstralHistory 0..1 MS 
-//* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
 
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -161,9 +160,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
 * section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
-//* section[AntepartumEducation].entry contains 
-//    firstTrimester 0..* MS and 
-//    secondTrimester 0..* MS and 
-//    thirdTrimester 0..* MS
-// Note: 
+* section[AntepartumEducation].entry contains 
+    firstTrimester 0..* MS and 
+    secondTrimester 0..* MS and 
+    thirdTrimester 0..* MS
+* section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
 
