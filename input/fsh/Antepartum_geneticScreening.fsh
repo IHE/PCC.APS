@@ -4,7 +4,7 @@ Id:             IHE.Antepartum.Genetic.Screening
 Title:          "Antepartum Genetic Screenings"
 Description:    "Antepartum Genetic Screening lab results"
 
-* code = Antepartum.Family.History.and.Genetic.Screening.VS(extensible)
+* code only from Antepartum.Family.History.and.Genetic.Screening.VS(extensible)
 
 Instance: ex-Antepartum-Genetic-Screening
 InstanceOf: Antepartum_Genetic_Screening

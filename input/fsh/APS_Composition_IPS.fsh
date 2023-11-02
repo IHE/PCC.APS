@@ -111,12 +111,12 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems].code MS
 * section[ReviewOfSystems].entry 0..* 
 * section[ReviewOfSystems].entry ^slicing.discriminator.type = #pattern
-* section[ReviewOfSystems].entry ^slicing.discriminator.path = ""
+* section[ReviewOfSystems].entry ^slicing.discriminator.path = "$this"
 * section[ReviewOfSystems].entry ^slicing.rules = #open
 * section[ReviewOfSystems].entry ^slicing.description = ""
 * section[ReviewOfSystems].entry ^slicing.ordered = false
 * section[ReviewOfSystems].entry contains menstralHistory 0..* MS
-* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
+* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or IHE.MenstrualStatus)
 
 
 
@@ -168,7 +168,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].entry 0..* 
 * section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
 * section[AntepartumEducation].entry ^slicing.discriminator.type = #pattern
-* section[AntepartumEducation].entry ^slicing.discriminator.path = ""
+* section[AntepartumEducation].entry ^slicing.discriminator.path = "$this"
 * section[AntepartumEducation].entry ^slicing.rules = #open
 * section[AntepartumEducation].entry ^slicing.description = ""
 * section[AntepartumEducation].entry ^slicing.ordered = false

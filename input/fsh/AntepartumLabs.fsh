@@ -4,7 +4,7 @@ Id:             IHE.AntepartumLabs
 Title:          "Antepartum Labs"
 Description:    "The Lab report results for the antepartum Labs."
 
-* code = Antepartum.Laboratory.VS(extensible)
+* code only from Antepartum.Laboratory.VS(extensible)
 
 Instance: ex-AntepartumLabs
 InstanceOf: AntepartumLabs
