@@ -110,6 +110,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].code MS
 * section[ReviewOfSystems].entry 0..* 
+* section[ReviewOfSystems].entry ^slicing.discriminator.type = #pattern
+* section[ReviewOfSystems].entry ^slicing.discriminator.path = ""
+* section[ReviewOfSystems].entry ^slicing.rules = #open
+* section[ReviewOfSystems].entry ^slicing.description = ""
+* section[ReviewOfSystems].entry ^slicing.ordered = false
 * section[ReviewOfSystems].entry contains menstralHistory 0..* MS
 * section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
 
