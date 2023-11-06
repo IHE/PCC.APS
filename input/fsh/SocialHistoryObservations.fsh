@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             IHE.SmokingTobaccoUseFrequency
 Title:          "Smoking and Tobacco Use Frequency"
 Description:    """
-TBD
+The frequency of tobacco use. This may be measured in packs/day, packs/week, or packs/year.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -75,7 +75,7 @@ Parent:         Observation
 Id:             IHE.drugUse
 Title:          "Drug Use"
 Description:    """
-TBD
+Use of illegal drugs or prescription medications for non-medical purposes.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -107,7 +107,7 @@ Parent:         Observation
 Id:             IHE.Exercise
 Title:          "Exercise"
 Description:    """
-TBD
+Frequency of Physical Activity (days per week) and duration of physical activity (in minutes per day).
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -143,7 +143,7 @@ Parent:         Observation
 Id:             IHE.Diet
 Title:          "Diet"
 Description:    """
-TBD
+The customary amount and kind of food and drink taken by a person from day to day.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -176,7 +176,7 @@ Parent:         Observation
 Id:             IHE.ToxicExposure
 Title:          "Toxic Exposure"
 Description:    """
-TBD
+Whether the patient has been exposed to a toxic substance.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -211,7 +211,7 @@ Parent:         Observation
 Id:             IHE.Homelessness
 Title:          "Homelessness"
 Description:    """
-TBD
+The state of having no home or permanent place of residence.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -246,7 +246,7 @@ Parent:         Observation
 Id:             IHE.ViolenceRisk
 Title:          "At risk of domestic violence"
 Description:    """
-TBD
+At increased risk of domestic partner abuse.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -262,7 +262,7 @@ TBD
 * specimen 0..0
 * referenceRange 0..0
 * component 0..0
-* method 0..0
+* method 0..0 
 
 Instance: ex-DomesticViolenceRisk
 InstanceOf: DomesticViolenceRisk

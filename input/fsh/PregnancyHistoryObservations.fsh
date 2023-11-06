@@ -677,7 +677,7 @@ Parent:         Observation
 Id:             IHE.DateOfLastMenstralPeriod
 Title:          "Date Of Last Menstral Period"
 Description:    """
-TBD 
+The date the mother’s last normal menstrual period began.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -716,7 +716,7 @@ Parent:         Observation
 Id:             IHE.DeliveryDateClinicalEstimate
 Title:          "Delivery Date Clinical Estimate"
 Description:    """
-TBD 
+The final number of weeks should be available in the OB admission H&P as the first source. The final number of weeks may also be obtained from the PNC records as a secondary source if the information is not available in the OB admissions H&P
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -753,7 +753,7 @@ Parent:         Observation
 Id:             IHE.DeliveryDateEstimatedFromLMP
 Title:          "Delivery Date Clinical Estimated From Last Menstral Period"
 Description:    """
-TBD 
+The estimated delivery date as determined based on the reported first day of the last menstrual period (LMP), typically estimated as 280 days after the first day of the LMP. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -791,7 +791,7 @@ Parent:         Observation
 Id:             IHE.DeliveryDateEstimatedFromOvulationDate
 Title:          "Delivery Date Clinical Estimated From Ovulation Date"
 Description:    """
-TBD 
+The estimated delivery date as determined based on the reported ovulation date. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -828,7 +828,7 @@ Parent:         Observation
 Id:             IHE.FetusGestationalAgeClinicalEstimate
 Title:          "Fetus Gestational Age Clinical Estimate"
 Description:    """
-TBD 
+The final number of weeks should be available in the OB admission H&P as the first source. The final number of weeks may also be obtained from the PNC records as a secondary source if the information is not available in the OB admissions H&P 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -866,7 +866,7 @@ Parent:         Observation
 Id:             IHE.FetusGestationalAgeEstimatedFromLMP
 Title:          "Fetus Gestational Age Estimated From LMP"
 Description:    """
-TBD 
+The final number of weeks should be available in the OB admission H&P as the first source. The final number of weeks may also be obtained from the PNC records as a secondary source if the information is not available in the OB admissions H&P 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -903,7 +903,7 @@ Parent:         Observation
 Id:             IHE.FetusGestationalAgeEstimatedFromOvulationDate
 Title:          "Fetus Gestational Age Estimated From Ovulation Date"
 Description:    """
-TBD 
+The estimated delivery date as determined based on the reported ovulation date. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -940,7 +940,8 @@ Parent:         Observation
 Id:             IHE.DateOfFirstPrenatalVisit
 Title:          "Date Of First Prenatal Visit"
 Description:    """
-TBD 
+Date Of First Prenatal Visit 
+The date a physician or other health care professional first examined and/or counseled the pregnant woman for the pregnancy. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -977,7 +978,7 @@ Parent:         Observation
 Id:             IHE.NumberOfPrenatalVisitsForThisPregnancy
 Title:          "Number Of Prenatal Visits For This Pregnancy"
 Description:    """
-TBD
+Do not include visits for laboratory and other testing in which a physician or health care professional did not examine or counsel the pregnant woman Access the most recent prenatal records available. If up-to-date records are not available, contact the prenatal care provider for the most current information. Count the prenatal visits recorded in the record. Exclude visits for laboratory and other tests or classes in which the mother was not seen by a physician or other health care professional for pregnancy-related care. If it is not clear whether the mother was seen by a physician or other health care professional, include the visit(s) in the total number.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1016,7 +1017,7 @@ Parent:         Observation
 Id:             IHE.NumberOfPreviousLiveBirthsNowDead
 Title:          "Number Of Previous Live Births Now Dead"
 Description:    """
-TBD
+Previous delivery by extracting the fetus, placenta, and membranes through an incision in the mother’s abdominal and uterine walls.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1055,7 +1056,7 @@ Parent:         Observation
 Id:             IHE.DateOfLastLiveBirth
 Title:          "Date Of Last Live Birth"
 Description:    """
-TBD 
+The date of birth of the last live-born infant. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1092,7 +1093,7 @@ Parent:         Observation
 Id:             IHE.NumberOfPreviousCesareanDeliveries
 Title:          "Number Of Previous Cesarean Deliveries"
 Description:    """
-TBD
+Previous delivery by extracting the fetus, placenta, and membranes through an incision in the mother’s abdominal and uterine walls.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1172,7 +1173,7 @@ Parent:         Observation
 Id:             IHE.DateOfLastOtherPregnancyOutcome
 Title:          "Date Of Last Other Pregnancy Outcome"
 Description:    """
-TBD
+The date (year) that the last pregnancy that did not result in a live birth ended. Includes pregnancy losses at any gestation age. Examples: spontaneous or induced losses or ectopic pregnancy. 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1211,7 +1212,7 @@ Parent:         Observation
 Id:             IHE.BodyWeightMeasuredPrePregnancy
 Title:          "Body Weight Measured Pre Pregnancy"
 Description:    """
-TBD
+Body Weight Measured before the current pregnancy
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1264,7 +1265,7 @@ MenstrualStatus Reported.
 * effective[x] only dateTime 
 * performer 1..*
 * subject only Reference(Patient)
-* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or Menarche or HCGPlus)
+* hasMember only Reference(DateOfLastMenstralPeriod or MensesMonthly or PriorMensesDate or DurationOfMenstrualFlow or FrequencyOfMenstrualCycles or Menarche or HCGPositive)
 // this is making everything else in observation forbidden.
 * device 0..0
 * interpretation 0..0
@@ -1289,7 +1290,7 @@ Parent:         Observation
 Id:             IHE.MensesMonthly
 Title:          "Menses Monthly"
 Description:    """
-TBD
+Regularity of menstrual cycle 
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1329,7 +1330,7 @@ Parent:         Observation
 Id:             IHE.PriorMensesDate
 Title:          "Prior Menses Date"
 Description:    """
-TBD
+The date of the last menstral period
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1368,7 +1369,7 @@ Parent:         Observation
 Id:             IHE.DurationOfMenstrualFlow
 Title:          "Duration of Menstrual Flow"
 Description:    """
-TBD
+Number of days typical for the patient’s menstrual flow
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1409,7 +1410,7 @@ Parent:         Observation
 Id:             IHE.FrequencyOfMenstrualCycles
 Title:          "Frequency of Menstrual Cycles"
 Description:    """
-TBD
+Number of days between menstrual cycle periods.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1451,7 +1452,7 @@ Parent:         Observation
 Id:             IHE.Menarche 	
 Title:          "Menarche"
 Description:    """
-TBD
+The patient age at the first occurrence of menstruation.
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1486,12 +1487,12 @@ Description: "The Example instance for the Menarche observation"
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
-Profile:        HCGPlus 
+Profile:        HCGPositive 
 Parent:         Observation
-Id:             IHE.hCGPlus 	
+Id:             IHE.hCGPositive	
 Title:          "hCG+"
 Description:    """
-TBD
+Positive pregnancy test as determined by the presence of Human Chorionic Gonadotropin (hCG)
 """
 * category 1..1
 * status = http://hl7.org/fhir/observation-status#final
@@ -1516,8 +1517,8 @@ TBD
 * component 0..0
 // HasMember open issue this may be relivant and useful for maternal health observations and groupings initially deffined under an organizer 
 
-Instance: ex-HCGPlus
-InstanceOf: HCGPlus
+Instance: ex-HCGPositive 
+InstanceOf: HCGPositive 
 Usage: #example
 Description: "The Example instance for the HCGPlus observation"
 * status = http://hl7.org/fhir/observation-status#final

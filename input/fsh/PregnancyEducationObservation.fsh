@@ -3,7 +3,7 @@ Parent:         Observation
 Id:             IHE.PregnancyEducationObservation
 Title:          "Pregnancy Education Observation"
 Description:    """
-TBD
+Any education provided to a patient relating to their pregnancy or birth plan (e.g. pregnancy risks from tobacco use, breastfeeding)
 """
 
 

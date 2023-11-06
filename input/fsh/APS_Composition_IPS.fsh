@@ -23,7 +23,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx] 1..1
 * section[sectionSocialHistory] 1..1
 * section[sectionProceduresHx] 1..1
-* section[sectionAdvanceDirectives] 1..1
 * section[sectionPlanOfCare] 1..1
 * section[sectionImmunizations] 1..1
 * section[sectionVitalSigns] 1..1
@@ -67,19 +66,19 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
 * section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(https://profiles.ihe.net/PCC/APS/StructureDefinition/IHE.ODH.EmploymentStatus.StructuredDefinition)
 
-
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
 * section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation)
 
 * section[sectionPlanOfCare].entry contains birthPlan 0..1 
-* section[sectionPlanOfCare].entry[birthPlan] only text
-//* section[sectionResults].entry contains 
-//    antepartumLaboratoryResults 1..* MS and 
-//    antepartumDiagnosticFindings 1..* MS and 
-//    antenatalTestingAndSurveillance 1..* MS
-//Note:
+* section[sectionPlanOfCare].entry[birthPlan] only Reference(CarePlan)
 
 
+* section[sectionResults] MS 
+* section[sectionResults].entry contains
+    antepartumLaboratoryResults 1..* MS and 
+    antenatalTestingAndSurveillance 0..* MS
+* section[sectionResults].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
+* section[sectionResults].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
 
 
 
@@ -109,10 +108,15 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].code MS
+* section[ReviewOfSystems].entry 0..* 
+* section[ReviewOfSystems].entry ^slicing.discriminator.type = #pattern
+* section[ReviewOfSystems].entry ^slicing.discriminator.path = "$this"
+* section[ReviewOfSystems].entry ^slicing.rules = #open
+* section[ReviewOfSystems].entry ^slicing.description = ""
+* section[ReviewOfSystems].entry ^slicing.ordered = false
+* section[ReviewOfSystems].entry contains menstralHistory 0..* MS
+* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or IHE.MenstrualStatus)
 
-// add slice
-//* section[ReviewOfSystems].entry contains menstralHistory 0..1 MS 
-//* section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or MestralStatus)
 
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -160,10 +164,18 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
+* section[AntepartumEducation].entry 0..* 
 * section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
-//* section[AntepartumEducation].entry contains 
-//    firstTrimester 0..* MS and 
-//    secondTrimester 0..* MS and 
-//    thirdTrimester 0..* MS
-// Note: 
+* section[AntepartumEducation].entry ^slicing.discriminator.type = #pattern
+* section[AntepartumEducation].entry ^slicing.discriminator.path = "$this"
+* section[AntepartumEducation].entry ^slicing.rules = #open
+* section[AntepartumEducation].entry ^slicing.description = ""
+* section[AntepartumEducation].entry ^slicing.ordered = false
+* section[AntepartumEducation].entry contains 
+    firstTrimester 0..* MS and 
+    secondTrimester 0..* MS and 
+    thirdTrimester 0..* MS
+* section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
 

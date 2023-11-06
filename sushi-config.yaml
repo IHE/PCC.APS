@@ -7,7 +7,7 @@ canonical: https://profiles.ihe.net/PCC/APS
 version: 0.0.1-current
 name: IHE_PCC_APS
 title: "Antepartum Summary"
-description: put the short description of the profile here. it should explain what problem is being solved
+description: Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode.
 releaseLabel: ci-build
 #releaseLabel: ballot
 #releaseLabel: trial-use

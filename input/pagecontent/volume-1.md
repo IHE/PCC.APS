@@ -91,16 +91,10 @@ When the laboratory results return, the physician completes the admission H&P, A
 Postcondition: The Pre-delivery H&P and Antepartum Summary with appropriate relationships to the Perinatologist Consultation, and all the antepartum laboratory and imaging studies are available to the obstetrician and the birthing center personnel for incorporation into their respective EHRs. The H&P is also available to the patient for viewing and incorporation into the patient’s PHR, and into the newborn baby’s PHR.
 
 
-<figure>
-{%include usecase1-processflow.svg%}
-<figcaption><b>Figure XX.1-1: Use Case 1 Process Flow</b></figcaption>
-</figure>
-<br clear="all">
-
 This section defines the actors and transactions in this implementation guide.
 
 Figure below shows the actors directly
-involved in the ANtepartum Summary document exchange  
+involved in the Antepartum Summary document exchange  
 Profile and the relevant transactions between them.
 
 <figure>
@@ -109,16 +103,7 @@ Profile and the relevant transactions between them.
 </figure>
 <br clear="all">
 
-<a name="actors-and-transactions"> </a>
 
-- [Content Creator](#creator)
-- [Content Consumer](#consumer)
-
-<figure>
-{%include docSharing.svg%}
-<figcaption><b>Figure: aIPS Actor Diagram</b></figcaption>
-</figure>
-<br clear="all">
 
 ### 56.1.1 Actors
 
