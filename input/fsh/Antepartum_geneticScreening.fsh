@@ -14,4 +14,4 @@ Description: "The Example instance for Antepartum Genetic Screening lab results"
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
 * code = $sct#417357006
 * performer = Reference(Practitioner/ex-Practitioner)
-* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
+* subject = Reference(Patient/ex-Patient-AmandaAlvarez) 
