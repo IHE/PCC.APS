@@ -18,7 +18,7 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Pregnancy History](StructureDefinition-IHE.PregnancyHistory.html)                                                                | N                         |
 | [Date Of First Prenatal Visit](StructureDefinition-IHE.DateOfFirstPrenatalVisit.html)                                             | N                         |
 | [Number Of Prenatal Visits For This Pregnancy](StructureDefinition-IHE.NumberOfPrenatalVisitsForThisPregnancy.html)               | N                         |
-| [Pregnancy Status](StructureDefinition-Observation-pregnancy-status-uv-ips.html)                                                  | Y                         |
+| [Pregnancy Status]({{site.data.fhir.hl7ips}}/StructureDefinition/Observation-pregnancy-status-uv-ips)                                                  | Y                         |
 | [Menstrual Status](StructureDefinition-IHE.MenstrualStatus.html)                                                                  | N                         |
 | [Date Of Last Menstral Period](StructureDefinition-IHE.DateOfLastMenstralPeriod.html)                                             | N                         |
 | [Delivery Date Clinical Estimate](StructureDefinition-IHE.DeliveryDateClinicalEstimate.html)                                      | N                         |
@@ -53,13 +53,12 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Prior Menses Date](StructureDefinition-IHE.PriorMensesDate.html)                                                                 | N                         |
 | [Duration Of Menstrual Flow](StructureDefinition-IHE.DurationOfMenstrualFlow.html)                                                | N                         |
 | [Frequency Of Menstrual Cycles](StructureDefinition-IHE.FrequencyOfMenstrualCycles.html)                                          | N                         |
-| [On BirthControl Pills At Conception](StructureDefinition-IHE.OnBirthControlPillsAtConception.html)                               | N                         |
 | [Menarche](StructureDefinition-IHE.Menarche.html)                                                                                 | N                         |
 | [Employment Status](StructureDefinition-odh-EmploymentStatus.html)                                                                | N                         |
 | [HCG+](StructureDefinition-IHE.hCGPlus.html)                                                                                      | N                         |
 | [Smoking Tobacco Use Frequency](StructureDefinition-IHE.SmokingTobaccoUseFrequency.html)                                          | N                         |
-| [Smoking Status](Observation-tobaccouse-uv-ips)                                                          | Y                         |
-| [alcohol Use](Observation-alcoholuse-uv-ips)                                                             | Y                         |
+| [Smoking Status]({{site.data.fhir.hl7ips}}/StructureDefinition/Observation-tobaccouse-uv-ips)                                                          | Y                         |
+| [alcohol Use]({{site.data.fhir.hl7ips}}/StructureDefinition/Observation-alcoholuse-uv-ips)                                                             | Y                         |
 | [Alcohol Use Frequency](StructureDefinition-IHE.AlcoholUseFrequency.html)                                                         | N                         |
 | [Drug Use](StructureDefinition-IHE.drugUse.html)                                                                                  | N                         |
 | [Exercise](StructureDefinition-IHE.Exercise.html)                                                                                 | N                         |
