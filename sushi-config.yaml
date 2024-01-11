@@ -35,8 +35,8 @@ dependencies:
     id: hl7ips
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: 1.0.x
-    ihe.pcc.odh: 
-    uri: https://profiles.ihe.net/PCC/ODH/ImplementationGuide/ihe.pcc.odh
+  ihe.pcc.odh: 
+    id: ihe.pcc.odh
     version: current
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
