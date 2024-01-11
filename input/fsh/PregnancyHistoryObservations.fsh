@@ -1245,7 +1245,7 @@ Usage: #example
 Description: "The Example instance for the BodyWeightMeasuredPrePregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 156 'lb'
+* valueQuantity = 156 '[lb_av]'
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
@@ -1422,7 +1422,8 @@ Number of days between menstrual cycle periods.
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].code = $ucum#d
+* valueQuantity.system = $ucum
+* valueQuantity.code = #d
 //need confirmation this is the correct 
 * subject only Reference(Patient)
 // this is making everything else in observation forbidden.
@@ -1442,7 +1443,7 @@ Usage: #example
 Description: "The Example instance for the FrequencyOfMenstrualCycles observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 24 'd'
+* valueQuantity = 24 'd' "days"
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
