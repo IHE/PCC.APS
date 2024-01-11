@@ -1245,7 +1245,7 @@ Usage: #example
 Description: "The Example instance for the BodyWeightMeasuredPrePregnancy observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 156 'lb_av'
+* valueQuantity = 156 'lb'
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
