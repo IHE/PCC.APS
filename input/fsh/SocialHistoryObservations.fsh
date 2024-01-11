@@ -117,7 +117,8 @@ Frequency of Physical Activity (days per week) and duration of physical activity
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].unit = $ucum#w
+* valueQuantity.system = $ucum
+* valueQuantity.code = #w
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
