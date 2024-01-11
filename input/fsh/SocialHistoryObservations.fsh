@@ -1,7 +1,7 @@
 Profile:        SmokingTobaccoUseFrequency
 Parent:         Observation
 Id:             IHE.SmokingTobaccoUseFrequency
-Title:          "Smoking and Tobacco Use Frequency"
+Title:          "Smoking and Tobacco Use Frequency" 
 Description:    """
 The frequency of tobacco use. This may be measured in packs/day, packs/week, or packs/year.
 """
