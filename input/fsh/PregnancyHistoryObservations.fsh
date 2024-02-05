@@ -7,7 +7,7 @@ The pregnancy history collects observations relevant to a single pregnancy withi
 each birth event associated with the pregnancy or shall conform to the birth event organizer template, but not both. 
 """
 
-* status = http://hl7.org/fhir/observation-status#final
+* status = http://hl7.org/fhir/observation-status#final 
 * code = $sct#118185001
 * effective[x] 1..1
 * effective[x] only dateTime 
