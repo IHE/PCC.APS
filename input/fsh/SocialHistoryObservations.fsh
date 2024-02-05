@@ -1,7 +1,7 @@
 Profile:        SmokingTobaccoUseFrequency
 Parent:         Observation
 Id:             IHE.SmokingTobaccoUseFrequency
-Title:          "Smoking and Tobacco Use Frequency"
+Title:          "Smoking and Tobacco Use Frequency" 
 Description:    """
 The frequency of tobacco use. This may be measured in packs/day, packs/week, or packs/year.
 """
@@ -117,7 +117,8 @@ Frequency of Physical Activity (days per week) and duration of physical activity
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only Quantity
-* value[x].unit = $ucum#{times}/wky
+* valueQuantity.system = $ucum
+* valueQuantity.code = #wk
 * subject only Reference(Patient)
 * device 0..0
 * interpretation 0..0
@@ -134,7 +135,7 @@ Usage: #example
 Description: "The Example instance for the Exercise observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 2 '{times}/wky'
+* valueQuantity = 2 'wk' "times a week"
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
