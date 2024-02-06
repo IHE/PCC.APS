@@ -4,7 +4,7 @@ INFORMATION: ValueSet-Antepartum.Education.VS.json: ValueSet.compose.include[0] 
 
 # The Units are the units of measure deffined in the loinc code for the observation
 WARNING: Observation/ex-SmokingTobaccoUseFrequency: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {pack} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
-
+WARNING: Observation/ex-AlcoholUseFrequency: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {drink} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
 
 # IHE knows that the valuesets that are being used are not normative 
 INFORMATION: StructureDefinition/IHE.AlcoholUseFrequency: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0

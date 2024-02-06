@@ -150,6 +150,6 @@
     </period> 
   </contact> 
   <managingOrganization> 
-    <reference value="Organization/1"/> 
+    <reference value="Organization/TII-Organization1"/> 
   </managingOrganization> 
 </Patient> 

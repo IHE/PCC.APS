@@ -31,7 +31,7 @@
         <text value="pregnancy"/> 
       </code> 
       <subject> 
-        <reference value="Patient/1"/> 
+        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
         <display value="Amanda Alvarez"/> 
       </subject> 
     </Condition> 
@@ -98,7 +98,7 @@
         <text value="Maintain patient's health throughout pregnancy and ensure a healthy child"/> 
       </description> 
       <subject> 
-        <reference value="Patient/1"/> 
+        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
         <display value="Amanda Alvarez"/> 
       </subject>      
     </Goal> 
@@ -116,13 +116,13 @@
         <end value="2021-09-28"/> 
       </requestedPeriod> 
     <subject> 
-        <reference value="Patient/1"/> 
+        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
     <display value="Amanda Alvarez"/> 
       </subject> 
     
     <participant>  
     <actor>  
-      <reference value="Patient/1"/> 
+      <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
       <display value="Amanda Alvarez"/> 
     </actor>  
     <required value="true"/>  
@@ -157,13 +157,13 @@
         <end value="2021-10-12"/> 
       </requestedPeriod> 
     <subject> 
-        <reference value="Patient/1"/> 
+        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
     <display value="Amanda Alvarez"/> 
       </subject> 
     
     <participant>  
     <actor>  
-      <reference value="Patient/1"/> 
+      <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
       <display value="Amanda Alvarez"/> 
     </actor>  
     <required value="true"/>  
@@ -197,13 +197,13 @@
         <end value="2022-04-20"/> 
       </requestedPeriod> 
     <subject> 
-        <reference value="Patient/1"/> 
+        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
     <display value="Amanda Alvarez"/> 
       </subject> 
     
     <participant>  
     <actor>  
-      <reference value="Patient/1"/> 
+      <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
       <display value="Amanda Alvarez"/> 
     </actor>  
     <required value="true"/>  
@@ -229,7 +229,7 @@
    <status value="active"/> 
   <intent value="plan"/> 
   <subject> 
-    <reference value="Patient/1"/> 
+    <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
     <display value="Amanda Alvarez"/> 
   </subject>  
   <period> 
