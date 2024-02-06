@@ -231,7 +231,6 @@ Id: Antepartum.Education.VS
 // APSOpenIssue_020: * $sct#66961001   "Second Trimester Childbirth classes/hospital facilities"  Removed because it is a repeat concept wiht the same code as "Childbirth classes/hospital facilities". CP may need to be made on the CDA APS to remove as well
 * $sct#440669000   "Signs and symptoms of preterm labor" 
 * $sct#410299006   "Abnormal Lab Values" 
-//* $sct# ??  "Influenza vaccine" 
 * $sct#439908001  "Selecting a newborn care provider" 
 * $sct#54070000   "Postpartum family planning" 
 * $sct#243064009   "Tubal sterilization" 

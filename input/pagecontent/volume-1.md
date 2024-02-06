@@ -54,8 +54,8 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Duration Of Menstrual Flow](StructureDefinition-IHE.DurationOfMenstrualFlow.html)                                                | N                         |
 | [Frequency Of Menstrual Cycles](StructureDefinition-IHE.FrequencyOfMenstrualCycles.html)                                          | N                         |
 | [Menarche](StructureDefinition-IHE.Menarche.html)                                                                                 | N                         |
-| [Employment Status](StructureDefinition-odh-EmploymentStatus.html)                                                                | N                         |
-| [HCG+](StructureDefinition-IHE.hCGPlus.html)                                                                                      | N                         |
+| [Employment Status](https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus)                                                                | N                         |
+| [HCG+](StructureDefinition-IHE.hCGPositive.html)                                                                                      | N                         |
 | [Smoking Tobacco Use Frequency](StructureDefinition-IHE.SmokingTobaccoUseFrequency.html)                                          | N                         |
 | [Smoking Status]({{site.data.fhir.hl7ips}}/StructureDefinition/Observation-tobaccouse-uv-ips)                                                          | Y                         |
 | [alcohol Use]({{site.data.fhir.hl7ips}}/StructureDefinition/Observation-alcoholuse-uv-ips)                                                             | Y                         |
