@@ -29,7 +29,7 @@
 - APSOpenIssue_023: Seeking comment for the History of infection Section within the Composition resource. This is modeled off of a historical CDA document adn we are looking for a more appropriate way to represent infections that may affect the current pregnancy 
 - APSOpenIssue_024: Seeking comment for clinical content review 
 - APSOpenIssue_025:	Seeking commment for the representaion of the units of measure for Packs/per day and Drinks per week. The warning was puressed becasue the unit that is measured withthe code is specific to packs per day and drinks per week. However it may be represented as number per day or week and the wordking of packs or drinks can be inplied from th responce of the loinc code that is calling for the result. 
-
+- APSOpenIssue_026:	Seeking commmen --  the incorperation of the survey questions for pregnancy history may have to be collected through a structure data capture survey from the patient prior to its incorperation into the summary. should there be language supporting this method of data collection deffined within this profile? 
 
 ### Closed Issues
 

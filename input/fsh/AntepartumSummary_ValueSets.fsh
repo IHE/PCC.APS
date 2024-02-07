@@ -299,3 +299,51 @@ Id: Alcohol.USe.Frequency.VS
 * $ucum#{drink}/wk   "drinks per week" 
 
 
+ValueSet: Fetal_Presentation_VS
+Title: "Fetal Presentation"
+Description: "This value set lists the expected values for the Fetal Presentation observation."
+Id: Fetal.Presentation.VS
+* ^experimental = false
+* $sct#70028003     "Vertex "
+* $sct#6096002     "Breech "
+* $sct#73161006     "Transverse"
+* $sct#63750008     "Oblique"
+* $sct#124736009     "Compound"
+* $sct#8014007     "Brow"
+* $sct#21882006     "Face"
+
+ValueSet: Fetal_Movement_VS
+Title: "Fetal Movement"
+Description: "This value set lists the expected values for the Fetal Movement observation."
+Id: Fetal.Movement.VS
+* ^experimental = false
+* $sct#364755008     "fetal movement activity"
+* $sct#276368003     "baby kicks a lot"
+* $sct#276370007     "baby not moving"
+* $sct#276369006     "reduced fetal movement"
+* $sct#289431008     "fetal movements present"
+* $sct#268470003     "fetal movements felt"
+* $sct#169731002     "fetal movements seen"
+
+ValueSet: Presence_In_Urine_VS
+Title: "Presence In Urine"
+Description: "This value set lists the expected values for the Presence In Urine observation."
+Id: Presence.In.Urine.VS
+* ^experimental = false
+* $sct#167273002     "Negative"
+* $sct#167274008     "Trace"
+* $sct#167275009     "1+"
+* $sct#167276005     "2+"
+* $sct#167277001     "3+"
+* $sct#167278006     "4+"
+
+ValueSet: Edema_VS
+Title: "Edema observation"
+Description: "This value set lists the expected values for the Edema observation."
+Id: Edema.VS
+* ^experimental = false
+* $loinc#44996-0     "Trace"
+* $sct#420829009     "1+"
+* $sct#421605005     "2+"
+* $sct#421346005     "3+"
+* $sct#421129002     "4+"

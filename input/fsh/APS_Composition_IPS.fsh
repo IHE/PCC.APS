@@ -153,9 +153,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet] ^definition = "This section is a running history of the most important elements noted for a pregnant woman."
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
-* section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation)
-//* section[AntepartumVisitSummaryFlowsheet].entry contains simpleObservation 0..* MS
-//    FlowsheetPannel 0..* 
+* section[AntepartumVisitSummaryFlowsheet].entry contains 
+    prePregnancyWeight 0..1 and 
+    antepartumFlowsheetPanel 0..* 
+* section[AntepartumVisitSummaryFlowsheet].entry[prePregnancyWeight] only Reference(Observation)
+* section[AntepartumVisitSummaryFlowsheet].entry[antepartumFlowsheetPanel] only Reference(AntepartumVisitSummaryFlowsheetBattery)
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
 * section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -178,4 +180,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
 * section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
 * section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
+
+
+
 
