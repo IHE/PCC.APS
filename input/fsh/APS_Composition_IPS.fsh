@@ -153,6 +153,12 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet] ^definition = "This section is a running history of the most important elements noted for a pregnant woman."
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
+* section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation or AntepartumVisitSummaryFlowsheetBattery)
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.type = #pattern
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.path = "$this"
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.rules = #open
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.description = ""
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.ordered = false
 * section[AntepartumVisitSummaryFlowsheet].entry contains 
     prePregnancyWeight 0..1 and 
     antepartumFlowsheetPanel 0..* 
