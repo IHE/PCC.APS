@@ -66,6 +66,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
 * section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork or OccupationalDataForHealth)
 
+* section[sectionAdvanceDirectives].entry only Reference(Consent or Observation or DocumentReference)
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
 * section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation or Observation)
 

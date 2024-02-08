@@ -8,8 +8,7 @@ Description: "The Example instance for the procedure - Cephalic Version"
 * category = $sct#386637004
 * code = $sct#240278000
 * subject = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
-* performed[x]
-    * performedDateTime = "2023-01-05"
+* performed[x].performedDateTime = "2023-01-05"
 * performer = Reference(Practitioner/ex-Practitioner)
 * reasonCode = $sct#1231436008
 * outcome = $sct#385669000

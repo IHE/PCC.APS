@@ -106,6 +106,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * code = $loinc#11348-0 "History of Past illness Narrative"
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> none found </div>"
+  * emptyReason = #unavailable
 
 
 * section[HistoryOfInfection]

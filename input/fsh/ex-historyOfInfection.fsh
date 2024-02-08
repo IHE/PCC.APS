@@ -9,5 +9,4 @@ Usage: #example
 * clinicalStatus = #active
 * code = $sct#105629000 "Chlamydial infection (disorder)"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
-* onset[x]
-    * onsetDateTime = "2022-09-18"
+* onset[x].onsetDateTime = "2022-09-18"
