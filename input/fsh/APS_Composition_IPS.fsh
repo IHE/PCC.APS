@@ -64,10 +64,10 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
-* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(hhttps://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth)
+* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork or OccupationalDataForHealth)
 
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
-* section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation)
+* section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation or Observation)
 
 * section[sectionPlanOfCare].entry contains birthPlan 0..1 
 * section[sectionPlanOfCare].entry[birthPlan] only Reference(CarePlan)

@@ -1,5 +1,5 @@
 Instance:   ex-VitalSigns-BodyWeight
-InstanceOf: VitalSigns
+InstanceOf: Observation
 Title:      "Vital Signs Body Weight example"
 Description: "Example for vital signs -  body weight"
 Usage: #example

@@ -12,5 +12,5 @@ Usage: #example
 * performer = Reference(Practitioner/ex-Practitioner)
 * valueCodeableConcept = #Employed
 * effectivePeriod[+].start = "2018-04-02T10:30:10+01:00"
-* valueBoolean = #true 
+* valueBoolean = true 
 * interpretation = #A

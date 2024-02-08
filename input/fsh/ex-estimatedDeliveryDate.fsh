@@ -8,5 +8,6 @@ Usage: #example
 * status = #final
 * code = $loinc#11779-6 "Delivery date Estimated from last menstrual period"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
+* performer = Reference(Practitioner/ex-Practitioner)
 * effectiveDateTime = "2022-09-18"
 * valueDateTime = "2023-01-18"

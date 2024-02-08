@@ -9,7 +9,7 @@ Description: "The Example instance for the procedure - Education Smoking"
 * category = $sct#311401005
 * code = $sct#171055003
 * subject = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
-* performedDateTime = "2022-08-025"
-* performer = Reference(Practitioner/ex-Practitioner)
-* location.description = "Women’s Clinic"
+* performed[x]
+    * performedDateTime = "2022-08-25"
+* performer.actor = Reference(Practitioner/ex-Practitioner)
 * reasonCode = $sct#449868002
