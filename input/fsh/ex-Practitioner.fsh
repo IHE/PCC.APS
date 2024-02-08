@@ -9,7 +9,7 @@ Usage: #example
 * identifier.type = #NPI
 * identifier.system = "oid:2.16.840.1.113883.2.4.6.3"
 * identifier.value = "567IUI51C154"
-* active = #true
+* active = true
 * name[+].use = #official
 * name[=].family = "Heps"
 * name[=].given = "Simone"

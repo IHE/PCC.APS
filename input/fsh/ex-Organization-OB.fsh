@@ -10,7 +10,7 @@ Usage: #example
 * identifier.system = "oid:2.16.840.1.113883.4.6"
 * identifier.value = "187659"
 * identifier.period.start = "1999-03-19"
-* active = #true
+* active = true
 * type = #prov
 * name = "Acme Healthcare"
 * telecom.system = #phone 

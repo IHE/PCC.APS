@@ -54,7 +54,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     exercise 0..1 and 
     diet 0..1 and 
     toxicExposure 0..1 and 
-    sdohObservations 0..1 MS and 
+    sdohObservations 0..* MS and 
     occupationalDataForHealth 0..1
 // Note:
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)

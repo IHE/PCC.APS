@@ -10,4 +10,4 @@ Usage: #example
 * subject = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
 * performer = Reference(Practitioner/f001)
 * valueCodeableConcept = #Employed
-* effectivePeriod = "2022-07-15"
+* effectivePeriod.start = "2022-07-15"

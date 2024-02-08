@@ -4,8 +4,8 @@ Usage: #example
 Description: "The Example instance for the Allergy Intolerance - Latex"
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* text = "allergy is to latex"
-* identifier.system = http://acme.com/ids/patients/risks
+* note.text = "allergy is to latex"
+* identifier.system = "http://acme.com/ids/patients/risks"
 * identifier.value = #2834532
 * clinicalStatus = #active
 * verificationStatus = #confirmed

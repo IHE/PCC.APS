@@ -9,7 +9,6 @@ Usage: #example
 * code.coding[0] = $loinc#29463-7 "Body Weight"
 * code.coding[+] = $loinc#3141-9 "Body weight Measured"
 * code.coding[+] = $sct#27113001 "Body weight"
-* code.coding[+] = $clinical-codes#body-weight "Body Weight"
 * subject = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
 * effectiveDateTime = "2023-01-06"
 * valueQuantity = 185 '[lb_av]' "lbs"
