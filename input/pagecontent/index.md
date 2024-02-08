@@ -36,6 +36,13 @@ See also the [Table of Contents](toc.html) and the index of [Artifacts](artifact
 
 IHE uses the normative words: Shall, Should, and May according to [standards conventions](https://profiles.ihe.net/GeneralIntro/ch-E.html).
 
+### Download 
+- [this entire guide](full-ig.zip),
+- the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
+- the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
+
+The source code for this Implementation Guide can be found on **https://github.com/IHE/PCC.mAPS**
+
 #### Must Support
 
 The use of ```mustSupport``` in StructureDefinition profiles equivalent to the IHE use of **R2** as defined in [Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir).

@@ -55,7 +55,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     diet 0..1 and 
     toxicExposure 0..1 and 
     sdohObservations 0..* MS and 
-    occupationalDataForHealth 0..1
+    occupationalDataForHealth 0..*
 // Note:
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
@@ -64,7 +64,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
-* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth)
+* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(hhttps://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-EmploymentStatus or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-PastOrPresentJob or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-UsualWork or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-RetirementDate or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-CombatZonePeriod or https://profiles.ihe.net/PCC/ODH/StructureDefinition/odh-OccupationalDataForHealth)
 
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
 * section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation)
