@@ -36,8 +36,9 @@ Usage: #example
 * telecom[=].use = #old
 * telecom[=].period.end = "2014"
 * gender = #female 
-* birthDate = "1994-12-25T14:35:45-05:00"
-* deceasedBoolean = #false 
+//* birthDate = "1994-12-25T14:35:45-05:00"
+* birthDate = "1994-12-25"
+* deceasedBoolean = false 
 * address.use = #home 
 * address.type = #both
 * address.text = "534 Erewhon St, Greenville, RI  02828"
@@ -64,5 +65,5 @@ Usage: #example
 * contact.address.country = "USA"
 * contact.address.period.start = "1994-12-25"
 * contact.gender = #female
-* contact.gender.period.start = "2012"
+* contact.period.start = "2012"
 * managingOrganization = Reference(Organization/ex-Organization-OB)

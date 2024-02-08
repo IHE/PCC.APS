@@ -1,5 +1,5 @@
 Instance:   ex-PhysicalExam-AbdominalTenderness
-InstanceOf: Observations
+InstanceOf: Observation
 Title:      "Physical Exam Abdominal tenderness example"
 Description: "Physical Exam Abdominal tenderness example"
 Usage: #example

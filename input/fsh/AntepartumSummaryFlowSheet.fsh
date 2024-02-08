@@ -15,7 +15,7 @@ observations.
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * subject only Reference(Patient)
-* hasMember only Reference(GestationalAge or FetalBodyWeightPalpation or FetalBodyWeightUltrasound or UterusFundalHeight or FetalPresentation or FetalHeartRateAuscultation or FetalMovementReported or http://hl7.org/fhir/StructureDefinition/bp or http://hl7.org/fhir/StructureDefinition/bodyweight or PretermLaborSymptoms or CervicalCanalExternalosDiameterUltrasound or EffacementCervixPalpitation or CervixLengthUltrasound or AlbuminPresenceInUrine or GlucosePresenceinUrine or GlucosePresenceinUrineTestStrip or Edema or PainSeverityReported or DateNextClinicVisit or AnnotationComment)
+* hasMember only Reference(GestationalAge or FetalBodyWeightPalpation or FetalBodyWeightUltrasound or UterusFundalHeight or FetalPresentationPalpitation or FetalPresentationUltrasound or FetalHeartRateAuscultation or FetalMovementReported or http://hl7.org/fhir/StructureDefinition/bp or http://hl7.org/fhir/StructureDefinition/bodyweight or PretermLaborSymptoms or CervicalCanalExternalosDiameterUltrasound or EffacementCervixPalpitation or CervixLengthUltrasound or AlbuminPresenceInUrine or GlucosePresenceinUrine or GlucosePresenceinUrineTestStrip or Edema or PainSeverityReported or DateNextClinicVisit or AnnotationComment)
 
 
 Instance: ex-AntepartumVisitSummaryFlowsheetBattery
@@ -54,8 +54,10 @@ Usage: #example
 Description: "The Example instance for the bloodpressure observation amanda alvarez"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* component:SystolicBP[+].valueQuantity = 132 'mmHg'
-* component:SystolicBP[+].valueQuantity = 86 'mmHg'
+* component[SystolicBP].valueQuantity = 132 'mm[Hg]'
+  * unit = "mmHg"
+* component[DiastolicBP].valueQuantity = 86 'mm[Hg]'
+  * unit = "mmHg"
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
@@ -72,7 +74,7 @@ The estimated weight of the fetus observation performed using palpation"""
 * code = $loinc#57067-1
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 // Note: system codes can be g, kg, lb_av, or oz_av
@@ -102,7 +104,7 @@ The estimated weight of the fetus observation performed using an ultrasound"""
 * code = $loinc#11727-5
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 // Note: system codes can be g, kg, lb_av, or oz_av
@@ -132,7 +134,7 @@ Distance from the top of the symphysis pubis to the palpable superior border of 
 * code = $loinc#11881-0 
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #cm
@@ -161,8 +163,8 @@ Fetal Presentation determined by palpation """
 * code = $loinc#11876-0
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Fetal.Presentation.VS (extensible)
 * performer 1..*
 * method = $sct#129434008 "Palpation - action"
@@ -189,8 +191,8 @@ Fetal Presentation determined by ultrasound"""
 * code = $loinc#11877-8
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Fetal.Presentation.VS (extensible)
 * performer 1..*
 * method = $sct#278292003 "Ultrasound imaging - action"
@@ -217,7 +219,7 @@ Fetal Heart rate determined by ultrasound"""
 * code = $loinc#11948-7
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #/min 
@@ -246,7 +248,7 @@ Fetal Heart rate determined by Auscultation"""
 * code = $loinc#57068-9
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #/min 
@@ -275,8 +277,8 @@ Fetal Movement Reported"""
 * code = $loinc#57088-7
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Fetal.Movement.VS (extensible)
 * performer 1..*
 
@@ -302,7 +304,7 @@ Preterm labor symptoms"""
 * code = $loinc#57069-7
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only boolean 
 * performer 1..*
 
@@ -328,7 +330,7 @@ Cervical Canal External os Diameter by ultrasound"""
 * code = $loinc#11785-3
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #cm 
@@ -357,7 +359,7 @@ Effacement observation of Cervix by Palpitation"""
 * code = $loinc#11867-9
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #% 
@@ -386,7 +388,7 @@ Cervix Length measured by ultrasound"""
 * code = $loinc#11961-0
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #cm
@@ -415,9 +417,8 @@ Albumin Presence In Urine observation"""
 * code = $loinc#1753-3
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only Quantity
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Presence.In.Urine.VS (extensible)
 * performer 1..*
 
@@ -443,9 +444,8 @@ Glucose Presence in Urine observation"""
 * code = $loinc#2349-9
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only Quantity
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Presence.In.Urine.VS (extensible)
 * performer 1..*
 
@@ -471,9 +471,8 @@ Glucose Presence in Urine observation"""
 * code = $loinc#2349-9
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only Quantity
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Presence.In.Urine.VS (extensible)
 * performer 1..*
 
@@ -499,9 +498,8 @@ Edema observation"""
 * code = $loinc#44966-0
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only Quantity
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from Edema.VS (extensible)
 * performer 1..*
 
@@ -527,9 +525,8 @@ Pain Severity Reported observation"""
 * code = $loinc#38208-5
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only Quantity
-* value[x] only valueCodeableConcept 
+* value[x] 1..1 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from https://loinc.org/38208-5/ (preferred)
 * performer 1..*
 
@@ -555,7 +552,7 @@ Date of Next Clinic Visit observation"""
 * code = $loinc#57070-5 
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
+* value[x] 1..1 
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 //Note: can be day, week, month
@@ -583,8 +580,8 @@ Annotation Comment observation"""
 * code = $loinc#48767-8 
 * effective[x] 1..1
 * effective[x] only dateTime 
-* value 1..1 
-* value[x] only valueString
+* value[x] 1..1 
+* value[x] only string
 //Note: can be day, week, month
 * performer 1..*
 
