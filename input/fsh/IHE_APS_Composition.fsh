@@ -35,6 +35,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section.code ^type.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
 * section.title 1..1 MS
 * section.text 1..1 MS 
+* section.emptyReason MS
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "$this"
 * section ^slicing.rules = #open

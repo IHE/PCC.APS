@@ -41,7 +41,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[problem][+] = Reference(ConditionUvIps/ex-Problem-Sepsis)
   * entry[problem][+] = Reference(ConditionUvIps/ex-Problem-GestationalDiabetes)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">active problems - sepsis and gestational diabedies </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> active problems - sepsis and gestational diabedies </div>"
 
 
 * section[ChiefComplaint]
