@@ -28,7 +28,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * attester.party MS
 * custodian MS 
 * event MS 
-* event = #OBS
+* event.code = #OBS
 
 * section.code 1..1 MS 
 // if it works keept if not just revert to codable concept  
