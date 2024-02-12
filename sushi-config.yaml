@@ -38,8 +38,8 @@ dependencies:
   ihe.pcc.odh: 
     id: ihepccodh
     version: current
-  ihe.iti.pqdm: 
-    id: iheitipdqm
+  iheitipqdm: 
+    id: ihe.iti.pdqm
     version: current
   fhir.uv.ipa: 
     id: hl7ipa
