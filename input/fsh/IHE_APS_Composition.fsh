@@ -179,7 +179,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
-* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork or OccupationalDataForHealth)
+* section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork)
 
 * section[sectionPregnancyHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPregnancyHx] ^extension.valueString = "Section"
