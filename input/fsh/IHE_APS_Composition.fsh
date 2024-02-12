@@ -35,7 +35,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section.code ^type.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
 * section.title 1..1 MS
 * section.text 1..1 MS 
-* section.emptyReason MS
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "$this"
 * section ^slicing.rules = #open
@@ -80,7 +79,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     medicationStatement 0..* and
     medicationRequest 0..*
 * section[sectionMedications].entry[medicationStatement] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)
-* section[medicationRequest].entry[medicationStatement] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips)
+* section[medicationRequest].entry[medicationRequest] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips)
 
 * section[sectionAllergies] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionAllergies] ^extension.valueString = "Section"
@@ -126,7 +125,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProceduresHx].entry ^slicing.rules = #open
 * section[sectionProceduresHx].entry ^slicing.description = "Patient past procedures pertinent to the scope of this document."
 * section[sectionProceduresHx].entry ^slicing.ordered = false
-* section[sectionProceduresHx].entry 1..* MS 
+* section[sectionProceduresHx].entry 0..* MS 
 * section[sectionProceduresHx].entry only Reference(Procedure  or DocumentReference)
 * section[sectionProceduresHx].entry contains procedure 1..* MS 
 * section[sectionProceduresHx].entry[procedure] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips)
@@ -384,7 +383,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.rules = #open
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.description = ""
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.ordered = false
-* section[AntepartumVisitSummaryFlowsheet].entry 0..*
 * section[AntepartumVisitSummaryFlowsheet].entry contains 
     prePregnancyWeight 0..1 and 
     antepartumFlowsheetPanel 0..* 
