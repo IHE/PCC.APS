@@ -120,7 +120,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[sectionPlanOfCare]
   * title = "Plan Of Care"
   * code = $loinc#18776-5 "Plan of care note"
-  * entry[birthPlan] = Reference(CarePlan/ex-CarePlanHomeBirth)
+  * entry[birthPlan] = Reference(CarePlan/ex-CarePlan-BirthPlan)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> birth Plan </div>"
 
@@ -153,7 +153,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[sectionAdvanceDirectives]
   * title = "Advance Directives"
   * code = $loinc#42348-3 "Advance Directives"
-  * entry[advanceDirectivesObservation] = Reference(ex-AdvanceDirectivesObservation)
+  * entry[advanceDirectivesObservation] = Reference(ex-AdvanceDirectives-BloodTransfusion)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">advance directve present</div>"
 

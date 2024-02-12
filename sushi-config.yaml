@@ -38,6 +38,13 @@ dependencies:
   ihe.pcc.odh: 
     id: ihepccodh
     version: current
+  ihe.iti.pqdm: 
+    id: iheitipdqm
+    version: current
+  fhir.uv.ipa: 
+    id: hl7ipa
+    uri: http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa
+    version: 1.0.0
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:

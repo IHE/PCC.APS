@@ -1,5 +1,5 @@
 Profile:   IHE_APS_Composition
-Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
+Parent: Composition
 Id:             IHE.PCC.APS.Composition
 Title: "Antapartum Summary"
 Description:      """
@@ -8,46 +8,161 @@ It is represented in part by Estimated Due Dates and a Visit Summary Flowsheet, 
 and selected histories are provided. The Antepartum Summary represents a summary of the most critical information to an antepartum care provider regarding the status of a patient’s pregnancy.
 """
 
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category 1..
-* category contains pregnancySummaryDocument 1..1
-* category[pregnancySummaryDocument] = $loinc#90767-5
-//* subject 1..1
-//* subject only Reference(Patient)
+* text MS
+* versionNumber = 
+* identifier MS
+* status MS 
+* type MS
+* type = $loinc#57055-6
+* category 1..* MS 
+* category = $loinc#90767-5
+* subject 1..1 MS 
+* subject Reference(https://profiles.ihe.net/ITI/PDQm/StructureDefinition/IHE.PDQm.Patient)
+* encounter MS 
+* date MS 
+* author MS 
+* title MS
 * title = "Antepartum Summary"
+* attester MS 
+* attester.mode MS 
+* attester.time MS 
+* attester.party MS
+* custodian MS 
+* event MS 
+* event = #OBS
 
-* section[sectionPregnancyHx] 1..1
-* section[sectionProblems] 1..1
-* section[sectionPastIllnessHx] 1..1
-* section[sectionSocialHistory] 1..1
-* section[sectionProceduresHx] 1..1
-* section[sectionPlanOfCare] 1..1
-* section[sectionImmunizations] 1..1
-* section[sectionVitalSigns] 1..1
-* section[sectionResults] 1..1
-
-
-* section contains 
-    ChiefComplaint 1..1 MS and 
-    FamilyMedicalHistory 1..1 MS and 
-    ReviewOfSystems 1..1 MS and 
-    HistoryOfInfection 1..1 MS and 
-    PhysicalExams 1..1 MS and 
+* section.code 1..1 MS 
+// if it works keept if not just revert to codable concept  
+* section.code ^type.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
+* section.title 1..1 MS
+* section.text 1..1 MS 
+* section ^slicing.discriminator.type = #code
+* section ^slicing.discriminator.path = ""
+* section ^slicing.rules = #open
+* section ^slicing.description = "Sections composing the APS"
+* section ^slicing.ordered = false
+* Section contains 
+    sectionMedications 1..1 MS and
+    sectionAllergies 1..1 MS and
+    sectionProblems 1..1 MS and
+    sectionPastIllnessHx 1..1 MS and
+    sectionSocialHistory 0..1 MS and
+    sectionProceduresHx 1..1 MS and
+    sectionPregnancyHx 1..1 MS and
+    sectionPlanOfCare 0..1 MS and
+    sectionImmunizations 1..1 MS and
+    sectionResults 0..1 MS and
+    sectionAdvanceDirectives 0..1 MS and
+    sectionVitalSigns 0..1 MS and
+    ChiefComplaint 0..1 MS and
+    FamilyMedicalHistory 0..1 MS and
+    ReviewOfSystems 0..1 MS and
+    HistoryOfInfection 0..1 MS and
+    PhysicalExams 0..1 MS and
+    AntepartumEducation 0..1 MS and 
     Payors 0..1 and 
-    AntepartumVisitSummaryFlowsheet 1..1 MS and 
-    AntepartumEducation 1..1 MS
-// Note:
+    AntepartumVisitSummaryFlowsheet 0..1 MS 
 
-* section[sectionPregnancyHx].entry contains 
-    currentPregnancyObservations 1..* MS and 
-    historicalPregnancyObservations 0..* MS
-* section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
-* section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
+* section[sectionMedications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionMedications] ^extension.valueString = "Section"
+* section[sectionMedications] ^short = "Medication Summary Section"
+* section[sectionMedications] ^definition = "TBD"
+* section[sectionMedications].code = $loinc#10160-0
+* section[sectionMedications].emptyReason MS 
+* section[sectionMedications].entry ^slicing.discriminator.type = #value
+* section[sectionMedications].entry ^slicing.discriminator.path = ""
+* section[sectionMedications].entry ^slicing.rules = #open
+* section[sectionMedications].entry ^slicing.description = "Medications relevant for the scope of the patient summary"
+* section[sectionMedications].entry ^slicing.ordered = false
+* section[sectionMedications].entry 1..* MS 
+* section[sectionMedications].entry only Reference(MedicationStatement or MedicationRequest or MedicationAdministration or MedicationDispense or DocumentReference)
+* section[sectionMedications].entry contains 
+    medicationStatement 0..* and
+    medicationRequest 0..*
+* section[sectionMedications].entry[medicationStatement] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement)
+* section[medicationRequest].entry[medicationStatement] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest)
 
+* section[sectionAllergies] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionAllergies] ^extension.valueString = "Section"
+* section[sectionAllergies] ^short = "Allergies and Intolerances Section"
+* section[sectionAllergies] ^definition = "TBD"
+* section[sectionAllergies].code = $loinc#48765-2
+* section[sectionAllergies].emptyReason MS 
+* section[sectionAllergies].entry ^slicing.discriminator.type = #value
+* section[sectionAllergies].entry ^slicing.discriminator.path = ""
+* section[sectionAllergies].entry ^slicing.rules = #open
+* section[sectionAllergies].entry ^slicing.description = "Relevant allergies or intolerances (conditions) for that patient."
+* section[sectionAllergies].entry ^slicing.ordered = false
+* section[sectionAllergies].entry 1..* MS 
+* section[sectionAllergies].entry only Reference(AllergyIntolerance or DocumentReference)
+* section[sectionAllergies].entry contains 
+    allergyOrIntolerance 1..* MS
+* section[sectionAllergies].entry[allergyOrIntolerance] only Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance)
 
+* section[sectionProblems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionProblems] ^extension.valueString = "Section"
+* section[sectionProblems] ^short = "Problems Section"
+* section[sectionProblems] ^definition = "TBD"
+* section[sectionProblems].code = $loinc#11450-4
+* section[sectionProblems].emptyReason MS 
+* section[sectionProblems].entry ^slicing.discriminator.type = #value
+* section[sectionProblems].entry ^slicing.discriminator.path = ""
+* section[sectionProblems].entry ^slicing.rules = #open
+* section[sectionProblems].entry ^slicing.description = "Clinical problems or conditions currently being monitored for the patient."
+* section[sectionProblems].entry ^slicing.ordered = false
+* section[sectionProblems].entry 1..* MS 
+* section[sectionProblems].entry only Reference(Condition or DocumentReference)
+* section[sectionProblems].entry contains problem 1..* MS 
+* section[sectionProblems].entry[problem] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition)
+
+* section[sectionProceduresHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionProceduresHx] ^extension.valueString = "Section"
+* section[sectionProceduresHx] ^short = "History of Procedures Section"
+* section[sectionProceduresHx] ^definition = "TBD"
+* section[sectionProceduresHx].code = $loinc#47519-4
+* section[sectionProceduresHx].emptyReason MS 
+* section[sectionProceduresHx].entry ^slicing.discriminator.type = #value
+* section[sectionProceduresHx].entry ^slicing.discriminator.path = ""
+* section[sectionProceduresHx].entry ^slicing.rules = #open
+* section[sectionProceduresHx].entry ^slicing.description = "Patient past procedures pertinent to the scope of this document."
+* section[sectionProceduresHx].entry ^slicing.ordered = false
+* section[sectionProceduresHx].entry 1..* MS 
+* section[sectionProceduresHx].entry only Reference(Procedure  or DocumentReference)
+* section[sectionProceduresHx].entry contains procedure 1..* MS 
+* section[sectionProceduresHx].entry[procedure] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips)
+
+* section[sectionPastIllnessHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPastIllnessHx] ^extension.valueString = "Section"
+* section[sectionPastIllnessHx] ^short = "History of Past Illness Section"
+* section[sectionPastIllnessHx] ^definition = "TBD"
+* section[sectionPastIllnessHx].code = $loinc#11348-0
+* section[sectionPastIllnessHx].emptyReason MS 
+* section[sectionPastIllnessHx].entry ^slicing.discriminator.type = #value
+* section[sectionPastIllnessHx].entry ^slicing.discriminator.path = ""
+* section[sectionPastIllnessHx].entry ^slicing.rules = #open
+* section[sectionPastIllnessHx].entry ^slicing.description = "Conditions the patient suffered in the past."
+* section[sectionPastIllnessHx].entry ^slicing.ordered = false
+* section[sectionPastIllnessHx].entry 1..* MS 
+* section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
+* section[sectionPastIllnessHx].entry contains pastProblem 1..* MS 
+* section[sectionPastIllnessHx].entry[pastProblem] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition)
+
+* section[sectionSocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionSocialHistory] ^extension.valueString = "Section"
+* section[sectionSocialHistory] ^short = "Social History Section"
+* section[sectionSocialHistory] ^definition = "TBD"
+* section[sectionSocialHistory].code = $loinc#11348-0
+* section[sectionSocialHistory].emptyReason MS 
+* section[sectionSocialHistory].entry ^slicing.discriminator.type = #value
+* section[sectionSocialHistory].entry ^slicing.discriminator.path = ""
+* section[sectionSocialHistory].entry ^slicing.rules = #open
+* section[sectionSocialHistory].entry ^slicing.description = "Health related 'lifestyle factors' or 'lifestyle observations' (e.g. smoke habits; alcohol consumption; diets, risky habits.)"
+* section[sectionSocialHistory].entry ^slicing.ordered = false
+* section[sectionSocialHistory].entry 0..* MS
+* section[sectionSocialHistory].entry only Reference(Observation or DocumentReference)
 * section[sectionSocialHistory].entry contains 
+    smokingTobaccoUse 0..1 and 
+    alcoholUse 0..1 and 
     drugUse 0..1 and 
     smokingTobaccoUseFrequency 0..1 MS and 
     alcoholUseFrequency 0..1 MS and 
@@ -56,7 +171,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     toxicExposure 0..1 and 
     sdohObservations 0..* MS and 
     occupationalDataForHealth 0..*
-// Note:
+* section[sectionSocialHistory].entry[smokingTobaccoUse] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips)
+* section[sectionSocialHistory].entry[alcoholUse] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
 * section[sectionSocialHistory].entry[alcoholUseFrequency] only Reference(AlcoholUseFrequency)
@@ -66,49 +182,140 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
 * section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork or OccupationalDataForHealth)
 
-* section[sectionAdvanceDirectives].entry only Reference(Consent or Observation or DocumentReference)
-* section[sectionAdvanceDirectives].entry contains advanceDirectivesObservation 0..* MS 
-* section[sectionAdvanceDirectives].entry[advanceDirectivesObservation] only Reference(AdvanceDirectivesObservation or Observation)
+* section[sectionPregnancyHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPregnancyHx] ^extension.valueString = "Section"
+* section[sectionPregnancyHx] ^short = "History of Pregnancy Section"
+* section[sectionPregnancyHx] ^definition = "TBD"
+* section[sectionPregnancyHx].code = $loinc#10162-6
+* section[sectionPregnancyHx].emptyReason MS 
+* section[sectionPregnancyHx].entry ^slicing.discriminator.type = #value
+* section[sectionPregnancyHx].entry ^slicing.discriminator.path = ""
+* section[sectionPregnancyHx].entry ^slicing.rules = #open
+* section[sectionPregnancyHx].entry ^slicing.description = "Current pregnancy status and, optionally, information about the outcome of earlier pregnancies."
+* section[sectionPregnancyHx].entry ^slicing.ordered = false
+* section[sectionPregnancyHx].entry 1..* MS
+* section[sectionPregnancyHx].entry only Reference(Observation or DocumentReference)
+* section[sectionPregnancyHx].entry contains
+    pregnancyStatus 1..* MS and 
+    currentPregnancyObservations 1..* MS and 
+    pregnancyOutcomeSummary 0..* MS and 	
+    historicalPregnancyObservations 0..* MS
+* section[sectionPregnancyHx].entry[pregnancyStatus] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)  
+* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)  
+* section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
+* section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
 
-* section[sectionPlanOfCare].entry contains birthPlan 0..1 
+* section[sectionImmunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionImmunizations] ^extension.valueString = "Section"
+* section[sectionImmunizations] ^short = "Immunization Section"
+* section[sectionImmunizations] ^definition = "TBD"
+* section[sectionImmunizations].code = $loinc#11369-6
+* section[sectionImmunizations].emptyReason MS 
+* section[sectionImmunizations].entry ^slicing.discriminator.type = #value
+* section[sectionImmunizations].entry ^slicing.discriminator.path = ""
+* section[sectionImmunizations].entry ^slicing.rules = #open
+* section[sectionImmunizations].entry ^slicing.description = "Patient's immunization status and pertinent history."
+* section[sectionImmunizations].entry ^slicing.ordered = false
+* section[sectionImmunizations].entry 1..* MS
+* section[sectionImmunizations].entry only Reference(Immunization or DocumentReference)
+* section[sectionImmunizations].entry contains immunization 1..* MS 
+* section[sectionImmunizations].entry[immunization] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization)
+
+* section[sectionPlanOfCare] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPlanOfCare] ^extension.valueString = "Section"
+* section[sectionPlanOfCare] ^short = "Plan of Care Section"
+* section[sectionPlanOfCare] ^definition = "TBD"
+* section[sectionPlanOfCare].code = $loinc#18776-5
+* section[sectionPlanOfCare].emptyReason MS 
+* section[sectionPlanOfCare].entry ^slicing.discriminator.type = #value
+* section[sectionPlanOfCare].entry ^slicing.discriminator.path = ""
+* section[sectionPlanOfCare].entry ^slicing.rules = #open
+* section[sectionPlanOfCare].entry ^slicing.description = "entry used to represent structured care plans"
+* section[sectionPlanOfCare].entry ^slicing.ordered = false
+* section[sectionPlanOfCare].entry 0..* MS
+* section[sectionPlanOfCare].entry only Reference(CarePlan or DocumentReference)
+* section[sectionPlanOfCare].entry contains
+    carePlan 0..* and 
+    birthPlan 0..* MS  
+* section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
 * section[sectionPlanOfCare].entry[birthPlan] only Reference(CarePlan)
 
-
-* section[sectionResults] MS 
+* section[sectionResults] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionResults] ^extension.valueString = "Section"
+* section[sectionResults] ^short = "Results Section"
+* section[sectionResults] ^definition = "TBD"
+* section[sectionResults].code = $loinc#30954-2
+* section[sectionResults].emptyReason MS 
+* section[sectionResults].entry ^slicing.discriminator.type = #value
+* section[sectionResults].entry ^slicing.discriminator.path = ""
+* section[sectionResults].entry ^slicing.rules = #open
+* section[sectionResults].entry ^slicing.description = "Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."
+* section[sectionResults].entry ^slicing.ordered = false
+* section[sectionResults].entry 0..* MS
+* section[sectionResults].entry only Reference(Observation or DiagnosticReport or DocumentReference)
 * section[sectionResults].entry contains
+    results-observation 0..* MS and 
+    results-diagnosticReport 0..* MS and 
     antepartumLaboratoryResults 1..* MS and 
     antenatalTestingAndSurveillance 0..* MS
+* section[sectionResults].entry[results-observation] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
+* section[sectionResults].entry[results-diagnosticReport] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
 * section[sectionResults].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
 * section[sectionResults].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
 
+* section[sectionAdvanceDirectives] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionAdvanceDirectives] ^extension.valueString = "Section"
+* section[sectionAdvanceDirectives] ^short = "Advance Directives Section"
+* section[sectionAdvanceDirectives] ^definition = "TBD"
+* section[sectionAdvanceDirectives].code = $loinc#42348-3
+* section[sectionAdvanceDirectives].emptyReason MS 
+* section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #value
+* section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = ""
+* section[sectionAdvanceDirectives].entry ^slicing.rules = #open
+* section[sectionAdvanceDirectives].entry ^slicing.description = "the patient's advance directive."
+* section[sectionAdvanceDirectives].entry ^slicing.ordered = false
+* section[sectionAdvanceDirectives].entry 0..*
+* section[sectionAdvanceDirectives].entry only Reference(Consent or DocumentReference)
+* section[sectionAdvanceDirectives].entry contains advanceDirectivesConsent 0..* 
+* section[sectionAdvanceDirectives].entry[advanceDirectivesConsent] only Reference(Consent)
 
+* section[sectionVitalSigns] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionVitalSigns] ^extension.valueString = "Section"
+* section[sectionVitalSigns] ^short = "Vital Signs Section"
+* section[sectionVitalSigns] ^definition = "TBD"
+* section[sectionVitalSigns].code = $loinc#8716-3
+* section[sectionVitalSigns].emptyReason MS 
+* section[sectionVitalSigns].entry ^slicing.discriminator.type = #value
+* section[sectionVitalSigns].entry ^slicing.discriminator.path = ""
+* section[sectionVitalSigns].entry ^slicing.rules = #open
+* section[sectionVitalSigns].entry ^slicing.description = "Notable vital signs or physical findings."
+* section[sectionVitalSigns].entry ^slicing.ordered = false
+* section[sectionVitalSigns].entry 0..*
+* section[sectionVitalSigns].entry only Reference(Observation or DocumentReference)
+* section[sectionVitalSigns].entry contains vitalSign 0..* 
+* section[sectionVitalSigns].entry[vitalSign] Reference(http://hl7.org/fhir/StructureDefinition/vitalsigns)
 
 * section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[ChiefComplaint] ^extension.valueString = "Section"
-* section[ChiefComplaint] ^short = "Cheif Complaint"
+* section[ChiefComplaint] ^short = "Cheif Complaint Section"
 * section[ChiefComplaint] ^definition = "Chief complaint records the patient's primary complaint (the patient's own description)."
 * section[ChiefComplaint].code = $loinc#10154-3
 * section[ChiefComplaint].code MS
 * section[ChiefComplaint].text 1..1
-// Note: If there is no narrative available in this section then a data absent Reason SHALL be provided 
-
 
 * section[FamilyMedicalHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[FamilyMedicalHistory] ^extension.valueString = "Section"
 * section[FamilyMedicalHistory] ^short = "Family Medical History"
 * section[FamilyMedicalHistory] ^definition = "The family history section shall include entries for family history"
 * section[FamilyMedicalHistory].code = $loinc#10157-6
-* section[FamilyMedicalHistory].code MS
 * section[FamilyMedicalHistory].entry 0..* 
 * section[FamilyMedicalHistory].entry only Reference(Observation)
-
 
 * section[ReviewOfSystems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[ReviewOfSystems] ^extension.valueString = "Section"
 * section[ReviewOfSystems] ^short = "Review of Systems"
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
-* section[ReviewOfSystems].code MS
 * section[ReviewOfSystems].entry 0..* 
 * section[ReviewOfSystems].entry ^slicing.discriminator.type = #pattern
 * section[ReviewOfSystems].entry ^slicing.discriminator.path = "$this"
@@ -117,8 +324,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems].entry ^slicing.ordered = false
 * section[ReviewOfSystems].entry contains menstralHistory 0..* MS
 * section[ReviewOfSystems].entry[menstralHistory] only Reference(Observation or IHE.MenstrualStatus)
-
-
 
 * section[HistoryOfInfection] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[HistoryOfInfection] ^extension.valueString = "Section"
@@ -137,6 +342,63 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[PhysicalExams].code MS
 * section[PhysicalExams].entry only Reference(Observation)
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided 
+
+* section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[AntepartumEducation] ^extension.valueString = "Section"
+* section[AntepartumEducation] ^short = "AntepartumEducation"
+* section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
+* section[AntepartumEducation].code = $loinc#34895-3
+* section[AntepartumEducation].code MS
+* section[AntepartumEducation].entry 0..* 
+* section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
+* section[AntepartumEducation].entry ^slicing.discriminator.type = #pattern
+* section[AntepartumEducation].entry ^slicing.discriminator.path = "$this"
+* section[AntepartumEducation].entry ^slicing.rules = #open
+* section[AntepartumEducation].entry ^slicing.description = ""
+* section[AntepartumEducation].entry ^slicing.ordered = false
+* section[AntepartumEducation].entry contains 
+    firstTrimester 0..* MS and 
+    secondTrimester 0..* MS and 
+    thirdTrimester 0..* MS
+* section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -167,26 +429,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].entry[antepartumFlowsheetPanel] only Reference(AntepartumVisitSummaryFlowsheetBattery)
 // Note:If there is no entry available in this section then a data absent Reason SHALL be provided
 
-* section[AntepartumEducation] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-* section[AntepartumEducation] ^extension.valueString = "Section"
-* section[AntepartumEducation] ^short = "AntepartumEducation"
-* section[AntepartumEducation] ^definition = "The Antepartum Education contains a list of patient education activities that have occured or have been planned to review with the patient."
-* section[AntepartumEducation].code = $loinc#34895-3
-* section[AntepartumEducation].code MS
-* section[AntepartumEducation].entry 0..* 
-* section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
-* section[AntepartumEducation].entry ^slicing.discriminator.type = #pattern
-* section[AntepartumEducation].entry ^slicing.discriminator.path = "$this"
-* section[AntepartumEducation].entry ^slicing.rules = #open
-* section[AntepartumEducation].entry ^slicing.description = ""
-* section[AntepartumEducation].entry ^slicing.ordered = false
-* section[AntepartumEducation].entry contains 
-    firstTrimester 0..* MS and 
-    secondTrimester 0..* MS and 
-    thirdTrimester 0..* MS
-* section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
-* section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
-* section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
+
 
 
 
