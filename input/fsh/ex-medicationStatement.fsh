@@ -11,7 +11,7 @@ Description: "The Example instance for the Medication Statement"
 * effectiveDateTime = "2023-01-02"
 * dateAsserted = "2023-01-08"
 * informationSource = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
-* note = "indicates they miss the occasional dose"
+* note.text = "indicates they miss the occasional dose"
 * dosage.sequence = 1
 * dosage.text = "5ml three times daily"
 * dosage.asNeededBoolean = false 
@@ -21,6 +21,6 @@ Description: "The Example instance for the Medication Statement"
 * dosage.doseAndRate.doseQuantity.unit = "mL"
 * dosage.doseAndRate.doseQuantity.system = $ucum
 * dosage.doseAndRate.doseQuantity.code = #mL
-* dosage.maxDosePerPeriod.numerator = 3 'ml'"mL"
-* dosage.maxDosePerPeriod.denominator = 1 'ml'"mL"
+* dosage.maxDosePerPeriod.numerator = 3.0
+* dosage.maxDosePerPeriod.denominator = 1.0
 
