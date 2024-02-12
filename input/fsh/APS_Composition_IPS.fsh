@@ -78,8 +78,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionMedications].entry contains 
     medicationStatement 0..* and
     medicationRequest 0..*
-* section[sectionMedications].entry[medicationStatement] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement)
-* section[medicationRequest].entry[medicationStatement] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest)
+* section[sectionMedications].entry[medicationStatement] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement")
+* section[medicationRequest].entry[medicationStatement] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest")
 
 * section[sectionAllergies] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionAllergies] ^extension.valueString = "Section"
@@ -96,7 +96,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAllergies].entry only Reference(AllergyIntolerance or DocumentReference)
 * section[sectionAllergies].entry contains 
     allergyOrIntolerance 1..* MS
-* section[sectionAllergies].entry[allergyOrIntolerance] only Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance)
+* section[sectionAllergies].entry[allergyOrIntolerance] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance")
 
 * section[sectionProblems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionProblems] ^extension.valueString = "Section"
@@ -112,7 +112,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProblems].entry 1..* MS 
 * section[sectionProblems].entry only Reference(Condition or DocumentReference)
 * section[sectionProblems].entry contains problem 1..* MS 
-* section[sectionProblems].entry[problem] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition)
+* section[sectionProblems].entry[problem] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition")
 
 * section[sectionProceduresHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionProceduresHx] ^extension.valueString = "Section"
@@ -128,7 +128,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProceduresHx].entry 1..* MS 
 * section[sectionProceduresHx].entry only Reference(Procedure  or DocumentReference)
 * section[sectionProceduresHx].entry contains procedure 1..* MS 
-* section[sectionProceduresHx].entry[procedure] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips)
+* section[sectionProceduresHx].entry[procedure] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips")
 
 * section[sectionPastIllnessHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPastIllnessHx] ^extension.valueString = "Section"
@@ -144,7 +144,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx].entry 1..* MS 
 * section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
 * section[sectionPastIllnessHx].entry contains pastProblem 1..* MS 
-* section[sectionPastIllnessHx].entry[pastProblem] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition)
+* section[sectionPastIllnessHx].entry[pastProblem] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition")
 
 * section[sectionSocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionSocialHistory] ^extension.valueString = "Section"
@@ -170,8 +170,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     toxicExposure 0..1 and 
     sdohObservations 0..* MS and 
     occupationalDataForHealth 0..*
-* section[sectionSocialHistory].entry[smokingTobaccoUse] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips)
-* section[sectionSocialHistory].entry[alcoholUse] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
+* section[sectionSocialHistory].entry[smokingTobaccoUse] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips")
+* section[sectionSocialHistory].entry[alcoholUse] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips")
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
 * section[sectionSocialHistory].entry[alcoholUseFrequency] only Reference(AlcoholUseFrequency)
@@ -199,8 +199,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     currentPregnancyObservations 1..* MS and 
     pregnancyOutcomeSummary 0..* MS and 	
     historicalPregnancyObservations 0..* MS
-* section[sectionPregnancyHx].entry[pregnancyStatus] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)  
-* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary] Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)  
+* section[sectionPregnancyHx].entry[pregnancyStatus] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips")  
+* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary]  only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips")  
 * section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
 * section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
 
@@ -218,7 +218,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionImmunizations].entry 1..* MS
 * section[sectionImmunizations].entry only Reference(Immunization or DocumentReference)
 * section[sectionImmunizations].entry contains immunization 1..* MS 
-* section[sectionImmunizations].entry[immunization] Reference(http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization)
+* section[sectionImmunizations].entry[immunization] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization")
 
 * section[sectionPlanOfCare] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPlanOfCare] ^extension.valueString = "Section"
@@ -257,8 +257,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     results-diagnosticReport 0..* MS and 
     antepartumLaboratoryResults 1..* MS and 
     antenatalTestingAndSurveillance 0..* MS
-* section[sectionResults].entry[results-observation] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
-* section[sectionResults].entry[results-diagnosticReport] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
+* section[sectionResults].entry[results-observation] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips")
+* section[sectionResults].entry[results-diagnosticReport] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips")
 * section[sectionResults].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
 * section[sectionResults].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
 
@@ -292,7 +292,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionVitalSigns].entry 0..*
 * section[sectionVitalSigns].entry only Reference(Observation or DocumentReference)
 * section[sectionVitalSigns].entry contains vitalSign 0..* 
-* section[sectionVitalSigns].entry[vitalSign] Reference(http://hl7.org/fhir/StructureDefinition/vitalsigns)
+* section[sectionVitalSigns].entry[vitalSign] only Reference("http://hl7.org/fhir/StructureDefinition/vitalsigns")
 
 * section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[ChiefComplaint] ^extension.valueString = "Section"
