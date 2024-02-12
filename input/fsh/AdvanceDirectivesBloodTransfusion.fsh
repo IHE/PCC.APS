@@ -1,5 +1,5 @@
 Profile:        IHE-AdvanceDirectives
-Parent:         Concent 
+Parent:         Consent 
 Id:             IHE.AdvanceDirectives
 Title:          "Advance Directives"
 Description:    """

@@ -9,7 +9,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 """
 
 * text MS
-* versionNumber = 
 * identifier MS
 * status MS 
 * type MS
