@@ -16,7 +16,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * category 1..* MS 
 * category = $loinc#90767-5
 * subject 1..1 MS 
-* subject Reference(PDQmPatient)
+* subject Reference(https://profiles.ihe.net/ITI/PDQm/StructureDefinition/IHE.PDQm.Patient)
 * encounter MS 
 * date MS 
 * author MS 
