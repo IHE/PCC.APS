@@ -40,27 +40,27 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section ^slicing.rules = #open
 * section ^slicing.description = "Sections composing the APS"
 * section ^slicing.ordered = false
-* Section contains 
-    sectionMedications 1..1 MS and
-    sectionAllergies 1..1 MS and
-    sectionProblems 1..1 MS and
-    sectionPastIllnessHx 1..1 MS and
-    sectionSocialHistory 0..1 MS and
-    sectionProceduresHx 1..1 MS and
-    sectionPregnancyHx 1..1 MS and
-    sectionPlanOfCare 0..1 MS and
-    sectionImmunizations 1..1 MS and
-    sectionResults 0..1 MS and
-    sectionAdvanceDirectives 0..1 MS and
-    sectionVitalSigns 0..1 MS and
-    ChiefComplaint 0..1 MS and
-    FamilyMedicalHistory 0..1 MS and
-    ReviewOfSystems 0..1 MS and
-    HistoryOfInfection 0..1 MS and
-    PhysicalExams 0..1 MS and
-    AntepartumEducation 0..1 MS and 
+* section contains 
+    sectionMedications 1..1 and
+    sectionAllergies 1..1  and
+    sectionProblems 1..1  and
+    sectionPastIllnessHx 1..1  and
+    sectionSocialHistory 0..1  and
+    sectionProceduresHx 1..1  and
+    sectionPregnancyHx 1..1  and
+    sectionPlanOfCare 0..1  and
+    sectionImmunizations 1..1  and
+    sectionResults 0..1  and
+    sectionAdvanceDirectives 0..1  and
+    sectionVitalSigns 0..1  and
+    ChiefComplaint 0..1  and
+    FamilyMedicalHistory 0..1  and
+    ReviewOfSystems 0..1  and
+    HistoryOfInfection 0..1  and
+    PhysicalExams 0..1  and
+    AntepartumEducation 0..1  and 
     Payors 0..1 and 
-    AntepartumVisitSummaryFlowsheet 0..1 MS 
+    AntepartumVisitSummaryFlowsheet 0..1  
 
 * section[sectionMedications] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionMedications] ^extension.valueString = "Section"
