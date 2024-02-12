@@ -170,8 +170,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     toxicExposure 0..1 and 
     sdohObservations 0..* MS and 
     occupationalDataForHealth 0..*
-* section[sectionSocialHistory].entry[smokingTobaccoUse] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips")
-* section[sectionSocialHistory].entry[alcoholUse] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips")
+* section[sectionSocialHistory].entry[smokingTobaccoUse] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips)
+* section[sectionSocialHistory].entry[alcoholUse] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
 * section[sectionSocialHistory].entry[alcoholUseFrequency] only Reference(AlcoholUseFrequency)
@@ -199,8 +199,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     currentPregnancyObservations 1..* MS and 
     pregnancyOutcomeSummary 0..* MS and 	
     historicalPregnancyObservations 0..* MS
-* section[sectionPregnancyHx].entry[pregnancyStatus] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips")  
-* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary]  only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips")  
+* section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)  
+* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary]  only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)  
 * section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
 * section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
 
@@ -257,8 +257,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
     results-diagnosticReport 0..* MS and 
     antepartumLaboratoryResults 1..* MS and 
     antenatalTestingAndSurveillance 0..* MS
-* section[sectionResults].entry[results-observation] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips")
-* section[sectionResults].entry[results-diagnosticReport] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips")
+* section[sectionResults].entry[results-observation] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
+* section[sectionResults].entry[results-diagnosticReport] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
 * section[sectionResults].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
 * section[sectionResults].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
 
@@ -292,7 +292,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionVitalSigns].entry 0..*
 * section[sectionVitalSigns].entry only Reference(Observation or DocumentReference)
 * section[sectionVitalSigns].entry contains vitalSign 0..* 
-* section[sectionVitalSigns].entry[vitalSign] only Reference("http://hl7.org/fhir/StructureDefinition/vitalsigns")
+* section[sectionVitalSigns].entry[vitalSign] only Reference(http://hl7.org/fhir/StructureDefinition/vitalsigns)
 
 * section[ChiefComplaint] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[ChiefComplaint] ^extension.valueString = "Section"
