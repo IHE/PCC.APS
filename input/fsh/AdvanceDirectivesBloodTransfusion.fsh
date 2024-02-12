@@ -1,6 +1,6 @@
-Profile:        IHE-AdvanceDirectives
+Profile:        IHE-advanceDirectives
 Parent:         Consent 
-Id:             IHE.AdvanceDirectives
+Id:             IHE.advanceDirectives
 Title:          "Advance Directives"
 Description:    """
 TBD
@@ -16,7 +16,7 @@ TBD
 
 
 Instance: ex-AdvanceDirectives-BloodTransfusion
-InstanceOf: AdvanceDirectives-BloodTransfusion
+InstanceOf: IHE-advanceDirectives
 Usage: #example
 Description: "The Example instance for the IHE Advance Directives resource for blood transfuaion"
 
