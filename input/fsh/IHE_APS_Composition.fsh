@@ -78,8 +78,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionMedications].entry contains 
     medicationStatement 0..* and
     medicationRequest 0..*
-* section[sectionMedications].entry[medicationStatement] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement")
-* section[medicationRequest].entry[medicationStatement] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest")
+* section[sectionMedications].entry[medicationStatement] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)
+* section[medicationRequest].entry[medicationStatement] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips)
 
 * section[sectionAllergies] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionAllergies] ^extension.valueString = "Section"
@@ -96,7 +96,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAllergies].entry only Reference(AllergyIntolerance or DocumentReference)
 * section[sectionAllergies].entry contains 
     allergyOrIntolerance 1..* MS
-* section[sectionAllergies].entry[allergyOrIntolerance] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance")
+* section[sectionAllergies].entry[allergyOrIntolerance] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)
 
 * section[sectionProblems] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionProblems] ^extension.valueString = "Section"
@@ -112,7 +112,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProblems].entry 1..* MS 
 * section[sectionProblems].entry only Reference(Condition or DocumentReference)
 * section[sectionProblems].entry contains problem 1..* MS 
-* section[sectionProblems].entry[problem] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition")
+* section[sectionProblems].entry[problem] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
 * section[sectionProceduresHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionProceduresHx] ^extension.valueString = "Section"
@@ -128,7 +128,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProceduresHx].entry 1..* MS 
 * section[sectionProceduresHx].entry only Reference(Procedure  or DocumentReference)
 * section[sectionProceduresHx].entry contains procedure 1..* MS 
-* section[sectionProceduresHx].entry[procedure] only Reference("http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips")
+* section[sectionProceduresHx].entry[procedure] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips)
 
 * section[sectionPastIllnessHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPastIllnessHx] ^extension.valueString = "Section"
@@ -144,7 +144,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx].entry 1..* MS 
 * section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
 * section[sectionPastIllnessHx].entry contains pastProblem 1..* MS 
-* section[sectionPastIllnessHx].entry[pastProblem] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition")
+* section[sectionPastIllnessHx].entry[pastProblem] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
 * section[sectionSocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionSocialHistory] ^extension.valueString = "Section"
@@ -218,7 +218,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionImmunizations].entry 1..* MS
 * section[sectionImmunizations].entry only Reference(Immunization or DocumentReference)
 * section[sectionImmunizations].entry contains immunization 1..* MS 
-* section[sectionImmunizations].entry[immunization] only Reference("http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization")
+* section[sectionImmunizations].entry[immunization] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips)
 
 * section[sectionPlanOfCare] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPlanOfCare] ^extension.valueString = "Section"
