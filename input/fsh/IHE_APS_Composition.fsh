@@ -143,7 +143,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx].entry ^slicing.ordered = false
 * section[sectionPastIllnessHx].entry 0..* MS 
 * section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
-* section[sectionPastIllnessHx].entry contains pastProblem 1..* MS 
+* section[sectionPastIllnessHx].entry contains pastProblem 0..* MS 
 * section[sectionPastIllnessHx].entry[pastProblem] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
 * section[sectionSocialHistory] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"

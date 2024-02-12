@@ -15,12 +15,12 @@ Description: "The Example instance for the Medication Statement"
 * dosage.sequence = 1
 * dosage.text = "5ml three times daily"
 * dosage.asNeededBoolean = false 
-* route = $sct#260548002
+* dosage.route = $sct#260548002
 * dosage.doseAndRate.type = http://terminology.hl7.org/CodeSystem/dose-rate-type#ordered
 * dosage.doseAndRate.doseQuantity.value = 5
 * dosage.doseAndRate.doseQuantity.unit = "mL"
 * dosage.doseAndRate.doseQuantity.system = $ucum
 * dosage.doseAndRate.doseQuantity.code = #mL
-* dosage.maxDosePerPeriod.numerator = 3
-* dosage.maxDosePerPeriod.denominator = 1
+* dosage.maxDosePerPeriod.numerator = 3 'ml'"mL"
+* dosage.maxDosePerPeriod.denominator = 1 'ml'"mL"
 
