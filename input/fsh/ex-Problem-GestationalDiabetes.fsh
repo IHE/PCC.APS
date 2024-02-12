@@ -10,7 +10,7 @@ Description: "The Example instance for the Problems - Gestational diabetes"
 * severity = $sct#371924009
 * code = $sct#11687002
 * subject = Reference(PatientUvIps/ex-Patient-AmandaAlvarez)
-* onset[x].onsetDateTime = "2023-01-02"
+* onsetDateTime = "2023-01-02"
 * recordedDate = "2023-01-02"
 * recorder = Reference(Practitioner/f001)
 * evidence.detail = Reference(DiagnosticReport/f202)
