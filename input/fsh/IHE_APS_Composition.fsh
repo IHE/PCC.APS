@@ -69,7 +69,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionMedications].code = $loinc#10160-0
 * section[sectionMedications].emptyReason MS 
 * section[sectionMedications].entry ^slicing.discriminator.type = #value
-* section[sectionMedications].entry ^slicing.discriminator.path = ""
+* section[sectionMedications].entry ^slicing.discriminator.path = "$this"
 * section[sectionMedications].entry ^slicing.rules = #open
 * section[sectionMedications].entry ^slicing.description = "Medications relevant for the scope of the patient summary"
 * section[sectionMedications].entry ^slicing.ordered = false
@@ -88,7 +88,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAllergies].code = $loinc#48765-2
 * section[sectionAllergies].emptyReason MS 
 * section[sectionAllergies].entry ^slicing.discriminator.type = #value
-* section[sectionAllergies].entry ^slicing.discriminator.path = ""
+* section[sectionAllergies].entry ^slicing.discriminator.path = "$this"
 * section[sectionAllergies].entry ^slicing.rules = #open
 * section[sectionAllergies].entry ^slicing.description = "Relevant allergies or intolerances (conditions) for that patient."
 * section[sectionAllergies].entry ^slicing.ordered = false
@@ -105,7 +105,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProblems].code = $loinc#11450-4
 * section[sectionProblems].emptyReason MS 
 * section[sectionProblems].entry ^slicing.discriminator.type = #value
-* section[sectionProblems].entry ^slicing.discriminator.path = ""
+* section[sectionProblems].entry ^slicing.discriminator.path = "$this"
 * section[sectionProblems].entry ^slicing.rules = #open
 * section[sectionProblems].entry ^slicing.description = "Clinical problems or conditions currently being monitored for the patient."
 * section[sectionProblems].entry ^slicing.ordered = false
@@ -121,7 +121,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProceduresHx].code = $loinc#47519-4
 * section[sectionProceduresHx].emptyReason MS 
 * section[sectionProceduresHx].entry ^slicing.discriminator.type = #value
-* section[sectionProceduresHx].entry ^slicing.discriminator.path = ""
+* section[sectionProceduresHx].entry ^slicing.discriminator.path = "$this"
 * section[sectionProceduresHx].entry ^slicing.rules = #open
 * section[sectionProceduresHx].entry ^slicing.description = "Patient past procedures pertinent to the scope of this document."
 * section[sectionProceduresHx].entry ^slicing.ordered = false
@@ -137,7 +137,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx].code = $loinc#11348-0
 * section[sectionPastIllnessHx].emptyReason MS 
 * section[sectionPastIllnessHx].entry ^slicing.discriminator.type = #value
-* section[sectionPastIllnessHx].entry ^slicing.discriminator.path = ""
+* section[sectionPastIllnessHx].entry ^slicing.discriminator.path = "$this"
 * section[sectionPastIllnessHx].entry ^slicing.rules = #open
 * section[sectionPastIllnessHx].entry ^slicing.description = "Conditions the patient suffered in the past."
 * section[sectionPastIllnessHx].entry ^slicing.ordered = false
@@ -153,7 +153,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].code = $loinc#11348-0
 * section[sectionSocialHistory].emptyReason MS 
 * section[sectionSocialHistory].entry ^slicing.discriminator.type = #value
-* section[sectionSocialHistory].entry ^slicing.discriminator.path = ""
+* section[sectionSocialHistory].entry ^slicing.discriminator.path = "$this"
 * section[sectionSocialHistory].entry ^slicing.rules = #open
 * section[sectionSocialHistory].entry ^slicing.description = "Health related 'lifestyle factors' or 'lifestyle observations' (e.g. smoke habits; alcohol consumption; diets, risky habits.)"
 * section[sectionSocialHistory].entry ^slicing.ordered = false
@@ -188,7 +188,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPregnancyHx].code = $loinc#10162-6
 * section[sectionPregnancyHx].emptyReason MS 
 * section[sectionPregnancyHx].entry ^slicing.discriminator.type = #value
-* section[sectionPregnancyHx].entry ^slicing.discriminator.path = ""
+* section[sectionPregnancyHx].entry ^slicing.discriminator.path = "$this"
 * section[sectionPregnancyHx].entry ^slicing.rules = #open
 * section[sectionPregnancyHx].entry ^slicing.description = "Current pregnancy status and, optionally, information about the outcome of earlier pregnancies."
 * section[sectionPregnancyHx].entry ^slicing.ordered = false
@@ -211,7 +211,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionImmunizations].code = $loinc#11369-6
 * section[sectionImmunizations].emptyReason MS 
 * section[sectionImmunizations].entry ^slicing.discriminator.type = #value
-* section[sectionImmunizations].entry ^slicing.discriminator.path = ""
+* section[sectionImmunizations].entry ^slicing.discriminator.path = "$this"
 * section[sectionImmunizations].entry ^slicing.rules = #open
 * section[sectionImmunizations].entry ^slicing.description = "Patient's immunization status and pertinent history."
 * section[sectionImmunizations].entry ^slicing.ordered = false
@@ -227,7 +227,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPlanOfCare].code = $loinc#18776-5
 * section[sectionPlanOfCare].emptyReason MS 
 * section[sectionPlanOfCare].entry ^slicing.discriminator.type = #value
-* section[sectionPlanOfCare].entry ^slicing.discriminator.path = ""
+* section[sectionPlanOfCare].entry ^slicing.discriminator.path = "$this"
 * section[sectionPlanOfCare].entry ^slicing.rules = #open
 * section[sectionPlanOfCare].entry ^slicing.description = "entry used to represent structured care plans"
 * section[sectionPlanOfCare].entry ^slicing.ordered = false
@@ -246,7 +246,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionResults].code = $loinc#30954-2
 * section[sectionResults].emptyReason MS 
 * section[sectionResults].entry ^slicing.discriminator.type = #value
-* section[sectionResults].entry ^slicing.discriminator.path = ""
+* section[sectionResults].entry ^slicing.discriminator.path = "$this"
 * section[sectionResults].entry ^slicing.rules = #open
 * section[sectionResults].entry ^slicing.description = "Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."
 * section[sectionResults].entry ^slicing.ordered = false
@@ -269,7 +269,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].emptyReason MS 
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #value
-* section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = ""
+* section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "$this"
 * section[sectionAdvanceDirectives].entry ^slicing.rules = #open
 * section[sectionAdvanceDirectives].entry ^slicing.description = "the patient's advance directive."
 * section[sectionAdvanceDirectives].entry ^slicing.ordered = false
@@ -285,7 +285,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionVitalSigns].code = $loinc#8716-3
 * section[sectionVitalSigns].emptyReason MS 
 * section[sectionVitalSigns].entry ^slicing.discriminator.type = #value
-* section[sectionVitalSigns].entry ^slicing.discriminator.path = ""
+* section[sectionVitalSigns].entry ^slicing.discriminator.path = "$this"
 * section[sectionVitalSigns].entry ^slicing.rules = #open
 * section[sectionVitalSigns].entry ^slicing.description = "Notable vital signs or physical findings."
 * section[sectionVitalSigns].entry ^slicing.ordered = false
@@ -363,43 +363,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
 * section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Payors] ^extension.valueString = "Section"
 * section[Payors] ^short = "Payors"
@@ -407,7 +370,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[Payors].code = $loinc#48768-6
 * section[Payors].code MS
 * section[Payors].entry only Reference(Coverage)
-
 
 * section[AntepartumVisitSummaryFlowsheet] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[AntepartumVisitSummaryFlowsheet] ^extension.valueString = "Section"
