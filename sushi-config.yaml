@@ -42,10 +42,7 @@ dependencies:
     id: ihepdqm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
     version: 2.4.x
-  fhir.uv.ipa: 
-    id: hl7ipa
-    uri: http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa
-    version: 1.0.0
+
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
