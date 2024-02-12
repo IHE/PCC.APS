@@ -21,7 +21,7 @@ Usage: #example
 * period.end = "2022-04-20"
 * careTeam = Reference(careteam)
 * goal = Reference(goal)
-* activity[1].extension.url = "http://example.org/fhir/StructureDefinition/careplan#andetails"
+* activity[+].extension.url = "http://example.org/fhir/StructureDefinition/careplan#andetails"
 * activity[=].extension.valueUri = "http://orionhealth.com/fhir/careplan/1andetails"
 
 Instance: p1

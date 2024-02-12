@@ -79,7 +79,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     medicationStatement 0..* and
     medicationRequest 0..*
 * section[sectionMedications].entry[medicationStatement] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)
-* section[medicationRequest].entry[medicationRequest] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips)
+* section[sectionMedications].entry[medicationRequest] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips)
 
 * section[sectionAllergies] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionAllergies] ^extension.valueString = "Section"
