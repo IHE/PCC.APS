@@ -74,7 +74,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionMedications].entry ^slicing.rules = #open
 * section[sectionMedications].entry ^slicing.description = "Medications relevant for the scope of the patient summary"
 * section[sectionMedications].entry ^slicing.ordered = false
-* section[sectionMedications].entry 1..* MS 
+* section[sectionMedications].entry 0..* MS 
 * section[sectionMedications].entry only Reference(MedicationStatement or MedicationRequest or MedicationAdministration or MedicationDispense or DocumentReference)
 * section[sectionMedications].entry contains 
     medicationStatement 0..* and
@@ -93,7 +93,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAllergies].entry ^slicing.rules = #open
 * section[sectionAllergies].entry ^slicing.description = "Relevant allergies or intolerances (conditions) for that patient."
 * section[sectionAllergies].entry ^slicing.ordered = false
-* section[sectionAllergies].entry 1..* MS 
+* section[sectionAllergies].entry 0..* MS 
 * section[sectionAllergies].entry only Reference(AllergyIntolerance or DocumentReference)
 * section[sectionAllergies].entry contains 
     allergyOrIntolerance 1..* MS
@@ -110,7 +110,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProblems].entry ^slicing.rules = #open
 * section[sectionProblems].entry ^slicing.description = "Clinical problems or conditions currently being monitored for the patient."
 * section[sectionProblems].entry ^slicing.ordered = false
-* section[sectionProblems].entry 1..* MS 
+* section[sectionProblems].entry 0..* MS 
 * section[sectionProblems].entry only Reference(Condition or DocumentReference)
 * section[sectionProblems].entry contains problem 1..* MS 
 * section[sectionProblems].entry[problem] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
@@ -142,7 +142,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx].entry ^slicing.rules = #open
 * section[sectionPastIllnessHx].entry ^slicing.description = "Conditions the patient suffered in the past."
 * section[sectionPastIllnessHx].entry ^slicing.ordered = false
-* section[sectionPastIllnessHx].entry 1..* MS 
+* section[sectionPastIllnessHx].entry 0..* MS 
 * section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
 * section[sectionPastIllnessHx].entry contains pastProblem 1..* MS 
 * section[sectionPastIllnessHx].entry[pastProblem] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
@@ -193,7 +193,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPregnancyHx].entry ^slicing.rules = #open
 * section[sectionPregnancyHx].entry ^slicing.description = "Current pregnancy status and, optionally, information about the outcome of earlier pregnancies."
 * section[sectionPregnancyHx].entry ^slicing.ordered = false
-* section[sectionPregnancyHx].entry 1..* MS
+* section[sectionPregnancyHx].entry 0..* MS
 * section[sectionPregnancyHx].entry only Reference(Observation or DocumentReference)
 * section[sectionPregnancyHx].entry contains
     pregnancyStatus 1..* MS and 
@@ -216,7 +216,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionImmunizations].entry ^slicing.rules = #open
 * section[sectionImmunizations].entry ^slicing.description = "Patient's immunization status and pertinent history."
 * section[sectionImmunizations].entry ^slicing.ordered = false
-* section[sectionImmunizations].entry 1..* MS
+* section[sectionImmunizations].entry 0..* MS
 * section[sectionImmunizations].entry only Reference(Immunization or DocumentReference)
 * section[sectionImmunizations].entry contains immunization 1..* MS 
 * section[sectionImmunizations].entry[immunization] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips)
@@ -384,6 +384,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.rules = #open
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.description = ""
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.ordered = false
+* section[AntepartumVisitSummaryFlowsheet].entry 0..*
 * section[AntepartumVisitSummaryFlowsheet].entry contains 
     prePregnancyWeight 0..1 and 
     antepartumFlowsheetPanel 0..* 
