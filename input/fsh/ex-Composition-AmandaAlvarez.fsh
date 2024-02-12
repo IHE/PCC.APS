@@ -153,7 +153,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[sectionAdvanceDirectives]
   * title = "Advance Directives"
   * code = $loinc#42348-3 "Advance Directives"
-  * entry[advanceDirectivesObservation] = Reference(ex-AdvanceDirectives-BloodTransfusion)
+  * entry[advanceDirectivesConsent] = Reference(ex-AdvanceDirectives-BloodTransfusion)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">advance directve present</div>"
 
