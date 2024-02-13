@@ -43,7 +43,7 @@ mustSupport of true - only has a meaning on items that are minimal cardinality o
 The consuming actors should handle these elements being populated or being absent/empty.
 Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.
 
-### Download
+### Download and Analysis
 
 - [this entire guide](full-ig.zip),
 - the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
