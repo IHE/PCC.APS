@@ -84,9 +84,6 @@ pages:
   other.md:
     title: Changes to Other Documents
     generation: markdown
-  download.md:
-    title: "Download and Analysis"
-    generation: markdown
   issues.md:
     title: Significant Changes & Issues
     generation: markdown
@@ -107,4 +104,4 @@ menu:
   Other:
     Test Plan: testplan.html
     Changes to Other IHE Specifications: other.html
-    Download and Analysis: download.html
+
