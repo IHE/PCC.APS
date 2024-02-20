@@ -304,8 +304,8 @@ Title: "Fetal Presentation"
 Description: "This value set lists the expected values for the Fetal Presentation observation."
 Id: Fetal.Presentation.VS
 * ^experimental = false
-* $sct#70028003     "Vertex "
-* $sct#6096002     "Breech "
+* $sct#70028003     "Vertex"
+* $sct#6096002     "Breech"
 * $sct#73161006     "Transverse"
 * $sct#63750008     "Oblique"
 * $sct#124736009     "Compound"
@@ -342,7 +342,7 @@ Title: "Edema observation"
 Description: "This value set lists the expected values for the Edema observation."
 Id: Edema.VS
 * ^experimental = false
-* $loinc#44996-0     "Trace"
+//Note: * $loinc#44996-0     "Trace" no longer a valid code in LOINC Replace ment should be found 
 * $sct#420829009     "1+"
 * $sct#421605005     "2+"
 * $sct#421346005     "3+"

@@ -7,7 +7,7 @@ Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * identifier.use = #usual  
 * identifier.type = #NPI
-* identifier.system = "oid:2.16.840.1.113883.2.4.6.3"
+* identifier.system = "2.16.840.1.113883.2.4.6.3"
 * identifier.value = "567IUI51C154"
 * active = true
 * name[+].use = #official
