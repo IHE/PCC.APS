@@ -10,7 +10,7 @@ Usage: #example
 * identifier.system = "oid:1.2.36.146.595.217.0.1"
 * identifier.value = "12345"
 * identifier.period.start = "2001-05-06"
-* identifier.assigner = Reference(Organization/ex-Organization-OB) 
+* identifier.assigner = Reference(Organization/ex-Organization-OB)
 * name[+].use = #official
 * name[=].family = "Alvarez"
 * name[=].given = "Amanda"

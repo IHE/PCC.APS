@@ -30,7 +30,7 @@ Usage: #example
 Description: "The Example instance for the SmokingTobaccoUseFrequency observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 0 '{pack}/d'
+* valueQuantity = 0 '/d'
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
@@ -66,7 +66,7 @@ Usage: #example
 Description: "The Example instance for the AlcoholUseFrequency observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 2 '{drink}/d'
+* valueQuantity = 2 '/d'
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
@@ -135,7 +135,7 @@ Usage: #example
 Description: "The Example instance for the Exercise observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueQuantity = 2 'wk' "times a week"
+* valueQuantity = 2 'wk'
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 
