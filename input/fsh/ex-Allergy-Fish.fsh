@@ -7,8 +7,8 @@ Description: "The Example instance for the Allergy Intolerance - fish"
 * note.text = "allergy is to fresh fish. Tolerates canned fish"
 * identifier.system = "http://acme.com/ids/patients/risks"
 * identifier.value = #49476535
-* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = #active
+* verificationStatus = #confirmed
 * category = #food
 * code = $sct#227037002
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
