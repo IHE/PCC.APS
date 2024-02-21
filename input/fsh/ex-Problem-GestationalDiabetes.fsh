@@ -4,8 +4,8 @@ Usage: #example
 Description: "The Example instance for the Problems - Gestational diabetes"
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* clinicalStatus = http://hl7.org/fhir/ValueSet/condition-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = $sct#55607006
 * severity = $sct#371924009
 * code = $sct#11687002

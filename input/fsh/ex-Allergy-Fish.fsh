@@ -8,7 +8,7 @@ Description: "The Example instance for the Allergy Intolerance - fish"
 * identifier.system = "http://acme.com/ids/patients/risks"
 * identifier.value = #49476535
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * category = #food
 * code = $sct#227037002
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
