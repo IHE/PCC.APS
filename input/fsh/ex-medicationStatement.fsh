@@ -5,7 +5,7 @@ Description: "The Example instance for the Medication Statement"
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #active 
-* category = #outpatient 
+* category = http://hl7.org/fhir/ValueSet/medication-statement-category#outpatient 
 * medicationCodeableConcept = $sct#27658006  "Product containing amoxicillin (medicinal product)"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * effectiveDateTime = "2023-01-02"

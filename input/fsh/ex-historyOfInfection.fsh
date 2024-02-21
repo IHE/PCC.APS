@@ -6,7 +6,7 @@ Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * category = #problem-list-item
-* clinicalStatus = #active
+* clinicalStatus = http://hl7.org/fhir/ValueSet/condition-clinical#active
 * code = $sct#105629000 "Chlamydial infection (disorder)"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * onsetDateTime = "2022-09-18"

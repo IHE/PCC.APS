@@ -35,8 +35,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section.code ^type.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
 * section.title 1..1 MS
 * section.text 1..1 MS 
-* section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "$this"
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.description = "Sections composing the APS"
 * section ^slicing.ordered = false
@@ -68,8 +68,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionMedications] ^definition = "TBD"
 * section[sectionMedications].code = $loinc#10160-0
 * section[sectionMedications].emptyReason MS 
-* section[sectionMedications].entry ^slicing.discriminator.type = #value
-* section[sectionMedications].entry ^slicing.discriminator.path = "$this"
+* section[sectionMedications].entry ^slicing.discriminator.type = #profile
+* section[sectionMedications].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionMedications].entry ^slicing.rules = #open
 * section[sectionMedications].entry ^slicing.description = "Medications relevant for the scope of the patient summary"
 * section[sectionMedications].entry ^slicing.ordered = false
@@ -87,8 +87,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAllergies] ^definition = "TBD"
 * section[sectionAllergies].code = $loinc#48765-2
 * section[sectionAllergies].emptyReason MS 
-* section[sectionAllergies].entry ^slicing.discriminator.type = #value
-* section[sectionAllergies].entry ^slicing.discriminator.path = "$this"
+* section[sectionAllergies].entry ^slicing.discriminator.type = #profile
+* section[sectionAllergies].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionAllergies].entry ^slicing.rules = #open
 * section[sectionAllergies].entry ^slicing.description = "Relevant allergies or intolerances (conditions) for that patient."
 * section[sectionAllergies].entry ^slicing.ordered = false
@@ -104,8 +104,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProblems] ^definition = "TBD"
 * section[sectionProblems].code = $loinc#11450-4
 * section[sectionProblems].emptyReason MS 
-* section[sectionProblems].entry ^slicing.discriminator.type = #value
-* section[sectionProblems].entry ^slicing.discriminator.path = "$this"
+* section[sectionProblems].entry ^slicing.discriminator.type = #profile
+* section[sectionProblems].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionProblems].entry ^slicing.rules = #open
 * section[sectionProblems].entry ^slicing.description = "Clinical problems or conditions currently being monitored for the patient."
 * section[sectionProblems].entry ^slicing.ordered = false
@@ -120,8 +120,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionProceduresHx] ^definition = "TBD"
 * section[sectionProceduresHx].code = $loinc#47519-4
 * section[sectionProceduresHx].emptyReason MS 
-* section[sectionProceduresHx].entry ^slicing.discriminator.type = #value
-* section[sectionProceduresHx].entry ^slicing.discriminator.path = "$this"
+* section[sectionProceduresHx].entry ^slicing.discriminator.type = #profile
+* section[sectionProceduresHx].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionProceduresHx].entry ^slicing.rules = #open
 * section[sectionProceduresHx].entry ^slicing.description = "Patient past procedures pertinent to the scope of this document."
 * section[sectionProceduresHx].entry ^slicing.ordered = false
@@ -136,8 +136,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPastIllnessHx] ^definition = "TBD"
 * section[sectionPastIllnessHx].code = $loinc#11348-0
 * section[sectionPastIllnessHx].emptyReason MS 
-* section[sectionPastIllnessHx].entry ^slicing.discriminator.type = #value
-* section[sectionPastIllnessHx].entry ^slicing.discriminator.path = "$this"
+* section[sectionPastIllnessHx].entry ^slicing.discriminator.type = #profile
+* section[sectionPastIllnessHx].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionPastIllnessHx].entry ^slicing.rules = #open
 * section[sectionPastIllnessHx].entry ^slicing.description = "Conditions the patient suffered in the past."
 * section[sectionPastIllnessHx].entry ^slicing.ordered = false
@@ -152,8 +152,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory] ^definition = "TBD"
 * section[sectionSocialHistory].code = $loinc#11348-0
 * section[sectionSocialHistory].emptyReason MS 
-* section[sectionSocialHistory].entry ^slicing.discriminator.type = #value
-* section[sectionSocialHistory].entry ^slicing.discriminator.path = "$this"
+* section[sectionSocialHistory].entry ^slicing.discriminator.type = #profile
+* section[sectionSocialHistory].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionSocialHistory].entry ^slicing.rules = #open
 * section[sectionSocialHistory].entry ^slicing.description = "Health related 'lifestyle factors' or 'lifestyle observations' (e.g. smoke habits; alcohol consumption; diets, risky habits.)"
 * section[sectionSocialHistory].entry ^slicing.ordered = false
@@ -187,8 +187,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPregnancyHx] ^definition = "TBD"
 * section[sectionPregnancyHx].code = $loinc#10162-6
 * section[sectionPregnancyHx].emptyReason MS 
-* section[sectionPregnancyHx].entry ^slicing.discriminator.type = #value
-* section[sectionPregnancyHx].entry ^slicing.discriminator.path = "$this"
+* section[sectionPregnancyHx].entry ^slicing.discriminator.type = #profile
+* section[sectionPregnancyHx].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionPregnancyHx].entry ^slicing.rules = #open
 * section[sectionPregnancyHx].entry ^slicing.description = "Current pregnancy status and, optionally, information about the outcome of earlier pregnancies."
 * section[sectionPregnancyHx].entry ^slicing.ordered = false
@@ -210,8 +210,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionImmunizations] ^definition = "TBD"
 * section[sectionImmunizations].code = $loinc#11369-6
 * section[sectionImmunizations].emptyReason MS 
-* section[sectionImmunizations].entry ^slicing.discriminator.type = #value
-* section[sectionImmunizations].entry ^slicing.discriminator.path = "$this"
+* section[sectionImmunizations].entry ^slicing.discriminator.type = #profile
+* section[sectionImmunizations].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionImmunizations].entry ^slicing.rules = #open
 * section[sectionImmunizations].entry ^slicing.description = "Patient's immunization status and pertinent history."
 * section[sectionImmunizations].entry ^slicing.ordered = false
@@ -226,8 +226,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPlanOfCare] ^definition = "TBD"
 * section[sectionPlanOfCare].code = $loinc#18776-5
 * section[sectionPlanOfCare].emptyReason MS 
-* section[sectionPlanOfCare].entry ^slicing.discriminator.type = #value
-* section[sectionPlanOfCare].entry ^slicing.discriminator.path = "$this"
+* section[sectionPlanOfCare].entry ^slicing.discriminator.type = #profile
+* section[sectionPlanOfCare].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionPlanOfCare].entry ^slicing.rules = #open
 * section[sectionPlanOfCare].entry ^slicing.description = "entry used to represent structured care plans"
 * section[sectionPlanOfCare].entry ^slicing.ordered = false
@@ -245,8 +245,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionResults] ^definition = "TBD"
 * section[sectionResults].code = $loinc#30954-2
 * section[sectionResults].emptyReason MS 
-* section[sectionResults].entry ^slicing.discriminator.type = #value
-* section[sectionResults].entry ^slicing.discriminator.path = "$this"
+* section[sectionResults].entry ^slicing.discriminator.type = #profile
+* section[sectionResults].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionResults].entry ^slicing.rules = #open
 * section[sectionResults].entry ^slicing.description = "Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."
 * section[sectionResults].entry ^slicing.ordered = false
@@ -268,8 +268,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionAdvanceDirectives] ^definition = "TBD"
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].emptyReason MS 
-* section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #value
-* section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "$this"
+* section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #profile
+* section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionAdvanceDirectives].entry ^slicing.rules = #open
 * section[sectionAdvanceDirectives].entry ^slicing.description = "the patient's advance directive."
 * section[sectionAdvanceDirectives].entry ^slicing.ordered = false
@@ -284,8 +284,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionVitalSigns] ^definition = "TBD"
 * section[sectionVitalSigns].code = $loinc#8716-3
 * section[sectionVitalSigns].emptyReason MS 
-* section[sectionVitalSigns].entry ^slicing.discriminator.type = #value
-* section[sectionVitalSigns].entry ^slicing.discriminator.path = "$this"
+* section[sectionVitalSigns].entry ^slicing.discriminator.type = #profile
+* section[sectionVitalSigns].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionVitalSigns].entry ^slicing.rules = #open
 * section[sectionVitalSigns].entry ^slicing.description = "Notable vital signs or physical findings."
 * section[sectionVitalSigns].entry ^slicing.ordered = false
@@ -316,8 +316,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[ReviewOfSystems] ^definition = "The review of systems section shall contain a narrative description of the responses the patient gave to a set of routine questions on the functions of each anatomic body system. "
 * section[ReviewOfSystems].code = $loinc#10187-3
 * section[ReviewOfSystems].entry 0..* 
-* section[ReviewOfSystems].entry ^slicing.discriminator.type = #pattern
-* section[ReviewOfSystems].entry ^slicing.discriminator.path = "$this"
+* section[ReviewOfSystems].entry ^slicing.discriminator.type = #profile
+* section[ReviewOfSystems].entry ^slicing.discriminator.path = "resolve()"
 * section[ReviewOfSystems].entry ^slicing.rules = #open
 * section[ReviewOfSystems].entry ^slicing.description = ""
 * section[ReviewOfSystems].entry ^slicing.ordered = false
@@ -350,8 +350,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].code MS
 * section[AntepartumEducation].entry 0..* 
 * section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
-* section[AntepartumEducation].entry ^slicing.discriminator.type = #pattern
-* section[AntepartumEducation].entry ^slicing.discriminator.path = "$this"
+* section[AntepartumEducation].entry ^slicing.discriminator.type = #profile
+* section[AntepartumEducation].entry ^slicing.discriminator.path = "resolve()"
 * section[AntepartumEducation].entry ^slicing.rules = #open
 * section[AntepartumEducation].entry ^slicing.description = ""
 * section[AntepartumEducation].entry ^slicing.ordered = false
@@ -378,8 +378,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumVisitSummaryFlowsheet].code = $loinc#57059-8
 * section[AntepartumVisitSummaryFlowsheet].code MS
 * section[AntepartumVisitSummaryFlowsheet].entry only Reference(Observation or AntepartumVisitSummaryFlowsheetBattery)
-* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.type = #pattern
-* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.path = "$this"
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.type = #profile
+* section[AntepartumVisitSummaryFlowsheet].entry ^slicing.discriminator.path = "resolve()"
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.rules = #open
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.description = ""
 * section[AntepartumVisitSummaryFlowsheet].entry ^slicing.ordered = false
