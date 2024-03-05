@@ -12,12 +12,10 @@ Usage: #example
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
 * category = $sct#735986004
 * activity.reference = Reference(Appointment/activity-3)
-* activity.detail.reasonReference = Reference(Condition/p1)
-* activity.detail.status = http://hl7.org/fhir/care-plan-activity-status#scheduled
 * period.start = "2021-07-15"
 * period.end = "2022-04-20"
-* careTeam = Reference(careteam)
-* goal = Reference(goal)
+* careTeam = Reference(CareTeam/careteam)
+* goal = Reference(Goal/goal)
 
 Instance: p1
 InstanceOf: Condition
@@ -44,10 +42,10 @@ InstanceOf: CareTeam
 Usage: #inline
 * participant[0].role = $mysys#lmc
 * participant[=].role.text = "Midwife"
-* participant[=].member = Reference(pr1) "Mavis Midwife"
+* participant[=].member = Reference(Practitioner/pr1) "Mavis Midwife"
 * participant[+].role = $mysys#obs
 * participant[=].role.text = "Obstretitian"
-* participant[=].member = Reference(pr2) "Oscar Obstetrician"
+* participant[=].member = Reference(Practitioner/pr2) "Oscar Obstetrician"
 
 Instance: goal
 InstanceOf: Goal
@@ -69,7 +67,7 @@ Usage: #inline
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
-* participant[=].actor = Reference(pr1) "Mavis Midwife"
+* participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
 * participant[=].required = #true
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
@@ -84,7 +82,7 @@ Usage: #inline
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
-* participant[=].actor = Reference(pr1) "Mavis Midwife"
+* participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
@@ -99,6 +97,7 @@ Usage: #inline
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
-* participant[=].actor = Reference(pr1) "Mavis Midwife"
+* participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
+*  reasonReference = Reference(Condition/p1)
