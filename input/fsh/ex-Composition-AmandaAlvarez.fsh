@@ -93,7 +93,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">last menstral period</div>"
 
 
-* section[PhysicalExams]
+* section[PhysicalExams] 
   * title = "Physical Exams"
   * code = $loinc#29545-1 "Physical findings Narrative"
   * entry = Reference(ex-PhysicalExam-AbdominalTenderness)
@@ -138,8 +138,8 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 
 
 * section[sectionPregnancyHx]
-  * title = "Pregnancies Hx"
-  * code = $loinc#10162-6 "Pregnancy History"
+  * title = "Pregnancy History"
+  * code = $loinc#10162-6 "Pregnancies Hx"
   * entry[pregnancyStatus] = Reference(ex-PregnencyStatus-pregnant)
   * entry[currentPregnancyObservations][+] = Reference(ex-EstimatedDeliveryDate)
   * entry[currentPregnancyObservations][+] = Reference(ex-GestationalAge)
