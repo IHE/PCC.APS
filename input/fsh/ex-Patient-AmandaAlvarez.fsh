@@ -67,3 +67,15 @@ Usage: #example
 * contact.gender = #female
 * contact.period.start = "2012"
 * managingOrganization = Reference(Organization/ex-Organization-OB)
+
+
+Instance:   ex-Patient-AmandaAlvarez-Father
+InstanceOf: Patient
+Title:      "Amanda Alvarez Father example"
+Description: "Amanda Alvarez patient father example for antepartum summary"
+Usage: #example
+
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* name[+].use = #official
+* name[=].family = "Alvarez"
+* name[=].given = "Dave"
