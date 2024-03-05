@@ -3,9 +3,9 @@ Parent:         Consent
 Id:             IHE.advanceDirectives
 Title:          "Advance Directives"
 Description:    """
-TBD
+Example of the consent resource in the deffined method that IHE uses to deffine advance directives. modified from IHE advance directives Observation. 
 """
-* scope = #treatment
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#treatment
 * dateTime 1..1
 * performer 1..*
 * verification 1..* 
@@ -21,7 +21,7 @@ Usage: #example
 Description: "The Example instance for the IHE Advance Directives resource for blood transfuaion"
 
 * status = #active
-* category = #hcd
+* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#hcd
 * dateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
