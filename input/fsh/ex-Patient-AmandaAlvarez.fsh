@@ -79,3 +79,13 @@ Usage: #example
 * name[+].use = #official
 * name[=].family = "Alvarez"
 * name[=].given = "Dave"
+
+Instance:   ex-Condition-FamilyHistory
+InstanceOf: Condition
+Title:      "Example Family history condition - colon cancer"
+Description: "Example Family history condition - colon cancer"
+Usage: #example
+
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* code = $sct#312824007
+* asserter = Reference(Patient/ex-Patient-AmandaAlvarez)
