@@ -6,14 +6,14 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 Instance: ex-CarePlan-BirthPlan
 InstanceOf: CarePlan
 Usage: #example
-* contained[0] = Reference(p1)
-* contained[+] = Reference(pr1)
-* contained[+] = Reference(pr2)
-* contained[+] = Reference(careteam)
-* contained[+] = Reference(goal)
-* contained[+] = Reference(activity-1)
-* contained[+] = Reference(activity-2)
-* contained[+] = Reference(activity-3)
+* contained[0] = Reference(Condition/p1)
+* contained[+] = Reference(Practitioner/pr1)
+* contained[+] = Reference(Practitioner/pr2)
+* contained[+] = Reference(CareTeam/careteam)
+* contained[+] = Reference(Goal/goal)
+* contained[+] = Reference(Appointment/activity-1)
+* contained[+] = Reference(Appointment/activity-2)
+* contained[+] = Reference(Appointment/activity-3)
 * status = #active
 * intent = #plan
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
