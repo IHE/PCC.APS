@@ -528,7 +528,7 @@ Pain Severity Reported observation"""
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from https://loinc.org/38208-5/ (preferred)
+* valueCodeableConcept from https://loinc.org/LL1014-1 (preferred)
 * performer 1..*
 
 Instance: ex-PainSeverityReported
@@ -537,7 +537,7 @@ Usage: #example
 Description: "The Example instance for the Pain Severity Reported observation"
 * status = http://hl7.org/fhir/observation-status#final
 * effectiveDateTime = "2021-10-06T10:52:30-07:00"
-* valueCodeableConcept = https://loinc.org/LL1014-1#LA6112-2    "1"
+* valueCodeableConcept = https://loinc.org/LL1014-1#LA6112-2   "1"
 * performer = Reference(Practitioner/ex-Practitioner)
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 

@@ -6,14 +6,14 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 Instance: ex-CarePlan-BirthPlan
 InstanceOf: CarePlan
 Usage: #example
-* contained[0] = p1
-* contained[+] = pr1
-* contained[+] = pr2
-* contained[+] = careteam
-* contained[+] = goal
-* contained[+] = activity-1
-* contained[+] = activity-2
-* contained[+] = activity-3
+* contained[0] = Reference(p1)
+* contained[+] = Reference(pr1)
+* contained[+] = Reference(pr2)
+* contained[+] = Reference(careteam)
+* contained[+] = Reference(goal)
+* contained[+] = Reference(activity-1)
+* contained[+] = Reference(activity-2)
+* contained[+] = Reference(activity-3)
 * status = #active
 * intent = #plan
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
@@ -65,33 +65,33 @@ Instance: activity-1
 InstanceOf: Appointment
 Usage: #inline
 * status = #booked
-* description = "The first antenatal encounter. This is where a detailed physical examination is        performed and the pregnanacy discussed with the mother-to-be."
+* description = "The first antenatal encounter. This is where a detailed physical examination is performed and the pregnanacy discussed with the mother-to-be."
 * start = "2021-09-18T10:38:00+00:00"
 * end = "2021-09-18T10:50:00+00:00"
 * requestedPeriod.start = "2021-09-18"
 * requestedPeriod.end = "2021-09-28"
 * participant[0].actor = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
-* participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(pr1) "Mavis Midwife"
 * participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
 Instance: activity-2
 InstanceOf: Appointment
 Usage: #inline
 * status = #proposed
-* description = "The second antenatal encounter. Discuss any issues that arose from the first antenatal        encounter"
+* description = "The second antenatal encounter. Discuss any issues that arose from the first antenatal encounter"
 * requestedPeriod.start = "2021-10-12"
 * requestedPeriod.end = "2021-10-12"
 * participant[0].actor = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
-* participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(pr1) "Mavis Midwife"
-* participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
 Instance: activity-3
 InstanceOf: Appointment
@@ -101,9 +101,9 @@ Usage: #inline
 * requestedPeriod.start = "2022-04-20"
 * requestedPeriod.end = "2022-04-20"
 * participant[0].actor = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
-* participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(pr1) "Mavis Midwife"
-* participant[=].required = #true
-* participant[=].status = #accepted
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].status = http://hl7.org/fhir/participationstatus#accepted
