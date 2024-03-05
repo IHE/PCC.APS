@@ -11,11 +11,11 @@ Usage: #example
 * intent = http://hl7.org/fhir/request-intent#plan
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
 * category = $sct#735986004
-* activity.reference = Reference(Appointment/activity-3)
+* activity.reference = Reference(activity-3)
 * period.start = "2021-07-15"
 * period.end = "2022-04-20"
-* careTeam = Reference(CareTeam/ex-careteam)
-* goal = Reference(Goal/ex-goal)
+* careTeam = Reference(ex-careteam)
+* goal = Reference(ex-goal)
 
 Instance: p1
 InstanceOf: Condition
@@ -100,4 +100,4 @@ Usage: #inline
 * participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
 * participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
-*  reasonReference = Reference(Condition/p1)
+* reasonReference = Reference(p1)
