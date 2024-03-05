@@ -17,7 +17,7 @@ Instance: ex-Coverage-Organization
 InstanceOf: Organization
 Usage: #example
 
-* identifier.value = "22224456"
+* identifier.value = 22224456
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/organization-type#pay
 * name = "Insurance 1"
