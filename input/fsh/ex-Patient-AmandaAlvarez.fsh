@@ -88,5 +88,6 @@ Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * code = $sct#312824007
+* clinicalStatus = #inactive 
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * asserter = Reference(Patient/ex-Patient-AmandaAlvarez)

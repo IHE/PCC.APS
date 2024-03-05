@@ -12,4 +12,4 @@ Usage: #example
 * performer = Reference(Practitioner/ex-Practitioner)
 * effectivePeriod[+].start = "2018-04-02T10:30:10+01:00"
 * valueBoolean = true 
-* interpretation = #A
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#A

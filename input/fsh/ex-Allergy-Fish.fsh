@@ -10,7 +10,7 @@ Description: "The Example instance for the Allergy Intolerance - fish"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * category = #food
-* code = $sct#227037002
+* code = $sct#417532002
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
 * recordedDate = "2015-08-06T15:37:31-06:00"
 * recorder = Reference(Practitioner/ex-Practitioner)
