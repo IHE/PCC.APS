@@ -6,17 +6,13 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 Instance: ex-CarePlan-BirthPlan
 InstanceOf: CarePlan
 Usage: #example
-* contained[0] = Reference(Condition/p1)
-* contained[+] = Reference(Practitioner/pr1)
-* contained[+] = Reference(Practitioner/pr2)
-* contained[+] = Reference(CareTeam/careteam)
-* contained[+] = Reference(Goal/goal)
-* contained[+] = Reference(Appointment/activity-1)
-* contained[+] = Reference(Appointment/activity-2)
-* contained[+] = Reference(Appointment/activity-3)
-* status = #active
-* intent = #plan
+
+* status = http://hl7.org/fhir/request-status#active
+* intent = http://hl7.org/fhir/request-intent#plan
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
+* category = $sct#735986004
+* activity.reference = Reference(Appointment/activity-3)
+* activity.detail.reasonReference = Reference(Condition/p1)
 * period.start = "2021-07-15"
 * period.end = "2022-04-20"
 * careTeam = Reference(careteam)
