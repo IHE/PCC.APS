@@ -5,11 +5,11 @@ Usage: #example
 * status = http://hl7.org/fhir/request-status#active
 * identifier.system = "http://benefitsinc.com/certificate"
 * identifier.value = "123456"
-* type = http://terminology.hl7.org/CodeSystem/coverage-selfpay#EHCPOL
+* type = http://terminology.hl7.org/CodeSystem/v3-ActCode#EHCPOL
 * policyHolder = Reference(Patient/ex-Patient-AmandaAlvarez) 
 * subscriberId = "582938"
 * beneficiary = Reference(Patient/ex-Patient-AmandaAlvarez) 
-* payor = Reference(Organization//ex-Coverage-Organization)
+* payor = Reference(Organization/ex-Coverage-Organization)
 
 
 

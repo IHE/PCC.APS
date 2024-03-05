@@ -14,8 +14,8 @@ Usage: #example
 * activity.reference = Reference(Appointment/activity-3)
 * period.start = "2021-07-15"
 * period.end = "2022-04-20"
-* careTeam = Reference(CareTeam/careteam)
-* goal = Reference(Goal/goal)
+* careTeam = Reference(CareTeam/ex-careteam)
+* goal = Reference(Goal/ex-goal)
 
 Instance: p1
 InstanceOf: Condition
@@ -37,7 +37,7 @@ Usage: #inline
 * name.family = "Obstetrician"
 * name.given = "Oscar"
 
-Instance: careteam
+Instance: ex-careteam
 InstanceOf: CareTeam
 Usage: #inline
 * participant[0].role = $mysys#lmc
@@ -47,7 +47,7 @@ Usage: #inline
 * participant[=].role.text = "Obstretitian"
 * participant[=].member = Reference(Practitioner/pr2) "Oscar Obstetrician"
 
-Instance: goal
+Instance: ex-goal
 InstanceOf: Goal
 Usage: #inline
 * lifecycleStatus = #active

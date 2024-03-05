@@ -9,11 +9,11 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * date = "2023-01-08T14:30:00+01:00"
 * author = Reference(Practitioner/ex-Practitioner)
-* confidentiality = #N
-* attester[0].mode = #legal
+* confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
+* attester[0].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[=].time = "2023-01-08T14:30:00+01:00"
 * attester[=].party = Reference(Practitioner/ex-Practitioner)
-* attester[+].mode = #legal
+* attester[+].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[=].time = "2023-01-08T14:30:00+01:00"
 * attester[=].party = Reference(Organization/ex-Organization-OB)
 * custodian = Reference(Organization/ex-Organization-OB)
@@ -24,7 +24,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * code = $loinc#10160-0 "History of Medication use Narrative"
   * entry = Reference(MedicationStatement/ex-medicationStatement)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Active Medications - Amoxicillin </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Active Medications - Amoxicillin</div>"
 
 * section[sectionAllergies]
   * title = "Allergies and Intolerances"
@@ -32,7 +32,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[allergyOrIntolerance][+] = Reference(AllergyIntolerance/ex-Allergy-Latex)
   * entry[allergyOrIntolerance][+] = Reference(AllergyIntolerance/ex-Allergy-Fish)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">active allergies - latex and fish </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">active allergies - latex and fish</div>"
 
 
 * section[sectionProblems]
@@ -41,7 +41,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[problem][+] = Reference(Condition/ex-Problem-Sepsis)
   * entry[problem][+] = Reference(Condition/ex-Problem-GestationalDiabetes)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> active problems - sepsis and gestational diabedies </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">active problems - sepsis and gestational diabedies</div>"
 
 
 * section[ChiefComplaint]
@@ -56,7 +56,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[+] = Reference(Procedure/ex-Procedure-CephalicVersion)
   * entry[+] = Reference(Procedure/ex-Procedure-EducationSmoking)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> past procedures - Education for smoking provided and Cephallic Version </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">past procedures - Education for smoking provided and Cephallic Version</div>"
 
 
 * section[sectionImmunizations]
@@ -73,7 +73,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[antepartumLaboratoryResults] = Reference(ex-AntepartumLabs)
   * entry[antenatalTestingAndSurveillance] = Reference(ex-Antepartum-Genetic-Screening)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> no abnormal results for labs </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">no abnormal results for labs</div>"
 
 
 * section[sectionVitalSigns]
@@ -82,7 +82,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * entry[+] = Reference(Observation/ex-VitalSigns-BodyWeight)
   * entry[+] = Reference(Observation/ex-VitalSigns-BodyWeight-PrePregnancy)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">body weight - 185 lbs , prepregnancy weight - 148 lbs </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">body weight - 185 lbs , prepregnancy weight - 148 lbs</div>"
 
 
 * section[ReviewOfSystems]
@@ -105,16 +105,16 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * title = "Past Illness History"
   * code = $loinc#11348-0 "History of Past illness Narrative"
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> none found </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">none found</div>"
   * emptyReason = #unavailable
 
 
 * section[HistoryOfInfection]
   * title = "History Of Infection"
   * code = $loinc#56838-6 "History of Infectious disease Narrative"
-  * entry = Reference(Observation/ex-HistoryOfInfection)
+  * entry = Reference(Condition/ex-HistoryOfInfection)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">history of clamidia infection </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">history of clamidia infection</div>"
 
 
 * section[sectionPlanOfCare]
@@ -122,32 +122,32 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * code = $loinc#18776-5 "Plan of care note"
   * entry[birthPlan] = Reference(CarePlan/ex-CarePlan-BirthPlan)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> birth Plan </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Plan</div>"
 
 
 * section[sectionSocialHistory]
   * title = "Social History"
   * code = $loinc#11348-0 
-  * entry[smokingTobaccoUse] = Reference(ObservationTobaccoUseUvIps/ex-SocialHistory-smokingTobaccoUse)
-  * entry[alcoholUse] = Reference(ObservationAlcoholUseUvIps/ex-SocialHistory-alcoholUse)
-  * entry[sdohObservations][+] = Reference(DomesticViolenceRisk/ex-DomesticViolenceRisk)
-  * entry[sdohObservations][+] = Reference(Homelessness/ex-Homelessness)
+  * entry[smokingTobaccoUse] = Reference(Observation/ex-SocialHistory-smokingTobaccoUse)
+  * entry[alcoholUse] = Reference(Observation/ex-SocialHistory-alcoholUse)
+  * entry[sdohObservations][+] = Reference(Observation/ex-DomesticViolenceRisk)
+  * entry[sdohObservations][+] = Reference(Observation/ex-Homelessness)
   * entry[occupationalDataForHealth] = Reference(EmploymentStatus/ex-SocialHistory-EmploymentStatus)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">active smoker, drinks occasionally, no domestic violence risk, no homlessness, currently working</div>"
 
 
 * section[sectionPregnancyHx]
-  * title = "Pregnancy History"
+  * title = "Pregnancies Hx"
   * code = $loinc#10162-6 "Pregnancy History"
   * entry[pregnancyStatus] = Reference(PregnencyStatus/ex-PregnencyStatus-pregnant)
-  * entry[currentPregnancyObservations][+] = Reference(EstimatedDeliveryDate/ex-EstimatedDeliveryDate)
-  * entry[currentPregnancyObservations][+] = Reference(GestationalAge/ex-GestationalAge)
-  * entry[currentPregnancyObservations][+] = Reference(DateOfLastMenstralPeriod/ex-DateOfLastMenstralPeriod)
-  * entry[currentPregnancyObservations][+] = Reference(DateOfFirstPrenatalVisit/ex-DateOfFirstPrenatalVisit)
-  * entry[historicalPregnancyObservations] = Reference(PregnancyHistory/ex-PregnancyHistory-AmandaAlvarez)
+  * entry[currentPregnancyObservations][+] = Reference(Observation/ex-EstimatedDeliveryDate)
+  * entry[currentPregnancyObservations][+] = Reference(Observation/ex-GestationalAge)
+  * entry[currentPregnancyObservations][+] = Reference(Observation/ex-DateOfLastMenstralPeriod)
+  * entry[currentPregnancyObservations][+] = Reference(Observation/ex-DateOfFirstPrenatalVisit)
+  * entry[historicalPregnancyObservations] = Reference(Observation/ex-PregnancyHistory-AmandaAlvarez)
   * text.status = #generated
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">observations for pregnancy history </div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">observations for pregnancy history</div>"
 
 
 * section[sectionAdvanceDirectives]
@@ -170,7 +170,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * title = "Antepartum Education"
   * code = $loinc#34895-3 "Education Note"
   * entry[firstTrimester] = Reference(Observation/ex-PregnancyEducationObservation)
-  * entry[secondTrimester] = Reference(observation/ex-PregnancyEducationObservation)
+  * entry[secondTrimester] = Reference(Observation/ex-PregnancyEducationObservation)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">education on smoking provided to patient in first and second trimesters</div>"
 
@@ -178,7 +178,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[AntepartumVisitSummaryFlowsheet]
   * title = "Antepartum Visit Summary Flowsheet"
   * code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
-  * entry[prePregnancyWeight] = Reference(observation/ex-vitalSigns-BodyWeight-PrePregnancy)
-  * entry[antepartumFlowsheetPanel] = Reference(AntepartumVisitSummaryFlowsheetBattery/ex-AntepartumVisitSummaryFlowsheetBattery)
+  * entry[prePregnancyWeight] = Reference(Observation/ex-vitalSigns-BodyWeight-PrePregnancy)
+  * entry[antepartumFlowsheetPanel] = Reference(Observation/ex-AntepartumVisitSummaryFlowsheetBattery)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Antepartum visit summary flowsheet documented</div>"
