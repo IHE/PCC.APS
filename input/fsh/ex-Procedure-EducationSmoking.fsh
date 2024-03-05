@@ -24,5 +24,5 @@ Description: "The Example instance for the Service Request for the Education Smo
 * category = $sct#409073007
 * code = $sct#171055003
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
-* performedDateTime = "2022-08-25"
-* performer.actor = Reference(Practitioner/ex-Practitioner)
+* occurrenceDateTime = "2022-08-25"
+* performer = Reference(Practitioner/ex-Practitioner)
