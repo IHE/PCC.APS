@@ -13,12 +13,11 @@ Usage: #example
 * category = $sct#735986004
 * activity.reference = Reference(Appointment/activity-3)
 * activity.detail.reasonReference = Reference(Condition/p1)
+* activity.detail.status = http://hl7.org/fhir/care-plan-activity-status#scheduled
 * period.start = "2021-07-15"
 * period.end = "2022-04-20"
 * careTeam = Reference(careteam)
 * goal = Reference(goal)
-* activity[+].extension.url = "http://example.org/fhir/StructureDefinition/careplan#andetails"
-* activity[=].extension.valueUri = "http://orionhealth.com/fhir/careplan/1andetails"
 
 Instance: p1
 InstanceOf: Condition
