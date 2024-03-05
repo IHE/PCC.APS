@@ -6,7 +6,7 @@ Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * identifier.use = #usual 
-* identifier.type = #MR
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * identifier.system = "1.2.36.146.595.217.0.1"
 * identifier.value = "12345"
 * identifier.period.start = "2001-05-06"
@@ -48,7 +48,7 @@ Usage: #example
 * address.state = "02828"
 * address.country = "USA"
 * address.period.start = "1974-12-25"
-* contact.relationship = #N
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N
 * contact.name[+].use = #official
 * contact.name[=].family = "du Marché"
 * contact.name[=].prefix = "W"

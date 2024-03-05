@@ -25,6 +25,7 @@ Description: "The Example instance for the IHE Advance Directives resource for b
 * dateTime = "2021-10-06T10:52:30-07:00"
 * performer = Reference(Practitioner/ex-Practitioner)
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
+* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
 * verification.verified = true
 * verification.verifiedWith = Reference(Patient/ex-Patient-AmandaAlvarez)
 * verification.verificationDate = "2021-10-06T10:52:30-07:00"

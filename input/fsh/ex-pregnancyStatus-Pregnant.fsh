@@ -11,4 +11,4 @@ Usage: #example
 * performer = Reference(Practitioner/ex-Practitioner)
 * effectiveDateTime = "2023-01-08"
 * valueCodeableConcept = $loinc#LA15173-0 "Pregnant"
-* hasMember = Reference(Observation/pregnancy-edd-example)
+* hasMember = Reference(Observation/ex-pregnancy-edd)

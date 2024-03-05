@@ -6,7 +6,7 @@ Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * identifier.use = #official  
-* identifier.type = #NPI
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#NPI
 * identifier.system = "oid:2.16.840.1.113883.4.6"
 * identifier.value = "187659"
 * identifier.period.start = "1999-03-19"

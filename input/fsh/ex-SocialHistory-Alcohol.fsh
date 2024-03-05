@@ -1,7 +1,7 @@
 Instance:   ex-SocialHistory-alcoholUse
 InstanceOf: ObservationAlcoholUseUvIps
-Title:      "Vital Signs Body Weight example"
-Description: "Example for vital signs -  body weight"
+Title:      "Social History alcohol Use example"
+Description: "Social History alcohol Use example"
 Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
@@ -10,4 +10,4 @@ Usage: #example
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * performer = Reference(Practitioner/ex-Practitioner)
 * effectiveDateTime = "2019-07-15"
-* valueQuantity = 2 '{wine glasses}/d'
+* valueQuantity = 2 '/d'

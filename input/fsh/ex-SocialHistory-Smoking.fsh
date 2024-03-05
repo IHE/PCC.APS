@@ -8,6 +8,7 @@ Usage: #example
 * status = #final
 * code = $loinc#72166-2 "Tobacco smoking status"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
+* performer = Reference(Practitioner/ex-Practitioner)
 * effectiveDateTime = "2022-08-15"
 * valueCodeableConcept = $loinc#LA18976-3	
 
