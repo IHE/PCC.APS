@@ -197,13 +197,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPregnancyHx].entry only Reference(Observation or DocumentReference)
 * section[sectionPregnancyHx].entry contains
     pregnancyStatus 1..* MS and 
-    currentPregnancyObservations 1..* MS and 
-    pregnancyOutcomeSummary 0..* MS and 	
-    historicalPregnancyObservations 0..* MS
+    PregnancyObservations 1..* MS and 
+    pregnancyOutcomeSummary 0..* MS  	
 * section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)  
 * section[sectionPregnancyHx].entry[pregnancyOutcomeSummary]  only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)  
-* section[sectionPregnancyHx].entry[currentPregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod)
-* section[sectionPregnancyHx].entry[historicalPregnancyObservations] only Reference(Observation or PregnancyHistory)
+* section[sectionPregnancyHx].entry[PregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod or PregnancyHistory)
 
 * section[sectionImmunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionImmunizations] ^extension.valueString = "Section"
@@ -350,19 +348,8 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[AntepartumEducation].code = $loinc#34895-3
 * section[AntepartumEducation].code MS
 * section[AntepartumEducation].entry 0..* 
-* section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or DocumentReference)
-* section[AntepartumEducation].entry ^slicing.discriminator.type = #profile
-* section[AntepartumEducation].entry ^slicing.discriminator.path = "resolve()"
-* section[AntepartumEducation].entry ^slicing.rules = #open
-* section[AntepartumEducation].entry ^slicing.description = ""
-* section[AntepartumEducation].entry ^slicing.ordered = false
-* section[AntepartumEducation].entry contains 
-    firstTrimester 0..* MS and 
-    secondTrimester 0..* MS and 
-    thirdTrimester 0..* MS
-* section[AntepartumEducation].entry[firstTrimester] only Reference(PregnancyEducationObservation)
-* section[AntepartumEducation].entry[secondTrimester] only Reference(PregnancyEducationObservation)
-* section[AntepartumEducation].entry[thirdTrimester] only Reference(PregnancyEducationObservation)
+* section[AntepartumEducation].entry only Reference(Procedure or PregnancyEducationObservation or Observation or DocumentReference)
+
 
 * section[Payors] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[Payors] ^extension.valueString = "Section"

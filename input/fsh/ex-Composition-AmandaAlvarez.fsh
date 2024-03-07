@@ -141,11 +141,11 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * title = "Pregnancy History"
   * code = $loinc#10162-6 "Pregnancies Hx"
   * entry[pregnancyStatus] = Reference(ex-PregnencyStatus-pregnant)
-  * entry[currentPregnancyObservations][+] = Reference(ex-EstimatedDeliveryDate)
-  * entry[currentPregnancyObservations][+] = Reference(ex-GestationalAge)
-  * entry[currentPregnancyObservations][+] = Reference(ex-DateOfLastMenstralPeriod)
-  * entry[currentPregnancyObservations][+] = Reference(ex-DateOfFirstPrenatalVisit)
-  * entry[historicalPregnancyObservations] = Reference(ex-PregnancyHistory-AmandaAlvarez)
+  * entry[PregnancyObservations][+] = Reference(ex-EstimatedDeliveryDate)
+  * entry[PregnancyObservations][+] = Reference(ex-GestationalAge)
+  * entry[PregnancyObservations][+] = Reference(ex-DateOfLastMenstralPeriod)
+  * entry[PregnancyObservations][+] = Reference(ex-DateOfFirstPrenatalVisit)
+  * entry[PregnancyObservations][+] = Reference(ex-PregnancyHistory-AmandaAlvarez)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">observations for pregnancy history</div>"
 
@@ -169,8 +169,8 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[AntepartumEducation]
   * title = "Antepartum Education"
   * code = $loinc#34895-3 "Education Note"
-  * entry[firstTrimester] = Reference(ex-PregnancyEducationObservation)
-  * entry[secondTrimester] = Reference(ex-PregnancyEducationObservation)
+  * entry[+] = Reference(ex-PregnancyEducationObservation)
+  * entry[+] = Reference(ex-PregnancyEducationObservation)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">education on smoking provided to patient in first and second trimesters</div>"
 
