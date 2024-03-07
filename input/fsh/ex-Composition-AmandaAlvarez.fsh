@@ -120,7 +120,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[sectionPlanOfCare]
   * title = "Plan Of Care"
   * code = $loinc#18776-5 "Plan of care note"
-  * entry[birthPlan] = Reference(ex-CarePlan-BirthPlan)
+  * entry = Reference(ex-CarePlan-BirthPlan)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Birth Plan</div>"
 

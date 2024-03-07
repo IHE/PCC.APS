@@ -10,6 +10,9 @@ WARNING: Observation/ex-AlcoholUseFrequency: Observation.value.ofType(Quantity):
 INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.reportOrigin: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-origin|0.1.0
 INFORMATION: Organization/ex-Coverage-Organization: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
 INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292' could not be found, so the code cannot be validated
+INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292' could not be found, so the code cannot be validated
+INFORMATION: Organization/ex-Coverage-Organization: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.reportOrigin: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-origin|0.1.0
 INFORMATION: StructureDefinition/IHE.AlcoholUseFrequency: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: StructureDefinition/IHE.AlcoholUseFrequency: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: StructureDefinition/IHE.BodyWeightMeasuredPrePregnancy: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0

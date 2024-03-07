@@ -250,13 +250,11 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionResults].entry ^slicing.description = "Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."
 * section[sectionResults].entry ^slicing.ordered = false
 * section[sectionResults].entry 0..* MS
-* section[sectionResults].entry only Reference(Observation or DiagnosticReport or DocumentReference)
+* section[sectionResults].entry only Reference(Observation or http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips or DiagnosticReport or DocumentReference)
 * section[sectionResults].entry contains
-    results-observation 0..* MS and 
     results-diagnosticReport 0..* MS and 
     antepartumLaboratoryResults 1..* MS and 
     antenatalTestingAndSurveillance 0..* MS
-* section[sectionResults].entry[results-observation] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
 * section[sectionResults].entry[results-diagnosticReport] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
 * section[sectionResults].entry[antepartumLaboratoryResults] only Reference(AntepartumLabs)
 * section[sectionResults].entry[antenatalTestingAndSurveillance] only Reference(Antepartum_Genetic_Screening)
