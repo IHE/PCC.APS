@@ -127,7 +127,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 
 * section[sectionSocialHistory]
   * title = "Social History"
-  * code = $loinc#11348-0 
+  * code = $loinc#29762-2 
   * entry[smokingTobaccoUse] = Reference(ex-SocialHistory-smokingTobaccoUse)
   * entry[alcoholUse] = Reference(ex-SocialHistory-alcoholUse)
   * entry[sdohObservations][+] = Reference(ex-DomesticViolenceRisk)

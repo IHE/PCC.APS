@@ -6,7 +6,7 @@
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">To do</div>
   </text   -->
-  <text> <status value="generated"/> <div xmlns="http://www.w3.org/1999/xhtml"><table class="clstu"><tr> <td> Mode: snapshotStatus: currentCode: History of family member diseases</td> </tr> <tr> <td> Subject: <a href="ex-Patient-AmandaAlvarez.fsh">Patient/ex-Patient-AmandaAlvarez</a>  &quot;Peter CHALMERS&quot;</td> </tr> </table> <table class="grid"><tr style="backgound-color: #eeeeee"><td> <b> Items</b> </td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> ?ngen-16a?</td> </tr> <tr> <td> <a href="ex-Condition-FamilyHistory.fsh">Condition/ex-Condition-FamilyHistory</a> </td> </tr> </table> </div> </text> <contained> 
+  <contained> 
     <FamilyMemberHistory> 
       <id value="1"/> 
       <extension url="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent">

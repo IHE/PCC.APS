@@ -19,7 +19,7 @@ Usage: #example
 
 Instance: p1
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.text = "pregnancy"
@@ -27,19 +27,19 @@ Usage: #inline
 
 Instance: pr1
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * name.family = "0'Malley"
 * name.given = "Melinda"
 
 Instance: pr2
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * name.family = "Obstetrician"
 * name.given = "Oscar"
 
 Instance: ex-careteam
 InstanceOf: CareTeam
-Usage: #inline
+Usage: #example
 * participant[0].role = $mysys#lmc
 * participant[=].role.text = "Midwife"
 * participant[=].member = Reference(Practitioner/pr1) "Mavis Midwife"
@@ -49,14 +49,14 @@ Usage: #inline
 
 Instance: ex-goal
 InstanceOf: Goal
-Usage: #inline
+Usage: #example
 * lifecycleStatus = #active
 * description.text = "Maintain patient's health throughout pregnancy and ensure a healthy child"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
 
 Instance: activity-1
 InstanceOf: Appointment
-Usage: #inline
+Usage: #example
 * status = #booked
 * description = "The first antenatal encounter. This is where a detailed physical examination is performed and the pregnanacy discussed with the mother-to-be."
 * start = "2021-09-18T10:38:00+00:00"
@@ -73,7 +73,7 @@ Usage: #inline
 
 Instance: activity-2
 InstanceOf: Appointment
-Usage: #inline
+Usage: #example
 * status = #proposed
 * description = "The second antenatal encounter. Discuss any issues that arose from the first antenatal encounter"
 * requestedPeriod.start = "2021-10-12"
@@ -88,7 +88,7 @@ Usage: #inline
 
 Instance: activity-3
 InstanceOf: Appointment
-Usage: #inline
+Usage: #example
 * status = #proposed
 * description = "The home delivery."
 * requestedPeriod.start = "2022-04-20"

@@ -151,7 +151,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory] ^extension.valueString = "Section"
 * section[sectionSocialHistory] ^short = "Social History Section"
 * section[sectionSocialHistory] ^definition = "TBD"
-* section[sectionSocialHistory].code = $loinc#11348-0
+* section[sectionSocialHistory].code = $loinc#29762-2
 * section[sectionSocialHistory].emptyReason MS 
 * section[sectionSocialHistory].entry ^slicing.discriminator.type = #profile
 * section[sectionSocialHistory].entry ^slicing.discriminator.path = "resolve()"
