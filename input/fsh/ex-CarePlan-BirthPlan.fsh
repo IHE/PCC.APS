@@ -4,7 +4,7 @@ Alias: $mysys = http://example.org/mysys
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
 Instance: ex-CarePlan-BirthPlan
-InstanceOf: CarePlan
+InstanceOf: Antepartum_BirthPlan
 Usage: #example
 
 * status = http://hl7.org/fhir/request-status#active

@@ -173,13 +173,13 @@ and selected histories are provided. The Antepartum Summary represents a summary
     occupationalDataForHealth 0..*
 * section[sectionSocialHistory].entry[smokingTobaccoUse] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips)
 * section[sectionSocialHistory].entry[alcoholUse] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
-* section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse or Observation)
+* section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
 * section[sectionSocialHistory].entry[alcoholUseFrequency] only Reference(AlcoholUseFrequency)
 * section[sectionSocialHistory].entry[exercise] only Reference(Exercise or Observation)
-* section[sectionSocialHistory].entry[diet] only Reference(Diet or Observation)
-* section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure or Observation)
-* section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk or Observation)
+* section[sectionSocialHistory].entry[diet] only Reference(Diet)
+* section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure)
+* section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk)
 * section[sectionSocialHistory].entry[occupationalDataForHealth] only Reference(CombatZonePeriod or EmploymentStatus or PastOrPresentJob or RetirementDate or UsualWork)
 
 * section[sectionPregnancyHx] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -201,7 +201,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     pregnancyOutcomeSummary 0..* MS  	
 * section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)  
 * section[sectionPregnancyHx].entry[pregnancyOutcomeSummary]  only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)  
-* section[sectionPregnancyHx].entry[PregnancyObservations] only Reference(Observation or MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod or PregnancyHistory)
+* section[sectionPregnancyHx].entry[PregnancyObservations] only Reference(MultiplePregnancy or GestationalAge or DateOfLastMenstralPeriod or PregnancyHistory)
 
 * section[sectionImmunizations] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionImmunizations] ^extension.valueString = "Section"
@@ -236,7 +236,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
     carePlan 0..* and 
     birthPlan 0..* MS  
 * section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
-* section[sectionPlanOfCare].entry[birthPlan] only Reference(CarePlan)
+* section[sectionPlanOfCare].entry[birthPlan] only Reference(Antepartum_BirthPlan)
 
 * section[sectionResults] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionResults] ^extension.valueString = "Section"

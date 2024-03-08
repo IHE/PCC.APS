@@ -178,7 +178,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 * section[AntepartumVisitSummaryFlowsheet]
   * title = "Antepartum Visit Summary Flowsheet"
   * code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
-  * entry[prePregnancyWeight] = Reference(ex-vitalSigns-BodyWeight-PrePregnancy)
+  * entry[prePregnancyWeight] = Reference(ex-VitalSigns-BodyWeight-PrePregnancy)
   * entry[antepartumFlowsheetPanel] = Reference(ex-AntepartumVisitSummaryFlowsheetBattery)
   * text.status = #generated
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Antepartum visit summary flowsheet documented</div>"
