@@ -112,13 +112,13 @@ The actors in this profile are described in more detail in the sections below.
 
 #### 56.1.1.1 Content Creator
 
-The [Content Creator](pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
 #### 56.1.1.2 Content Consumer
 
-The [Content Consumer](pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 #### 56.1.2 APS Content
 
