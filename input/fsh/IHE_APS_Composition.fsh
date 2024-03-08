@@ -13,7 +13,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * identifier MS
 * status MS 
 * type MS
-* insert requireAtLeastOneMatch(type, asummary, $loinc#57055-6 )
+* insert requireAtLeastOneMatch(type.coding, asummary, $loinc#57055-6 )
 * category 1..* MS 
 * insert requireAtLeastOneMatch(category, pstat, $loinc#90767-5)
 * subject 1..1 MS 
