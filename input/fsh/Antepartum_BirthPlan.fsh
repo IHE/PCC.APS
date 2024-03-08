@@ -14,7 +14,7 @@ Description:    "A birth plan profile to help deffine the plan for birth that a 
 * title = "Birth Plan"
 
 
-Instance: Ex-Antepartum_BirthPlan
+Instance: Ex-Antepartum-BirthPlan
 InstanceOf: Antepartum_BirthPlan
 Usage: #inline
 * intent = http://hl7.org/fhir/request-intent#plan
