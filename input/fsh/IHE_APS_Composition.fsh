@@ -232,11 +232,6 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionPlanOfCare].entry ^slicing.ordered = false
 * section[sectionPlanOfCare].entry 0..* MS
 * section[sectionPlanOfCare].entry only Reference(CarePlan or DocumentReference)
-* section[sectionPlanOfCare].entry contains
-    carePlan 0..* and 
-    birthPlan 0..* MS  
-* section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
-* section[sectionPlanOfCare].entry[birthPlan] only Reference(Antepartum_BirthPlan)
 
 * section[sectionResults] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionResults] ^extension.valueString = "Section"
