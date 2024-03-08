@@ -6,7 +6,7 @@ Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#exam
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = $loinc#29463-7 "Body Weight"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez)
 * performer = Reference(Practitioner/ex-Practitioner)

@@ -10,7 +10,7 @@ Usage: #example
 * identifier.value = "187659"
 * identifier.period.start = "1999-03-19"
 * active = true
-* type = #prov
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov
 * name = "Acme Healthcare"
 * telecom.system = #phone 
 * telecom.value = "(401) 623 8856"
