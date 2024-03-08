@@ -13,6 +13,7 @@ INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.reportOrigin: 
 INFORMATION: Organization/ex-Coverage-Organization: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
 INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292' could not be found, so the code cannot be validated
 INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.vaccineCode.coding[0].system: A definition for CodeSystem 'https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292' could not be found, so the code cannot be validated
+INFORMATION: Immunization/ex-Immunization-Vericella: Immunization.vaccineCode.coding[0]: A definition for CodeSystem 'https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292' could not be found, so the code cannot be validated
 INFORMATION: CareTeam/ex-careteam: CareTeam.participant[0].role[0].coding[0].system: A definition for CodeSystem 'http://example.org/mysys' could not be found, so the code cannot be validated
 INFORMATION: CareTeam/ex-careteam: CareTeam.participant[1].role[0].coding[0]: A definition for CodeSystem 'http://example.org/mysys' could not be found, so the code cannot be validated
 INFORMATION: Organization/ex-Coverage-Organization: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0

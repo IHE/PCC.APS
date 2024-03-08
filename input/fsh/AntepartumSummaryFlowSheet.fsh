@@ -15,7 +15,7 @@ observations.
 * performer 1..*
 //Confomrance Statment: The effective time element shall be present to indicate the interval of the pregnancy. 
 * subject only Reference(Patient)
-* hasMember only Reference(GestationalAge or FetalBodyWeightPalpation or FetalBodyWeightUltrasound or UterusFundalHeight or FetalPresentationPalpitation or FetalPresentationUltrasound or FetalHeartRateAuscultation or FetalMovementReported or http://hl7.org/fhir/StructureDefinition/bp or http://hl7.org/fhir/StructureDefinition/bodyweight or PretermLaborSymptoms or CervicalCanalExternalosDiameterUltrasound or EffacementCervixPalpitation or CervixLengthUltrasound or AlbuminPresenceInUrine or GlucosePresenceinUrine or GlucosePresenceinUrineTestStrip or Edema or PainSeverityReported or DateNextClinicVisit or AnnotationComment)
+* hasMember only Reference(GestationalAge or FetalBodyWeightPalpation or FetalBodyWeightUltrasound or UterusFundalHeight or FetalPresentationPalpitation or FetalPresentationUltrasound or FetalHeartRateAuscultation or FetalMovementReported or http://hl7.org/fhir/StructureDefinition/bp or PretermLaborSymptoms or CervicalCanalExternalosDiameterUltrasound or EffacementCervixPalpitation or CervixLengthUltrasound or AlbuminPresenceInUrine or GlucosePresenceinUrine or GlucosePresenceinUrineTestStrip or Edema or PainSeverityReported or DateNextClinicVisit or AnnotationComment)
 
 
 Instance: ex-AntepartumVisitSummaryFlowsheetBattery

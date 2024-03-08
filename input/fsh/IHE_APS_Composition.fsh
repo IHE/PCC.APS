@@ -176,7 +176,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionSocialHistory].entry[drugUse] only Reference(DrugUse)
 * section[sectionSocialHistory].entry[smokingTobaccoUseFrequency] only Reference(SmokingTobaccoUseFrequency)
 * section[sectionSocialHistory].entry[alcoholUseFrequency] only Reference(AlcoholUseFrequency)
-* section[sectionSocialHistory].entry[exercise] only Reference(Exercise or Observation)
+* section[sectionSocialHistory].entry[exercise] only Reference(Exercise)
 * section[sectionSocialHistory].entry[diet] only Reference(Diet)
 * section[sectionSocialHistory].entry[toxicExposure] only Reference(ToxicExposure)
 * section[sectionSocialHistory].entry[sdohObservations] only Reference(Homelessness or DomesticViolenceRisk)
