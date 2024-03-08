@@ -98,6 +98,6 @@ Usage: #example
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
-* participant[=].required = true
+* participant[=].required = http://hl7.org/fhir/participantrequired#required
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * reasonReference = Reference(p1)
