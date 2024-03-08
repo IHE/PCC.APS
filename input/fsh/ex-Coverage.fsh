@@ -1,5 +1,6 @@
 Instance: ex-Coverage
 InstanceOf: Coverage
+Description: "Example coverage for ex composition."
 Usage: #example
 
 * status = http://hl7.org/fhir/request-status#active
@@ -15,6 +16,7 @@ Usage: #example
 
 Instance: ex-Coverage-Organization
 InstanceOf: Organization
+Description: "Example organization for ex composition."
 Usage: #example
 
 * identifier.value = "22224456"

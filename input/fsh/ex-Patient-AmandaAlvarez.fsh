@@ -7,7 +7,6 @@ Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * identifier.use = #usual 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
-* identifier.system = "1.2.36.146.595.217.0.1"
 * identifier.value = "12345"
 * identifier.period.start = "2001-05-06"
 * identifier.assigner = Reference(Organization/ex-Organization-OB)

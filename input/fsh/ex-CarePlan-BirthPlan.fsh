@@ -5,6 +5,7 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 
 Instance: ex-CarePlan-BirthPlan
 InstanceOf: CarePlan
+Description: "Example birth plan for ex composition."
 Usage: #example
 
 * status = http://hl7.org/fhir/request-status#active
@@ -19,6 +20,7 @@ Usage: #example
 
 Instance: p1
 InstanceOf: Condition
+Description: "Example condition for the ex-birthpan element."
 Usage: #example
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
@@ -27,18 +29,21 @@ Usage: #example
 
 Instance: pr1
 InstanceOf: Practitioner
+Description: "Example practitioner 2 for the ex-birthpan care team"
 Usage: #example
 * name.family = "0'Malley"
 * name.given = "Melinda"
 
 Instance: pr2
 InstanceOf: Practitioner
+Description: "Example practitioner 2 for the ex-birthpan care team."
 Usage: #example
 * name.family = "Obstetrician"
 * name.given = "Oscar"
 
 Instance: ex-careteam
 InstanceOf: CareTeam
+Description: "Example care team for the ex-birthpan element."
 Usage: #example
 * participant[0].role = $mysys#lmc
 * participant[=].role.text = "Midwife"
@@ -49,6 +54,7 @@ Usage: #example
 
 Instance: ex-goal
 InstanceOf: Goal
+Description: "Example goal for the ex-birthpan element."
 Usage: #example
 * lifecycleStatus = #active
 * description.text = "Maintain patient's health throughout pregnancy and ensure a healthy child"
@@ -56,6 +62,7 @@ Usage: #example
 
 Instance: activity-1 
 InstanceOf: Appointment
+Description: "Example appointment 1 for the ex-birthpan element."
 Usage: #example
 * status = #booked
 * description = "The first antenatal encounter. This is where a detailed physical examination is performed and the pregnanacy discussed with the mother-to-be."
@@ -73,6 +80,7 @@ Usage: #example
 
 Instance: activity-2
 InstanceOf: Appointment
+Description: "Example appointment 2 for the ex-birthpan element."
 Usage: #example
 * status = #proposed
 * description = "The second antenatal encounter. Discuss any issues that arose from the first antenatal encounter"
@@ -87,7 +95,8 @@ Usage: #example
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
 Instance: activity-3
-InstanceOf: Appointment 
+InstanceOf: Appointment
+Description: "Example appointment 3 for the ex-birthpan element." 
 Usage: #example
 * status = #proposed
 * description = "The home delivery."
