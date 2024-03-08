@@ -13,9 +13,9 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * identifier MS
 * status MS 
 * type MS
-* type = $loinc#57055-6
+* insert requireAtLeastOneMatch(type, asummary, $loinc#57055-6 )
 * category 1..* MS 
-* category = $loinc#90767-5
+* insert requireAtLeastOneMatch(category, pstat, $loinc#90767-5)
 * subject 1..1 MS 
 * subject only Reference(https://profiles.ihe.net/ITI/PDQm/StructureDefinition/IHE.PDQm.Patient)
 * encounter MS 
@@ -241,7 +241,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * section[sectionResults].emptyReason MS 
 * section[sectionResults].entry ^slicing.discriminator.type = #profile
 * section[sectionResults].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionResults].entry ^slicing.rules = #open
+* section[sectionResults].entry ^slicing.rules = #open 
 * section[sectionResults].entry ^slicing.description = "Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."
 * section[sectionResults].entry ^slicing.ordered = false
 * section[sectionResults].entry 0..* MS

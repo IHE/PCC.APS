@@ -67,7 +67,6 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Homelessness](StructureDefinition-IHE.Homelessness.html)                                                                         | N                         |
 | [Domestic Violence Risk](StructureDefinition-IHE.ViolenceRisk.html)                                                               | N                         |
 | [Pregnancy Education Observation](StructureDefinition-IHE.PregnancyEducationObservation.html)                                     | N                         |
-| [Advance Directives Observation](StructureDefinition-IHE.AdvanceDirectivesObservation.html)                                       | N                         |
 {: .grid}
 
 
@@ -76,8 +75,8 @@ The following table informs the Pregnancy observations that are defined in this 
 ## 1:X.1 APS Actors, Transactions, and Content Modules
 
 * Actors
-  * [ContentCreator](#ContentCreator)
-  * [ContentConsumer](#ContentConsumer)
+  * [ContentCreator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
+  * [ContentConsumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
 
 ## 1:X.2 Use Cases 
 
@@ -141,18 +140,18 @@ between options when applicable are specified in notes.
 
 ### 56.2.1 View Option
 
-This option defines the processing requirements placed on Content Consumers for providing access, rendering and management of the medical document. See the [View Option in IHE PCC TF-2:3.1.1](pcc.html#31-document-sharing-pcc-1) for more details on this option.
+This option defines the processing requirements placed on Content Consumers for providing access, rendering and management of the medical document. See the [View Option in IHE PCC TF-2:3.1.1](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
 The Content Consumer Actor shall be able to present a view of the document. Minimal view guidance following [FHIR core Document Presentation](http://hl7.org/fhir/documents.html#presentation).
 
 ### 56.2.2 Document Import Option
 
-This option defines the processing requirements placed on Content Consumers for providing access, and importing the entire medical document and managing it as part of the patient record. See the [Document Import Option in IHE PCC TF-2:3.1.2](pcc.html#31-document-sharing-pcc-1) for more details on this option.
+This option defines the processing requirements placed on Content Consumers for providing access, and importing the entire medical document and managing it as part of the patient record. See the [Document Import Option in IHE PCC TF-2:3.1.2](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
 ### 56.2.3 Discrete Data Import Option
 
 This option defines the processing requirements placed on Content Consumers for providing access, and importing discrete data from selected sections of the medical document and
-managing them as part of the patient record. See the [Discrete Data Import Option in IHE PCC TF-2:3.1.4](pcc.html#31-document-sharing-pcc-1) for more details on this option.
+managing them as part of the patient record. See the [Discrete Data Import Option in IHE PCC TF-2:3.1.4](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
 
 <a name="required-groupings"> </a>
