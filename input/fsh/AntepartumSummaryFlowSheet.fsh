@@ -528,7 +528,6 @@ Pain Severity Reported observation"""
 * effective[x] only dateTime 
 * value[x] 1..1 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from https://loinc.org/LL1014-1 (preferred)
 * performer 1..*
 
 Instance: ex-PainSeverityReported
