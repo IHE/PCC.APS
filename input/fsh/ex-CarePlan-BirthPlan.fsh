@@ -87,7 +87,7 @@ Usage: #example
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
 Instance: activity-3
-InstanceOf: Appointment
+InstanceOf: Appointment 
 Usage: #example
 * status = #proposed
 * description = "The home delivery."
