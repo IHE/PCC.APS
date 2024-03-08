@@ -54,7 +54,7 @@ Usage: #example
 * description.text = "Maintain patient's health throughout pregnancy and ensure a healthy child"
 * subject = Reference(Patient/ex-Patient-AmandaAlvarez) "Amanda Alvarez"
 
-Instance: activity-1
+Instance: activity-1 
 InstanceOf: Appointment
 Usage: #example
 * status = #booked
@@ -68,7 +68,7 @@ Usage: #example
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
-* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].required = http://hl7.org/fhir/participantrequired#required 
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 
 Instance: activity-2
@@ -98,6 +98,6 @@ Usage: #example
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * participant[+].type = $v3-ParticipationType#ATND
 * participant[=].actor = Reference(Practitioner/pr1) "Mavis Midwife"
-* participant[=].required = http://hl7.org/fhir/participantrequired#required
+* participant[=].required = true
 * participant[=].status = http://hl7.org/fhir/participationstatus#accepted
 * reasonReference = Reference(p1)
