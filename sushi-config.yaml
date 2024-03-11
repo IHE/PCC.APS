@@ -37,7 +37,7 @@ dependencies:
     version: 1.1.x
   ihe.pcc.odh: 
     id: ihepccodh
-    version: current
+    version: 1.0.0-comment
   ihe.iti.pdqm: 
     id: ihepdqm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
