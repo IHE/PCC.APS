@@ -1,6 +1,6 @@
 Volume 3 contains content profiles.
 
-This section corresponds to Content Module [domain-ZZ]
+This section corresponds to Content Module
 
 ## 1:XX.6 Antepartum Summary Specification 
 The Antepartum Summary represents a summary of the most critical information to an antepartum care provider regarding the status of a patient’s pregnancy. This document content module is a Medical Summary and inherits all header constraints from Medical Summary (1.3.6.1.4.1.19376.1.5.3.1.1.2).

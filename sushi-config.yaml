@@ -2,18 +2,18 @@
 # ───────────────────────────────────────────────────
 # the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
-id: ihe.pcc.aps
-canonical: https://profiles.ihe.net/PCC/APS
+id: ihe.pcc.maps
+canonical: https://profiles.ihe.net/PCC/mAPS
 version: 0.0.1-current
-name: IHE_PCC_APS
-title: "Antepartum Summary"
+name: IHE_PCC_MAPS
+title: "Mobile Antepartum Summary"
 description: Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode.
 releaseLabel: ci-build
 #releaseLabel: ballot
 #releaseLabel: trial-use
 #releaseLabel: release
 #date: 2022-01-02
-status: draft
+status: active
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
   - name: IHE Patient Care Coordination Committee
@@ -62,13 +62,13 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   apply-publisher: 'true'
   apply-version: 'true'
 
-resources:
+#resources:
 # list every example here with a name, description and that exampleBoolean is true; These are used to populate the artifacts page, and are needed to eliminate build warnings 
 # You may delay filling out this section until you approach publication as it is merely a nice to have and eliminates build warnings -- If you do this then you will need above the autoload-resources true
-  List/genetic:
-    name: Genetic List
-    description: TODO
-    exampleBoolean: true
+#  List/genetic:
+#    name: Genetic List
+#    description: TODO
+#    exampleBoolean: true
 
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
@@ -78,8 +78,8 @@ pages:
   volume-1.md:
     title: 1:XX. Antepartum Summary (APS) Volume 1
     generation: markdown
-  Volume-3.md:
-    title: 3:?.Antepartum Summary (APS) Content [Domain-ZZ]
+  volume-3.md:
+    title: 3:YY.Antepartum Summary (APS) Content
     generation: markdown
   testplan.md:
     title: "Test Plan"
@@ -102,7 +102,7 @@ menu:
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
   Volume 3:
-    "Antepartum Summary (APS) Content [Domain-ZZ]": domain-ZZ.html
+    "Antepartum Summary (APS) Content": volume-3.html
   Artifacts: artifacts.html
   Other:
     Test Plan: testplan.html
