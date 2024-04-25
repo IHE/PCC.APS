@@ -6,7 +6,7 @@ Description: "The Example instance for the Allergy Intolerance - Latex"
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * note.text = "allergy is to latex"
 * identifier.system = "http://acme.com/ids/patients/risks"
-* identifier.value = #2834532
+* identifier.value = "2834532"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
 * category = #environment
