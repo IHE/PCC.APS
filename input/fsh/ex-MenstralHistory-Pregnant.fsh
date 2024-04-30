@@ -15,7 +15,7 @@ Usage: #example
 * hasMember[=] = Reference(ex-FrequencyOfMenstrualCycles)
 
 Instance: ex-HCGPositive-Positive 
-InstanceOf: HCGPositive 
+InstanceOf: HCGPlus 
 Usage: #example
 Description: "The Example instance for the HCGPlus observation"
 * status = http://hl7.org/fhir/observation-status#final
