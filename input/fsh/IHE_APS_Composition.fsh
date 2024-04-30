@@ -31,8 +31,7 @@ and selected histories are provided. The Antepartum Summary represents a summary
 * event MS 
 * insert requireAtLeastOneMatch(event.code, obs, http://terminology.hl7.org/CodeSystem/v3-ActCode#OBS)
 
-* section.code 1..1 MS 
-// if it works keept if not just revert to codable concept  
+* section.code 1..1 MS  
 * section.code ^type.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
 * section.title 1..1 MS
 * section.text 1..1 MS 
