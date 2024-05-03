@@ -24,7 +24,7 @@ This guide is organized into the following sections:
 3. Volume 3: Metadata and Content
    1. [Content One](volume-3.html)
 4. Volume 4: National Extensions
-   1. [US Realm National Extension](https://profiles.ihe.net/PCC/mAPS.us/ImplementationGuide/ihe.pcc.maps.us)
+   1. [US Realm National Extension](https://build.fhir.org/ig/IHE/PCC.mAPS.us/branches/master/index.html)
 5. Other
    1. [Test Plan](testplan.html)
    1. [Changes to Other IHE Specifications](other.html)
