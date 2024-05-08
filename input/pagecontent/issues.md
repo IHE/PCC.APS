@@ -31,6 +31,8 @@
 - APSOpenIssue_025:	Seeking commment for the representaion of the units of measure for Packs/per day and Drinks per week. The warning was puressed becasue the unit that is measured withthe code is specific to packs per day and drinks per week. However it may be represented as number per day or week and the wordking of packs or drinks can be inplied from th responce of the loinc code that is calling for the result. 
 - APSOpenIssue_026:	Seeking commment --  the incorperation of the survey questions for pregnancy history may have to be collected through a structure data capture survey from the patient prior to its incorperation into the summary. should there be language supporting this method of data collection deffined within this profile? 
 - APSOpenIssue_027: * $loinc#44996-0     "Trace" no longer a valid code in LOINC Replace ment should be found 
+- APSOpenIssue_028: This version of the profile is in FHIR R4.0 not R4B. If there is interest in making this IG conformant to r4B, the public comment period is where this can be requested. If it is not requested, the next version of this IG may be in r4B or r6. 
+
 
 ### Closed Issues
 
