@@ -1,7 +1,7 @@
 ## Significant Changes
 
 ### Significant Changes From Previous Release
-This is the first release of teh is Implementation Guide.
+This is the first release of this Implementation Guide.
 
 ##Issues
 
