@@ -11,6 +11,6 @@
     "first" : true,
     "title" : "Mobile Antepartum Summary",
     "ci-build" : "https://build.fhir.org/ig/IHE/PCC.mAPS/branches/master/index.html",
-    "category" : "Material Health",
+    "category" : "Maternal Health",
     "introduction" : "Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode."
   }
