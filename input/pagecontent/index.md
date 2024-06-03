@@ -27,7 +27,7 @@ This guide is organized into the following sections:
    1. [US Realm National Extension](https://build.fhir.org/ig/IHE/PCC.mAPS.us/branches/master/index.html)
 5. Other
    1. [Changes to Other IHE Specifications](other.html)
-   1. [Download and Analysis](download.md)
+   1. [Download and Analysis](download.html)
    1. [Test Plan](testplan.html)
 
 See also the [Table of Contents](toc.html) and the index of [Artifacts](artifacts.html) defined as part of this implementation guide.
