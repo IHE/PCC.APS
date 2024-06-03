@@ -12,23 +12,23 @@ The actors in this profile are described in more detail in the sections below.
 
 <a name="creator"> </a>
 
-#### X.1.1.1 Content Creator
+#### 1:X.1.1.1 Content Creator
 
 The [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
-#### X.1.1.2 Content Consumer
+#### 1:X.1.1.2 Content Consumer
 
 The [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
-#### X.1.2 mAPS Content
+#### 1:X.1.2 mAPS Content
 
 The Content Creator and Content Consumer share the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="actor-options"> </a>
 
-## X.2 mAPS Actor Options
+## 1:X.2 mAPS Actor Options
 
 Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
 between options when applicable are specified in notes.
@@ -61,9 +61,10 @@ managing them as part of the patient record. See the [Discrete Data Import Optio
 
 N/A
 
-<a name="security-considerations"> </a>
+<a name="overview"> </a>
 
-##1:X.4 Overview
+## 1:X.4 Overview
+
 This FHIR document inherits its composition from the [International Patient Summary](https://hl7.org/fhir/uv/ips/) and will have some dependencies on that implementation guide. 
 
 The following table informs the Pregnancy observations that are defined in this profile, indicating where the observation is already included in the in the IPS. However, many of the sections and entries defined in the IPS were designed to be extensible, so the additional observations profiled by this specification do not impact conformance to the IPS document. 
@@ -125,12 +126,14 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Pregnancy Education Observation](StructureDefinition-IHE.PregnancyEducationObservation.html)                                     | N                         |
 {: .grid}
 
-###1:X.4.1 Concepts
+### 1:X.4.1 Concepts
+
 Not applicable.
 
 ### 1:X.4.2 Use Cases
 
 #### 1:X.4.2.1 Use Case 1
+
 Precondition: The patient’s obstetrician sees the patient for her pregnancy in the ambulatory (office) setting.  During the pregnancy, the patient is noted to have a medical problem requiring consultation with a Maternal-Fetal Medicine specialist (perinatologist).  The office obtains pre-authorization from the insurance payer for the consult, and for the intended or anticipated route of delivery, and transmits that information to both the consultant and to the hospital.  
 
 Events: The patient is seen in the obstetrician’s office where a complete medical and relevant social history are taken by the nurse and recorded in the office EHR, incorporating data from the perinatologist’s consultation report as appropriate. Laboratory and imaging reports ordered by the perinatologist as well as the perinatologist’s consultation report are displayed electronically to the obstetrician. The obstetrician reviews the consultation report from the perinatologist’s office and imaging studies ordered by the perinatologist along with data recorded by the nurse.  Physical exam reveals some abnormalities. The obstetrician orders additional laboratory studies, and sends the patient to the hospital to Labor and Delivery. 
@@ -150,6 +153,8 @@ Profile and the relevant transactions between them.
 <figcaption><b>Figure XX.1-2: ToDo Actor Diagram</b></figcaption>
 </figure>
 <br clear="all">
+
+<a name="security-considerations"> </a>
 
 ## 1:X.5 mAPS Security Considerations
 
