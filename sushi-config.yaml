@@ -76,22 +76,25 @@ resources:
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
   index.md:
-    title: 1:XX. Antepartum Summary (APS) Home
+    title: Mobile Antepartum Summary (mAPS) Home
     generation: markdown
   volume-1.md:
-    title: 1:XX. Antepartum Summary (APS) Volume 1
+    title: 1:XX Mobile Antepartum Summary (mAPS) Volume 1
     generation: markdown
   volume-3.md:
-    title: 3:YY.Antepartum Summary (APS) Content
+    title: 3:YY Mobile Antepartum Summary (mAPS) Content
     generation: markdown
   testplan.md:
     title: "Test Plan"
     generation: markdown
   other.md:
-    title: Changes to Other Documents
+    title: Changes to Other IHE Specifications
+    generation: markdown
+  download.md:
+    title: "Download and Analysis"
     generation: markdown
   issues.md:
-    title: Significant Changes & Issues
+    title: Significant Changes and Issues
     generation: markdown
 
 menu:
@@ -100,14 +103,15 @@ menu:
     Introduction: volume-1.html
     Actors and Transactions: volume-1.html#actors-and-transactions
     Actor Options: volume-1.html#actor-options
-    Required Groupings: volume-1.html#required-groupings
+    Required Actor Groupings: volume-1.html#required-groupings
     Overview: volume-1.html#overview
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
   Volume 3:
-    "Antepartum Summary (APS) Content": volume-3.html
+    "Mobile Antepartum Summary (mAPS) Content": volume-3.html
   Artifacts: artifacts.html
   Other:
-    Test Plan: testplan.html
     Changes to Other IHE Specifications: other.html
+    Download and Analysis: download.html
+    Test Plan: testplan.html
 
