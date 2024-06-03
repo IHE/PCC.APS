@@ -1,5 +1,5 @@
 {
-    "package-id" : "{pid} -- ihe.pcc.maps",
+    "package-id" : "ihe.pcc.maps",
     "version" : "1.0.0-comment",
     "path" : "https://profiles.ihe.net/PCC/mAPS/1.0.0-comment",
     "mode" : "milestone",
@@ -7,7 +7,7 @@
     "sequence" : "Publication",
     "desc" : "Public-Comment",
     "descmd" : "Public-Comment",
-    "changes" : "{relative link to description of changes} (optional)",
+    "changes" : "issues.html",
     "title" : "Mobile Antepartum Summary",
     "ci-build" : "https://build.fhir.org/ig/IHE/PCC.mAPS/branches/master/index.html",
     "category" : "Material Health",
