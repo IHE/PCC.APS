@@ -8,11 +8,11 @@ version: 1.0.0-comment
 name: IHE_PCC_MAPS
 title: "Mobile Antepartum Summary"
 description: Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode.
-releaseLabel: ci-build
-#releaseLabel: ballot
+#releaseLabel: ci-build
+releaseLabel: ballot
 #releaseLabel: trial-use
 #releaseLabel: release
-#date: 2022-01-02
+date: 2024-06-07
 status: active
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
