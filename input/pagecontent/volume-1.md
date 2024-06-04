@@ -22,7 +22,7 @@ The [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sha
 
 The [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
-#### 1:X.1.2 mAPS Content
+### 1:X.1.2 mAPS Content
 
 The Content Creator and Content Consumer share the [APS content](StructureDefinition-IHE.PCC.APS.Composition.html) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
