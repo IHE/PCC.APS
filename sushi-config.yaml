@@ -4,15 +4,15 @@
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
 id: ihe.pcc.maps
 canonical: https://profiles.ihe.net/PCC/mAPS
-version: 1.0.0-comment
+version: 1.0.0-current
 name: IHE_PCC_MAPS
 title: "Mobile Antepartum Summary"
 description: Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode.
-#releaseLabel: ci-build
-releaseLabel: ballot
+releaseLabel: ci-build
+#releaseLabel: ballot
 #releaseLabel: trial-use
 #releaseLabel: release
-date: 2024-06-04
+#date: 2024-06-04
 status: active
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
