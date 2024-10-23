@@ -2,10 +2,6 @@
 
 <List xmlns="http://hl7.org/fhir">
   <id value="genetic"/> 
-      <!--   text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">To do</div>
-  </text   -->
   <contained> 
     <FamilyMemberHistory> 
       <id value="1"/> 
@@ -27,9 +23,9 @@
         </extension> 
       </extension> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez-Father"/> 
-        <display value="Amanda Alvarez Father"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
+        <display value="Peter Patient"/> 
       </patient> 
       <name value="Dave"/> 
       <relationship> 
@@ -45,8 +41,8 @@
     <FamilyMemberHistory> 
       <id value="2"/> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
       <relationship> 
@@ -79,8 +75,8 @@
         </extension> 
       </extension> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
       <relationship> 
@@ -95,9 +91,9 @@
   <contained> 
     <FamilyMemberHistory> 
       <id value="4"/> 
-    <status value="completed"/> 
+      <status value="completed"/> 
       <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
       <relationship> 
@@ -113,18 +109,18 @@
     <FamilyMemberHistory> 
       <id value="5"/> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
       <name value="Eve"/> 
-          <!--   relationship>
+      <!--  relationship>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
           <code value="38048003"/>
           <display value="maternal uncle"/>
         </coding>
-      </relationship   -->
+      </relationship  -->
       <relationship> 
         <coding> 
           <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/> 
@@ -138,10 +134,10 @@
     <FamilyMemberHistory> 
       <id value="6"/> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
-      </patient>  
+      </patient> 
       <relationship> 
         <coding> 
           <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/> 
@@ -155,8 +151,8 @@
     <FamilyMemberHistory> 
       <id value="7"/> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
       <relationship> 
@@ -189,11 +185,10 @@
         </extension> 
       </extension> 
       <status value="completed"/> 
-    <patient> 
-        <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
+      <patient> 
+        <reference value="Patient/example"/> 
         <display value="Peter Patient"/> 
       </patient> 
-      
       <name value="Alice"/> 
       <relationship> 
         <coding> 
@@ -204,7 +199,6 @@
       </relationship> 
     </FamilyMemberHistory> 
   </contained> 
-
   <status value="current"/> 
   <mode value="snapshot"/> 
   <code> 
@@ -215,10 +209,8 @@
     </coding> 
   </code> 
   <subject> 
-    <reference value="Patient/ex-Patient-AmandaAlvarez"/> 
-    <display value="Peter Patient">
-          <!--    Should be 'Bob', but didn't make sense to define a new patient    -->
-    </display> 
+    <reference value="Patient/example"/> 
+    <display value="Peter Patient"/> 
   </subject> 
   <entry> 
     <item> 
@@ -262,8 +254,8 @@
   </entry> 
   <entry> 
     <item> 
-      <reference value="Condition/ex-Condition-FamilyHistory"/> 
-    <display value="Family history of cancer of colon"/> 
+      <reference value="Condition/family-history"/> 
+      <display value="Family history of cancer of colon"/> 
     </item> 
   </entry> 
 </List> 
