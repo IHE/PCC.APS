@@ -1,6 +1,15 @@
-## Issues
+## Significant Changes
+
+### Significant Changes From Previous Release
+This is the first release of this Implementation Guide.
+
+##Issues
 
 ### Submit an Issue
+IHE welcomes [New Issues](https://github.com/IHE/PCC.mAPS/issues/new/choose) from the GitHub community. 
+For those without GitHub access, issues may be submitted to the [Public Comment form](https://www.ihe.net/PCC_Public_Comments/).
+
+As issues are submitted they will be managed on the [mAPS GitHub Issues](https://github.com/IHE/PCC.mAPS/issues), where discussion and workarounds may be found. These issues, when critical, will be processed using the normal [IHE Change Proposal](https://wiki.ihe.net/index.php/Category:CPs) management and balloting. It is important to note that as soon as a Change Proposal is approved, it carries the same weight as a published Implementation Guide (i.e., it is testable at an [IHE Connectathon](https://www.ihe.net/participate/connectathon/) from the time it is approved, even if it will not be integrated until several months later).
 
 ### Open Issues
 
@@ -33,19 +42,10 @@
 - APSOpenIssue_027: * $loinc#44996-0     "Trace" no longer a valid code in LOINC Replace ment should be found 
 - APSOpenIssue_028: This version of the profile is in FHIR R4.0 not R4B. If there is interest in making this IG conformant to r4B, the public comment period is where this can be requested. If it is not requested, the next version of this IG may be in r4B or r6. 
 
-
 ### Closed Issues
 
-- ToDo_002: this is closed issue 2
+- None
 
 
-
-## Significant Changes
-
-### Significant Changes from Revision x.x
-
-- change 1
-- change 2
-- etc.
 
 

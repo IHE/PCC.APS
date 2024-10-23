@@ -1,17 +1,16 @@
 <div markdown="1" class="stu-note">
 
-This Test Plan page is a prototype.   We expect the maturity of the content will improve over time.  For now, we summarize high level testing scope and available tools. Comments are welcome.
+This Test Plan page is a prototype. We expect the maturity of the content will improve over time. For now, we summarize high level testing scope and available tools. Comments are welcome.
 </div>
 
 
-**TODO: fill in the goals of the testing.
 mAPS test goals are:
-- verify the ability of a content creator to generate the content using the specified structure for this FHIR antepartum Summary
-- Verify the ability of a contento consumer to view or import the data according to the import option selected (View, Section import, document import, and descrete data import)
+- Verify the ability of a Content Creator to generate the content using the specified structure for this FHIR Antepartum Summary
+- Verify the ability of a Content Consumer to view or import the data according to the import option selected (View, Section Import, Document Import, and Discrete Data Import)
 
 ## Introduction
 
-Overall test plan leverages the Profiles, and Examples shown on the [Artifacts Summary](artifacts.html). The [Profiles](artifacts.html#structures-resource-profiles) listed are describing the constraints that would be adhered to by Actors claiming conformance to this implementation guide. Thus any applicable Resources that are known to have been published by an app or server MUST be conformant to these profiles as appropriate.
+Overall test plan leverages the Profiles and Examples shown on the [Artifacts Summary](artifacts.html). The [Profiles](artifacts.html#structures-resource-profiles) listed are describing the constraints that would be adhered to by Actors claiming conformance to this implementation guide. Thus any applicable Resources that are known to have been published by an app or server MUST be conformant to these profiles as appropriate.
 
 The Example Instances are listed listed in [Example Instances](artifacts.html#example-example-instances). Some are conformant to the profiles. Other examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that  should be able to handle in various ways. 
 
