@@ -11,20 +11,20 @@ This section defines the actors, transactions, and/or content modules in this im
 
 ### 1:X.1.1 Actors
 The actors in this profile are described in more detail in the sections below.
-  - [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
-  - [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
+  - [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
+  - [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
 
 <a name="creator"> </a>
 
 #### 1:X.1.1.1 Content Creator
 
-The [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
 #### 1:X.1.1.2 Content Consumer
 
-The [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 ### 1:X.1.2 mAPS Content
 
@@ -39,9 +39,9 @@ between options when applicable are specified in notes.
 
 |     Actor        |      Option          |
 |------------------|----------------------|
-| Content Consumer | View                 |
-| Content Consumer | Document Import      |
-| Content Consumer | Discrete Data Import |
+| mAPS Content Consumer | View                 |
+| mAPS Content Consumer | Document Import      |
+| mAPS Content Consumer | Discrete Data Import |
 {: .grid}
 
 ### 1:X.2.1 View Option
@@ -187,13 +187,13 @@ The actors in this profile are described in more detail in the sections below.
 
 #### 28.1.1.1 Content Creator
 
-The [Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
 #### 28.1.1.2 Content Consumer
 
-The [Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
+The [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 #### 28.1.2 APS Content
 
@@ -208,9 +208,9 @@ between options when applicable are specified in notes.
 
 |     Actor        |      Option          |
 |------------------|----------------------|
-| Content Consumer | View                 |
-| Content Consumer | Document Import      |
-| Content Consumer | Discrete Data Import |
+| mAPS Content Consumer | View                 |
+| mAPS Content Consumer | Document Import      |
+| mAPS Content Consumer | Discrete Data Import |
 {: .grid}
 
 ### 28.2.1 View Option
