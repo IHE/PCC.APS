@@ -1,5 +1,5 @@
 Instance: ex-APS-Composition-AmandaAlvarez
-InstanceOf: IHE.PCC.APS.Composition
+InstanceOf: IHE.PCC.mAPS.Composition
 Usage: #example
 Description: "The Example instance for the Antepartum Summary composition for example patient Amanda Alvarez"
 

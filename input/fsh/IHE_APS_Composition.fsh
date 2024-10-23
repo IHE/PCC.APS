@@ -1,6 +1,6 @@
-Profile:   IHE_APS_Composition
+Profile:   IHE_PCC_mAPS_Composition
 Parent: Composition
-Id:             IHE.PCC.APS.Composition
+Id:             IHE.PCC.mAPS.Composition
 Title: "Antapartum Summary"
 Description:      """
 Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode. 
