@@ -67,26 +67,3 @@ Usage: #example
 * contact.period.start = "2012"
 * managingOrganization = Reference(Organization/ex-Organization-OB)
 
-
-Instance:   ex-Patient-AmandaAlvarez-Father
-InstanceOf: Patient
-Title:      "Amanda Alvarez Father example"
-Description: "Amanda Alvarez patient father example for antepartum summary"
-Usage: #example
-
-* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* name[+].use = #official
-* name[=].family = "Alvarez"
-* name[=].given = "Dave"
-
-Instance:   ex-Condition-FamilyHistory
-InstanceOf: Condition
-Title:      "Example Family history condition - colon cancer"
-Description: "Example Family history condition - colon cancer"
-Usage: #example
-
-* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* code = $sct#312824007
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#inactive 
-* subject = Reference(Patient/ex-Patient-AmandaAlvarez)
-* asserter = Reference(Patient/ex-Patient-AmandaAlvarez)

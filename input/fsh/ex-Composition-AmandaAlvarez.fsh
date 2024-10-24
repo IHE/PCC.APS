@@ -149,6 +149,15 @@ Description: "The Example instance for the Antepartum Summary composition for ex
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">observations for pregnancy history</div>"
 
 
+* section[FamilyMedicalHistory]
+  * title = "Family Medical History"
+  * code = $loinc#10157-6 "Family Medical History"
+  * entry[+] = Reference(ex-FamilyMemberHistory-AmandaAlvarez-Eve)
+  * entry[+] = Reference(ex-FamilyMemberHistory-AmandaAlvarez-Alice)
+  * text.status = #generated
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Family Medical History for Amanda Alvarez</div>"
+
+
 * section[sectionAdvanceDirectives]
   * title = "Advance Directives"
   * code = $loinc#42348-3 "Advance Directives"
