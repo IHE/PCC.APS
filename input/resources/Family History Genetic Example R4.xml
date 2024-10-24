@@ -25,7 +25,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <name value="Dave"/> 
       <relationship> 
@@ -43,7 +43,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <relationship> 
         <coding> 
@@ -77,7 +77,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <relationship> 
         <coding> 
@@ -94,7 +94,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <relationship> 
         <coding> 
@@ -111,7 +111,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <name value="Eve"/> 
       <!--  relationship>
@@ -136,7 +136,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <relationship> 
         <coding> 
@@ -153,7 +153,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <relationship> 
         <coding> 
@@ -187,7 +187,7 @@
       <status value="completed"/> 
       <patient> 
         <reference value="Patient/example"/> 
-        <display value="Peter Patient"/> 
+        <display value="Amanda Alvarez"/> 
       </patient> 
       <name value="Alice"/> 
       <relationship> 
@@ -210,7 +210,7 @@
   </code> 
   <subject> 
     <reference value="Patient/example"/> 
-    <display value="Peter Patient"/> 
+    <display value="Amanda Alvarez"/> 
   </subject> 
   <entry> 
     <item> 
