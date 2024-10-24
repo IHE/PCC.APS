@@ -8,7 +8,7 @@ Usage: #example
 * status = #complete
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
 * name = "Eve Alvarez"
-* relationship = http://terminology.hl7.org/ValueSet/v3-FamilyMember#MTH
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH
 * condition.code = $sct#190905008 
 
 
@@ -22,5 +22,5 @@ Usage: #example
 * status = #complete
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
 * name = "Alice Brown"
-* relationship = http://terminology.hl7.org/ValueSet/v3-FamilyMember#MCOUSN
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MCOUSN
 * condition.code = $sct#190905008 
