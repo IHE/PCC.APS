@@ -5,7 +5,7 @@ Description: "Amanda Alvarez Eve Family Member History example for antepartum su
 Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* status = http://hl7.org/fhir/history-status#complete
+* status = http://hl7.org/fhir/history-status#completed
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
 * name = "Eve Alvarez"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH
@@ -19,7 +19,7 @@ Description: "Amanda Alvarez Alice Family Member History example for antepartum 
 Usage: #example
 
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* status = http://hl7.org/fhir/history-status#complete
+* status = http://hl7.org/fhir/history-status#completed
 * patient = Reference(Patient/ex-Patient-AmandaAlvarez)
 * name = "Alice Brown"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MCOUSN
