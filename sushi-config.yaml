@@ -20,7 +20,7 @@ publisher:
   - url: https://www.ihe.net/ihe_domains/patient_care_coordination/
   - email: pcc@ihe.net
 contact:
-  - name: IHE Patient Care Coordination Committee
+  - name: IHE Patient Care Coordination Committee  
     telecom:
       - system: email
         value: pcc@ihe.net
