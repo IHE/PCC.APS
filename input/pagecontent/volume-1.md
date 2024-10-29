@@ -2,33 +2,33 @@ Mobile Antepartum Summary is a content profile that defines the structure for th
 
 <a name="actors-and-transactions"> </a>
 
-## 1:X.1 mAPS Actors, Transactions, and Content Modules
+## 1:28.1 mAPS Actors, Transactions, and Content Modules
 This section defines the actors, transactions, and/or content modules in this implementation guide. General definitions of actors are given in the Technical Frameworks General Introduction Appendix A. IHE Transactions can be found in the Technical Frameworks General Introduction Appendix B. Both appendices are located at https://profiles.ihe.net/GeneralIntro/.
 
-### 1:X.1.1 Actors
+### 1:28.1.1 Actors
 The actors in this profile are described in more detail in the sections below.
   - [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
   - [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
 
 <a name="creator"> </a>
 
-#### 1:X.1.1.1 Content Creator
+#### 1:28.1.1.1 Content Creator
 
 The [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="consumer"> </a>
 
-#### 1:X.1.1.2 Content Consumer
+#### 1:28.1.1.2 Content Consumer
 
 The [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
-### 1:X.1.2 mAPS Content
+### 1:28.1.2 mAPS Content
 
 The Content Creator and Content Consumer share the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
 <a name="actor-options"> </a>
 
-## 1:X.2 mAPS Actor Options
+## 1:28.2 mAPS Actor Options
 
 Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
 between options when applicable are specified in notes.
@@ -40,24 +40,24 @@ between options when applicable are specified in notes.
 | mAPS Content Consumer | Discrete Data Import |
 {: .grid}
 
-### 1:X.2.1 View Option
+### 1:28.2.1 View Option
 
 This option defines the processing requirements placed on Content Consumers for providing access, rendering and management of the medical document. See the [View Option in IHE PCC TF-2:3.1.1](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
 The Content Consumer Actor shall be able to present a view of the document. Minimal view guidance following [FHIR core Document Presentation](http://hl7.org/fhir/documents.html#presentation).
 
-### 1:X.2.2 Document Import Option
+### 1:28.2.2 Document Import Option
 
 This option defines the processing requirements placed on Content Consumers for providing access, and importing the entire medical document and managing it as part of the patient record. See the [Document Import Option in IHE PCC TF-2:3.1.2](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
-### 1:X.2.3 Discrete Data Import Option
+### 1:28.2.3 Discrete Data Import Option
 
 This option defines the processing requirements placed on Content Consumers for providing access, and importing discrete data from selected sections of the medical document and
 managing them as part of the patient record. See the [Discrete Data Import Option in IHE PCC TF-2:3.1.4](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
 
 <a name="required-groupings"> </a>
 
-## 1:X.3 mAPS Required Actor Groupings
+## 1:28.3 mAPS Required Actor Groupings
 
 N/A
 
@@ -126,17 +126,17 @@ The following table informs the Pregnancy observations that are defined in this 
 | [Pregnancy Education Observation](StructureDefinition-IHE.PregnancyEducationObservation.html)                                     | N                         |
 {: .grid}
 
-### 1:X.4.1 Concepts
+### 1:28.4.1 Concepts
 
 <a name="actors-and-transactions"> </a>
 
 ## 1:28.1 APS Actors, Transactions, and Content Modules
 
-### 1:X.4.2 Use Cases
+### 1:28.4.2 Use Cases
 
 ## 1:28.2 Use Cases 
 
-### 28.2.1.1 Use case 1
+### 1:28.2.1.1 Use case 1
 Precondition: The patient’s obstetrician sees the patient for her pregnancy in the ambulatory (office) setting.  During the pregnancy, the patient is noted to have a medical problem requiring consultation with a Maternal-Fetal Medicine specialist (perinatologist).  The office obtains pre-authorization from the insurance payer for the consult, and for the intended or anticipated route of delivery, and transmits that information to both the consultant and to the hospital.  
 
 Events: The patient is seen in the obstetrician’s office where a complete medical and relevant social history are taken by the nurse and recorded in the office EHR, incorporating data from the perinatologist’s consultation report as appropriate. Laboratory and imaging reports ordered by the perinatologist as well as the perinatologist’s consultation report are displayed electronically to the obstetrician. The obstetrician reviews the consultation report from the perinatologist’s office and imaging studies ordered by the perinatologist along with data recorded by the nurse.  Physical exam reveals some abnormalities. The obstetrician orders additional laboratory studies, and sends the patient to the hospital to Labor and Delivery. 
@@ -153,67 +153,10 @@ Profile and the relevant transactions between them.
 
 <figure>
 {%include ActorsAndTransactions.svg%}
-<figcaption><b>Figure XX.1-2: ToDo Actor Diagram</b></figcaption>
+<figcaption><b>Figure 28.1-2: PCC Content Creator Content Consumer [PCC-01] Actor Diagram</b></figcaption>
 </figure>
 <br clear="all">
 
-
-
-### 528.1.1 Actors
-
-The actors in this profile are described in more detail in the sections below.
-
-<a name="creator"> </a>
-
-#### 28.1.1.1 Content Creator
-
-The [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
-
-<a name="consumer"> </a>
-
-#### 28.1.1.2 Content Consumer
-
-The [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) consumes the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and obtains it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
-
-#### 28.1.2 APS Content
-
-The Content Creator and Content Consumer share the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
-
-<a name="actor-options"> </a>
-
-## 28.2 APS Actor Options
-
-Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
-between options when applicable are specified in notes.
-
-|     Actor        |      Option          |
-|------------------|----------------------|
-| mAPS Content Consumer | View                 |
-| mAPS Content Consumer | Document Import      |
-| mAPS Content Consumer | Discrete Data Import |
-{: .grid}
-
-### 28.2.1 View Option
-
-This option defines the processing requirements placed on Content Consumers for providing access, rendering and management of the medical document. See the [View Option in IHE PCC TF-2:3.1.1](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
-
-The Content Consumer Actor shall be able to present a view of the document. Minimal view guidance following [FHIR core Document Presentation](http://hl7.org/fhir/documents.html#presentation).
-
-### 28.2.2 Document Import Option
-
-This option defines the processing requirements placed on Content Consumers for providing access, and importing the entire medical document and managing it as part of the patient record. See the [Document Import Option in IHE PCC TF-2:3.1.2](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
-
-### 28.2.3 Discrete Data Import Option
-
-This option defines the processing requirements placed on Content Consumers for providing access, and importing discrete data from selected sections of the medical document and
-managing them as part of the patient record. See the [Discrete Data Import Option in IHE PCC TF-2:3.1.4](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) for more details on this option.
-
-
-<a name="required-groupings"> </a>
-
-## 28.3 APS Required Actor Groupings
-
-N/A
 
 <a name="security-considerations"> </a>
 
