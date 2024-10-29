@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# 1:28 Antepartum Summary
-=======
 Mobile Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode.
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 
 <a name="actors-and-transactions"> </a>
 
@@ -67,15 +63,9 @@ N/A
 
 <a name="overview"> </a>
 
-<<<<<<< HEAD
 ## 1:28.1 Overview
 TBD
 This FHIR document inherits its composition from the [International Patient Summary](https://hl7.org/fhir/uv/ips/) and will have some dependencies on that Implementation guide. 
-=======
-## 1:X.4 Overview
-
-This FHIR document inherits its composition from the [International Patient Summary](https://hl7.org/fhir/uv/ips/) and will have some dependencies on that implementation guide. 
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 
 The following table informs the Pregnancy observations that are defined in this profile, indicating where the observation is already included in the in the IPS. However, many of the sections and entries defined in the IPS were designed to be extensible, so the additional observations profiled by this specification do not impact conformance to the IPS document. 
 
@@ -138,24 +128,15 @@ The following table informs the Pregnancy observations that are defined in this 
 
 ### 1:X.4.1 Concepts
 
-<<<<<<< HEAD
 <a name="actors-and-transactions"> </a>
 
 ## 1:28.1 APS Actors, Transactions, and Content Modules
-=======
-Not applicable.
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 
 ### 1:X.4.2 Use Cases
 
-<<<<<<< HEAD
 ## 1:28.2 Use Cases 
 
 ### 28.2.1.1 Use case 1
-=======
-#### 1:X.4.2.1 Use Case 1
-
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 Precondition: The patient’s obstetrician sees the patient for her pregnancy in the ambulatory (office) setting.  During the pregnancy, the patient is noted to have a medical problem requiring consultation with a Maternal-Fetal Medicine specialist (perinatologist).  The office obtains pre-authorization from the insurance payer for the consult, and for the intended or anticipated route of delivery, and transmits that information to both the consultant and to the hospital.  
 
 Events: The patient is seen in the obstetrician’s office where a complete medical and relevant social history are taken by the nurse and recorded in the office EHR, incorporating data from the perinatologist’s consultation report as appropriate. Laboratory and imaging reports ordered by the perinatologist as well as the perinatologist’s consultation report are displayed electronically to the obstetrician. The obstetrician reviews the consultation report from the perinatologist’s office and imaging studies ordered by the perinatologist along with data recorded by the nurse.  Physical exam reveals some abnormalities. The obstetrician orders additional laboratory studies, and sends the patient to the hospital to Labor and Delivery. 
@@ -242,10 +223,6 @@ See ITI TF-2x: [Appendix Z.8 “Mobile Security Considerations”](https://profi
 
 <a name="other-grouping"> </a>
 
-<<<<<<< HEAD
 ## 28.6 APS Cross-Profile Considerations
-=======
-## 1:X.6 mAPS Cross-Profile Considerations
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 
 The content defined in this profile can serve as source information for many pregancy related public health reporting and research efforts. Information from this profile may provide content to the Labor and Delivery Summary and may be a source for Birth and Fetal Death Reporting (BFDRE). 
