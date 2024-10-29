@@ -176,7 +176,6 @@ Profile and the relevant transactions between them.
 </figure>
 <br clear="all">
 
-<<<<<<< HEAD
 
 
 ### 528.1.1 Actors
@@ -235,8 +234,6 @@ managing them as part of the patient record. See the [Discrete Data Import Optio
 
 N/A
 
-=======
->>>>>>> 257ce79d60ad5d978fa05a9b7c35cf6aba872d7d
 <a name="security-considerations"> </a>
 
 ## 1:X.5 mAPS Security Considerations

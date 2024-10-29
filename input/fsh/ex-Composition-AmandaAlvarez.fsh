@@ -151,7 +151,7 @@ Description: "The Example instance for the Antepartum Summary composition for ex
 
 * section[FamilyMedicalHistory]
   * title = "Family Medical History"
-  * code = $loinc#10157-6 "Family Medical History"
+  * code = $loinc#10157-6 "History of family member diseases Narrative"
   * entry[+] = Reference(ex-FamilyMemberHistory-AmandaAlvarez-Eve)
   * entry[+] = Reference(ex-FamilyMemberHistory-AmandaAlvarez-Alice)
   * text.status = #generated
