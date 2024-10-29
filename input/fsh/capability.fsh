@@ -8,7 +8,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-17"
 * publisher = "Integrating the Healthcare Enterprise (IHE)"
-* description = "The mAPS[Content Creator](ActorsAndTransactions.html#Content-Creator)"
+* description = "The mAPS[Content Creator](volume-1.html#Content-Creator)"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
@@ -26,7 +26,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-17"
 * publisher = "Integrating the Healthcare Enterprise (IHE)"
-* description = "The mAPS[Content Creator](ActorsAndTransactions.html#Content-Consumer)"
+* description = "The mAPS[Content Creator](volume-1.htmll#Content-Consumer)"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
