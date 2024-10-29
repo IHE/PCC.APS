@@ -26,7 +26,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-07-17"
 * publisher = "Integrating the Healthcare Enterprise (IHE)"
-* description = "The mAPS[Content Creator](volume-1.htmll#Content-Consumer)"
+* description = "The mAPS[Content Consumer](volume-1.html#Content-Consumer)"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
