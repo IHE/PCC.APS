@@ -10,13 +10,13 @@ The actors in this profile are described in more detail in the sections below.
   - [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
   - [mAPS Content Consumer](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1)
 
-<a name="creator"> </a>
+<a name="Content-Creator"> </a>
 
 #### 1:28.1.1.1 Content Creator
 
 The [mAPS Content Creator](https://profiles.ihe.net/ITI/sIPS/pcc.html#31-document-sharing-pcc-1) creates the [APS content](StructureDefinition-IHE.PCC.mAPS.Composition.html) and shares it using one of the methods defined in the [IHE Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html).
 
-<a name="consumer"> </a>
+<a name="Content-Consumer"> </a>
 
 #### 1:28.1.1.2 Content Consumer
 
