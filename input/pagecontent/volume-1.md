@@ -128,10 +128,6 @@ The following table informs the Pregnancy observations that are defined in this 
 
 ### 1:28.4.1 Concepts
 
-<a name="actors-and-transactions"> </a>
-
-## 1:28.1 APS Actors, Transactions, and Content Modules
-
 ### 1:28.4.2 Use Cases
 
 ## 1:28.2 Use Cases 
