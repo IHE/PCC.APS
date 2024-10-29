@@ -1,16 +1,12 @@
 {
     "package-id" : "ihe.pcc.maps",
-    "version" : "1.0.0-comment",
-    "path" : "https://profiles.ihe.net/PCC/mAPS/1.0.0-comment",
+    "version" : "1.0.0",
+    "path" : "https://profiles.ihe.net/PCC/mAPS/1.0.0",
     "mode" : "milestone",
-    "status" : "ballot",
+    "status" : "trial-use",
     "sequence" : "Publication",
-    "desc" : "Public-Comment",
-    "descmd" : "Public-Comment",
+    "desc" : "Trial-Implementation",
+    "descmd" : "Trial-Implementation",
     "changes" : "issues.html",
-    "first" : true,
-    "title" : "Mobile Antepartum Summary",
-    "ci-build" : "https://build.fhir.org/ig/IHE/PCC.mAPS/branches/master/index.html",
-    "category" : "Maternal Health",
-    "introduction" : "Antepartum Summary is a content profile that defines the structure for the aggregation of significant events, diagnoses, and plans of care derived from the visits over the course of an antepartum episode."
+    "first" : false
   }
